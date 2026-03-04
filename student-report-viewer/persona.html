@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Persona Profile | ICAN STELLAR</title>
+  <link rel="stylesheet" href="css/persona-styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-content">
+        <div class="logo-section">
+          <div class="logo-icon">🎓</div>
+          <div class="logo-text">
+            <h1>Student Persona Profile</h1>
+            <p>Based on Learning Habits Assessment</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Student Selection Page -->
+      <section id="selection-page" class="page active">
+        <div class="selection-container">
+          <!-- Back to Reports Button -->
+          <a href="index.html" class="back-to-reports-link" id="back-to-reports">
+            <span>←</span> Back to Report Viewer
+          </a>
+
+          <div class="selection-header">
+            <div class="selection-icon">👤</div>
+            <h2>Select a Student</h2>
+            <p>Choose a student to view their comprehensive learning persona analysis.</p>
+          </div>
+
+          <div class="search-container">
+            <div class="search-box">
+              <span class="search-icon">🔍</span>
+              <input type="text" id="student-search" placeholder="Search students..." autocomplete="off">
+            </div>
+          </div>
+
+          <div class="students-grid" id="students-grid">
+            <div class="loading-state">
+              <div class="spinner"></div>
+              <p>Loading students...</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Student Profile Page -->
+      <section id="profile-page" class="page">
+        <div class="profile-container">
+          <!-- Back Button -->
+          <button class="back-button" id="back-button">
+            <span>←</span> Back to Students
+          </button>
+
+          <!-- Profile Header -->
+          <div class="profile-header" id="profile-header">
+            <div class="profile-avatar" id="profile-avatar">👤</div>
+            <div class="profile-info">
+              <h2 id="student-name">Student Name</h2>
+              <div class="profile-stats">
+                <span class="stat-badge" id="total-reports">0 Reports</span>
+                <span class="stat-badge" id="subjects-count">0 Subjects</span>
+                <span class="stat-badge tier-badge" id="performance-tier">Loading...</span>
+              </div>
+            </div>
+            <a href="#" class="header-quiz-btn" id="header-quiz-btn" title="Take Personality Quiz">
+              🧠 Take Quiz
+            </a>
+          </div>
+
+          <!-- 1. CURRENT ASSESSMENT (the TL;DR) -->
+          <div class="section-card assessment-card" id="assessment-section">
+            <h3 class="section-title">📋 Overall Assessment</h3>
+            <p class="section-subtitle">A summary of this student's current standing based on all teacher reports to date</p>
+            <div class="honest-assessment" id="honest-assessment">
+              <!-- Filled dynamically -->
+            </div>
+          </div>
+
+          <!-- 2. LEARNING PROFILE + METRICS (how they learn) -->
+          <div class="section-card" id="learning-profile-section">
+            <h3 class="section-title">🎭 Learning Profile</h3>
+            <p class="section-subtitle">How this student learns best, based on classroom behavior patterns observed by teachers</p>
+            <div class="section-explainer">
+              Teachers rate students daily on <strong>6 classroom behaviors</strong> (1-5 scale). These ratings reveal how the student naturally approaches learning. A score of <strong>4.0+</strong> is the proficiency target.
+            </div>
+            <div class="learning-profile-card" id="learning-profile-card">
+              <div class="profile-main">
+                <span class="profile-emoji" id="profile-emoji">💬</span>
+                <div class="profile-details">
+                  <h4 id="profile-name">Loading...</h4>
+                  <p id="profile-description">Loading...</p>
+                </div>
+              </div>
+              <div class="profile-traits" id="profile-traits">
+                <!-- Filled dynamically -->
+              </div>
+              <div class="profile-environment">
+                <strong>Ideal Learning Environment:</strong>
+                <span id="ideal-environment">Loading...</span>
+              </div>
+            </div>
+
+            <!-- Metrics Grid -->
+            <div class="metrics-grid" id="metrics-grid">
+              <!-- Filled dynamically -->
+            </div>
+          </div>
+
+          <!-- 3. PERSONALITY PROFILE (6 dimensions) -->
+          <div class="section-card" id="personality-section">
+            <h3 class="section-title">🧠 Personality Profile</h3>
+            <p class="section-subtitle">Six personality dimensions that describe this student's learning style</p>
+            <div class="section-explainer">
+              Each dimension has two opposite poles (e.g. "Breadth" vs "Depth"). The student's position on each slider shows their natural tendency. The <strong>letter code</strong> below summarizes all 6 dimensions &mdash; uppercase = strong tendency, lowercase = balanced/neutral.
+            </div>
+
+            <div id="personality-content">
+              <!-- Loading state -->
+              <div id="personality-loading" class="personality-loading">
+                <p>Analyzing personality...</p>
+              </div>
+
+              <!-- Not enough data -->
+              <div id="personality-insufficient" class="hidden">
+                <p class="no-data-message">Not enough data to determine personality profile yet. At least 3 teacher reports are needed.</p>
+              </div>
+
+              <!-- Personality profile -->
+              <div id="personality-profile" class="hidden">
+                <div class="personality-header">
+                  <div class="personality-code-display" id="personality-code-display">
+                    <!-- Filled dynamically -->
+                  </div>
+                  <div class="personality-confidence">
+                    <span class="confidence-label">Confidence:</span>
+                    <span class="confidence-value" id="personality-confidence">--%</span>
+                    <span class="info-tip" data-tip="How reliable this profile is. Based on number of reports and quiz completion. More reports = higher confidence.">?</span>
+                  </div>
+                </div>
+
+                <!-- Personality code legend -->
+                <div class="section-explainer" id="personality-code-legend">
+                  <!-- Filled dynamically by JS -->
+                </div>
+
+                <div class="personality-dimensions" id="personality-dimensions">
+                  <!-- Filled dynamically -->
+                </div>
+
+                <div class="personality-descriptions" id="personality-descriptions">
+                  <!-- Filled dynamically -->
+                </div>
+
+                <div class="personality-actions">
+                  <a href="#" class="quiz-button" id="take-quiz-btn">
+                    <span class="btn-icon">📝</span>
+                    <span id="quiz-btn-text">Take Personality Quiz</span>
+                  </a>
+                  <p class="quiz-hint" id="quiz-hint">Take a short quiz to improve accuracy</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. PERSONA TYPE + TIMELINE (what persona and how it evolved) -->
+          <div class="section-card" id="persona-type-section" style="display:none;">
+            <h3 class="section-title">🌟 Learner Persona</h3>
+            <p class="section-subtitle">A named archetype that best describes this student's learning personality</p>
+            <div class="section-explainer">
+              Based on the 6 personality dimensions above, the system matches this student to one of <strong>21 learner archetypes</strong>. The match percentage shows how closely the student fits this type. As more reports come in, the persona may evolve.
+            </div>
+
+            <div class="persona-hero" id="persona-hero">
+              <div class="persona-hero-emoji" id="persona-type-emoji"></div>
+              <div class="persona-hero-info">
+                <h2 id="persona-type-name"></h2>
+                <p class="persona-tagline" id="persona-type-tagline"></p>
+                <span class="persona-match-badge" id="persona-type-match"></span>
+              </div>
+            </div>
+
+            <p class="persona-description" id="persona-type-description"></p>
+
+            <div class="persona-alternates" id="persona-alternates">
+              <!-- Filled dynamically -->
+            </div>
+
+            <div class="persona-tabs" id="persona-tabs">
+              <button class="persona-tab active" data-tab="strengths">Strengths</button>
+              <button class="persona-tab" data-tab="weaknesses">Weaknesses</button>
+              <button class="persona-tab" data-tab="careers">Career Directions</button>
+              <button class="persona-tab" data-tab="assets">Future Advantages</button>
+              <button class="persona-tab" data-tab="path">How to Improve</button>
+              <button class="persona-tab" data-tab="goals">Long-term Goals</button>
+            </div>
+
+            <div class="persona-tab-content" id="persona-tab-content">
+              <!-- Filled dynamically -->
+            </div>
+          </div>
+
+          <!-- 4b. PERSONA JOURNEY TIMELINE -->
+          <div class="section-card" id="timeline-section" style="display:none;">
+            <h3 class="section-title">📅 Persona Journey</h3>
+            <p class="section-subtitle">How this student's persona has changed over time as more reports are submitted</p>
+            <div class="section-explainer">
+              Each dot represents a date when a new teacher report was added. The persona is recalculated each time using <strong>all reports up to that date</strong>. Click any dot to see a detailed snapshot from that day.
+            </div>
+
+            <!-- Date Picker Controls -->
+            <div class="date-picker-controls" id="date-picker-controls">
+              <div class="date-mode-tabs">
+                <button class="date-mode-tab active" data-mode="as-of">View as of a date</button>
+                <button class="date-mode-tab" data-mode="period">View a specific period</button>
+                <button class="date-mode-tab" data-mode="compare">Compare two dates</button>
+              </div>
+
+              <!-- As-Of Mode -->
+              <div class="date-mode-panel" id="mode-as-of">
+                <label>Show persona using all reports up to:</label>
+                <div class="date-mode-inputs">
+                  <input type="date" id="as-of-date">
+                  <button class="action-button" id="btn-view-as-of">View Persona</button>
+                </div>
+              </div>
+
+              <!-- Period Mode -->
+              <div class="date-mode-panel hidden" id="mode-period">
+                <label>Show persona for reports between:</label>
+                <div class="date-mode-inputs">
+                  <input type="date" id="period-from">
+                  <span class="date-separator">to</span>
+                  <input type="date" id="period-to">
+                  <button class="action-button" id="btn-view-period">View Period</button>
+                </div>
+              </div>
+
+              <!-- Compare Mode -->
+              <div class="date-mode-panel hidden" id="mode-compare">
+                <label>Compare persona at two points in time:</label>
+                <div class="date-mode-inputs">
+                  <div class="compare-row">
+                    <span class="compare-label">Date A:</span>
+                    <input type="date" id="compare-date-a">
+                  </div>
+                  <div class="compare-row">
+                    <span class="compare-label">Date B:</span>
+                    <input type="date" id="compare-date-b">
+                  </div>
+                  <button class="action-button" id="btn-compare">Compare</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Result panel for date picker outputs -->
+            <div class="date-picker-result hidden" id="date-picker-result">
+              <!-- Filled dynamically -->
+            </div>
+
+            <div class="timeline-chart-container" id="timeline-chart-container">
+              <!-- Replaced canvas with div-based chart -->
+            </div>
+
+            <div class="timeline-nodes" id="timeline-nodes">
+              <!-- Filled dynamically -->
+            </div>
+
+            <div class="timeline-detail hidden" id="timeline-detail">
+              <!-- Filled dynamically when a node is clicked -->
+            </div>
+          </div>
+
+          <!-- 5. GAPS & PERFORMANCE (what needs work) -->
+          <div class="section-card gaps-card" id="gaps-section">
+            <h3 class="section-title">⚠️ Areas Needing Improvement</h3>
+            <p class="section-subtitle">Classroom behaviors and skills scoring below the school's proficiency target of 4.0 out of 5.0</p>
+            <div class="section-explainer">
+              The <strong>4.0 target</strong> is ICAN's benchmark for proficiency. Scores are averaged from all teacher reports. Areas below this level need focused attention.
+            </div>
+            <div class="gaps-container" id="gaps-container">
+              <!-- Filled dynamically -->
+            </div>
+          </div>
+
+          <!-- 5b. PERFORMANCE & SKILLS -->
+          <div class="section-card" id="skills-section">
+            <h3 class="section-title">💪 Performance & Skills</h3>
+            <p class="section-subtitle">Detailed breakdown of academic performance and skill development</p>
+
+            <div class="performance-overview">
+              <div class="performance-stat">
+                <span class="stat-label">Skill Focus Success<span class="info-tip" data-tip="How often the student met the teacher's daily skill focus goal (e.g. 'use past tense correctly')">?</span></span>
+                <span class="stat-value" id="sf-met-rate">--%</span>
+              </div>
+              <div class="performance-stat">
+                <span class="stat-label">Avg Test Score</span>
+                <span class="stat-value" id="avg-test-score">--%</span>
+              </div>
+              <div class="performance-stat">
+                <span class="stat-label">Behavior Avg<span class="info-tip" data-tip="Average of all 6 classroom behavior ratings (attention, retention, comprehension, behavior, handwriting, conversation) on a 1-5 scale">?</span></span>
+                <span class="stat-value" id="metrics-avg">--</span>
+              </div>
+              <div class="performance-stat">
+                <span class="stat-label">Lowest Area</span>
+                <span class="stat-value warning" id="lowest-metric">--</span>
+              </div>
+            </div>
+
+            <div class="skills-columns">
+              <div class="skills-column strengths">
+                <h4>✅ Demonstrated Strengths</h4>
+                <div class="skills-list" id="strengths-list">
+                  <!-- Filled dynamically -->
+                </div>
+              </div>
+              <div class="skills-column weaknesses">
+                <h4>⚠️ Recurring Weak Areas</h4>
+                <div class="skills-list" id="weaknesses-list">
+                  <!-- Filled dynamically -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. REINFORCEMENT RECOMMENDATIONS (how to improve) -->
+          <div class="section-card" id="reinforcement-section" style="display:none;">
+            <h3 class="section-title">🔧 Recommended Activities</h3>
+            <p class="section-subtitle">Specific exercises and activities to help improve weak areas</p>
+            <div class="section-explainer">
+              These recommendations are matched to the student's specific weaknesses. <strong>Teachers:</strong> use the buttons to track which activities have been assigned. Click "Generate AI Recommendations" for personalized suggestions.
+            </div>
+
+            <div class="reinforcement-tabs" id="reinforcement-tabs">
+              <button class="reinforcement-tab active" data-filter="all">All</button>
+              <button class="reinforcement-tab" data-filter="pending">Not Started</button>
+              <button class="reinforcement-tab" data-filter="in_progress">In Progress</button>
+              <button class="reinforcement-tab" data-filter="completed">Completed</button>
+            </div>
+
+            <div class="reinforcement-list" id="reinforcement-list">
+              <!-- Filled dynamically -->
+            </div>
+
+            <button class="generate-button" id="generate-ai-reinforcement">
+              <span class="btn-icon">✨</span>
+              Generate AI Recommendations
+            </button>
+
+            <div class="loading-state hidden" id="reinforcement-loading">
+              <div class="spinner"></div>
+              <p>AI is generating personalized recommendations...</p>
+            </div>
+
+            <!-- Projected Persona -->
+            <div class="projected-persona-container" id="projected-persona-container" style="display:none;">
+              <h4>📊 Expected Outcome</h4>
+              <p class="section-subtitle">If the student completes all active recommendations, here's how their persona is projected to shift</p>
+              <div class="projected-comparison" id="projected-comparison">
+                <!-- Filled dynamically: current vs projected side-by-side -->
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. TARGET PERSONA + GAP ANALYSIS (where to aim) -->
+          <div class="section-card" id="desired-persona-section" style="display:none;">
+            <h3 class="section-title">🎯 Goal Persona</h3>
+            <p class="section-subtitle">Choose a target persona type for the student and see what's needed to get there</p>
+            <div class="section-explainer">
+              The student or teacher can pick an ideal learner type as a goal. The system will calculate the <strong>gap</strong> between where the student is now and where they want to be, and suggest specific activities to close that gap.
+            </div>
+
+            <div class="desired-persona-current" id="desired-persona-current">
+              <!-- Shows current target if set -->
+            </div>
+
+            <div class="persona-type-grid" id="persona-type-grid">
+              <!-- Grid of selectable persona types -->
+            </div>
+
+            <div class="desired-set-controls hidden" id="desired-set-controls">
+              <select id="desired-set-by">
+                <option value="teacher">Set by Teacher</option>
+                <option value="student">Set by Student</option>
+              </select>
+              <input type="text" id="desired-set-by-name" placeholder="Your name (optional)">
+              <input type="text" id="desired-reason" placeholder="Why this persona? (optional)">
+              <button class="action-button" id="desired-save-btn">Set as Goal</button>
+            </div>
+
+            <div class="gap-analysis-container hidden" id="gap-analysis-container">
+              <h4>📊 Gap Analysis: Current → Goal</h4>
+              <p class="section-subtitle">Each bar shows one personality dimension. The blue marker is where the student is now, and the colored marker is where they need to be.</p>
+              <div class="gap-bars" id="gap-bars">
+                <!-- Filled dynamically: dimension-by-dimension bars -->
+              </div>
+              <div class="gap-summary" id="gap-summary">
+                <!-- Difficulty, timeframe, suggested templates -->
+              </div>
+            </div>
+          </div>
+
+          <!-- 8. ACADEMIC ORIENTATION + CAREERS (future direction) -->
+          <div class="section-card" id="academic-orientation-section">
+            <h3 class="section-title">📚 Academic Strengths</h3>
+            <p class="section-subtitle">Subject areas where this student shows the strongest engagement and performance based on teacher ratings</p>
+            <div class="orientation-cards" id="orientation-cards">
+              <!-- Filled dynamically -->
+            </div>
+          </div>
+
+          <div class="section-card" id="careers-section">
+            <h3 class="section-title">🚀 Future Career Matches (2035+)</h3>
+            <p class="section-subtitle">Potential future careers based on the student's academic strengths, learning style, and personality</p>
+
+            <div class="careers-grid" id="careers-grid">
+              <!-- Filled dynamically -->
+            </div>
+
+            <button class="generate-button" id="generate-ai-careers">
+              <span class="btn-icon">✨</span>
+              Get AI Career Analysis
+            </button>
+
+            <div class="ai-careers-result hidden" id="ai-careers-result">
+              <!-- Filled dynamically -->
+            </div>
+
+            <div class="loading-state hidden" id="careers-loading">
+              <div class="spinner"></div>
+              <p>AI is analyzing the profile...</p>
+            </div>
+          </div>
+
+          <!-- 9. PROFILE SHIFT EXPLORER -->
+          <div class="section-card" id="shift-section">
+            <h3 class="section-title">🔄 Explore Different Learning Profiles</h3>
+            <p class="section-subtitle">Want to develop different skills? See what it takes to shift the student's learning style.</p>
+
+            <div class="profiles-selector" id="profiles-selector">
+              <!-- Filled dynamically -->
+            </div>
+
+            <div class="shift-result hidden" id="shift-result">
+              <!-- Filled dynamically -->
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Powered by ICAN STELLAR Assessment System</p>
+    </footer>
+  </div>
+
+  <script src="js/persona-script.js"></script>
+</body>
+</html>

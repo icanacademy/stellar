@@ -1,0 +1,543 @@
+[
+  {
+    "id": "e686058e-9c64-47ff-aad0-15a2725d9204",
+    "student": "Ahn Jay [안재이]",
+    "type": "initial",
+    "season": "2026-01-02_2026-02-13",
+    "teachers": [
+      "Angelo Luis Alonzo",
+      "Christine Joy Malihan",
+      "Demple Agan",
+      "John Edward Padilla",
+      "Maricris Recalde",
+      "Noel Delos Reyes",
+      "Rafael Vincent Canlas",
+      "Robert Apues",
+      "Shiela Katrina Deri"
+    ],
+    "ratings": {
+      "Study Habits": {
+        "Note-taking": {
+          "Angelo Luis Alonzo": 1
+        },
+        "Reviewing": {},
+        "Annotating": {},
+        "Study Time": {},
+        "Asking for Teacher Assistance": {}
+      },
+      "Organization": {
+        "Punctuality": {},
+        "Orderliness": {},
+        "Work Materials": {},
+        "Learning Transition": {}
+      },
+      "Homework Accomplishment": {
+        "Homework Completion": {},
+        "Time Management": {},
+        "Homework Annotations": {}
+      },
+      "Cooperative Learning Skill": {
+        "Discussion Participation": {},
+        "Group Activity Cooperation": {},
+        "Class Activities Participation": {},
+        "Group Task Distribution": {},
+        "Leadership": {}
+      },
+      "Independent Seat Work": {
+        "Classroom Behaviour": {},
+        "Asking for Teacher Assistance": {},
+        "Efficiency": {},
+        "Output Quality": {},
+        "Dependability": {}
+      },
+      "Motivation": {
+        "Self-Efficacy": {},
+        "Intrinsic Motivation": {},
+        "Extrinsic Motivation": {}
+      }
+    },
+    "createdAt": "2026-02-13T05:03:03.859Z",
+    "updatedAt": "2026-02-19T08:52:26.861Z",
+    "activeTeachers": [
+      "Angelo Luis Alonzo",
+      "Christine Joy Malihan",
+      "Demple Agan",
+      "John Edward Padilla",
+      "Maricris Recalde",
+      "Noel Delos Reyes",
+      "Rafael Vincent Canlas",
+      "Robert Apues",
+      "Shiela Katrina Deri"
+    ]
+  },
+  {
+    "id": "d93c3c76-ab88-461d-a3eb-510f9c1aad71",
+    "student": "Ahn Jay [안재이]",
+    "type": "final",
+    "season": "2026-01-02_2026-02-13",
+    "teachers": [
+      "Angelo Luis Alonzo",
+      "Christine Joy Malihan",
+      "Demple Agan",
+      "John Edward Padilla",
+      "Maricris Recalde",
+      "Noel Delos Reyes",
+      "Rafael Vincent Canlas",
+      "Robert Apues",
+      "Shiela Katrina Deri"
+    ],
+    "ratings": {
+      "Study Habits": {
+        "Note-taking": {
+          "Angelo Luis Alonzo": 2
+        },
+        "Reviewing": {},
+        "Annotating": {},
+        "Study Time": {},
+        "Asking for Teacher Assistance": {}
+      },
+      "Organization": {
+        "Punctuality": {},
+        "Orderliness": {},
+        "Work Materials": {},
+        "Learning Transition": {}
+      },
+      "Homework Accomplishment": {
+        "Homework Completion": {},
+        "Time Management": {},
+        "Homework Annotations": {}
+      },
+      "Cooperative Learning Skill": {
+        "Discussion Participation": {},
+        "Group Activity Cooperation": {},
+        "Class Activities Participation": {},
+        "Group Task Distribution": {},
+        "Leadership": {}
+      },
+      "Independent Seat Work": {
+        "Classroom Behaviour": {},
+        "Asking for Teacher Assistance": {},
+        "Efficiency": {},
+        "Output Quality": {},
+        "Dependability": {}
+      },
+      "Motivation": {
+        "Self-Efficacy": {},
+        "Intrinsic Motivation": {},
+        "Extrinsic Motivation": {}
+      }
+    },
+    "createdAt": "2026-02-13T05:03:03.883Z",
+    "updatedAt": "2026-02-13T05:03:03.883Z"
+  },
+  {
+    "id": "71775df8-31ee-4ecc-a70d-24139c85fbae",
+    "student": "Ahn Jay [안재이]",
+    "type": "initial",
+    "season": "2026-01-02_2026-02-20",
+    "teachers": [
+      "Angelo Luis Alonzo",
+      "Christine Joy Malihan",
+      "Demple Agan",
+      "John Edward Padilla",
+      "Maricris Recalde",
+      "Noel Delos Reyes",
+      "Rafael Vincent Canlas",
+      "Robert Apues",
+      "Shiela Katrina Deri"
+    ],
+    "activeTeachers": [
+      "Angelo Luis Alonzo",
+      "Christine Joy Malihan",
+      "Demple Agan",
+      "John Edward Padilla",
+      "Maricris Recalde",
+      "Noel Delos Reyes",
+      "Rafael Vincent Canlas",
+      "Robert Apues"
+    ],
+    "ratings": {
+      "Study Habits": {
+        "Note-taking": {
+          "John Edward Padilla": 90
+        },
+        "Reviewing": {},
+        "Annotating": {},
+        "Study Time": {},
+        "Asking for Teacher Assistance": {}
+      },
+      "Organization": {
+        "Punctuality": {},
+        "Orderliness": {},
+        "Work Materials": {},
+        "Learning Transition": {}
+      },
+      "Homework Accomplishment": {
+        "Homework Completion": {},
+        "Time Management": {},
+        "Homework Annotations": {}
+      },
+      "Cooperative Learning Skill": {
+        "Discussion Participation": {},
+        "Group Activity Cooperation": {},
+        "Class Activities Participation": {},
+        "Group Task Distribution": {},
+        "Leadership": {}
+      },
+      "Independent Seat Work": {
+        "Classroom Behaviour": {},
+        "Asking for Teacher Assistance": {},
+        "Efficiency": {},
+        "Output Quality": {},
+        "Dependability": {}
+      },
+      "Motivation": {
+        "Self-Efficacy": {},
+        "Intrinsic Motivation": {},
+        "Extrinsic Motivation": {}
+      }
+    },
+    "createdAt": "2026-02-20T03:19:50.647Z",
+    "updatedAt": "2026-02-20T03:19:50.647Z"
+  },
+  {
+    "id": "08ee4053-618d-47ec-9d0a-61a987baf0d2",
+    "student": "Ahn Jay [안재이]",
+    "type": "initial",
+    "season": "2026-01-02_2026-02-24",
+    "teachers": [
+      "Angelo Luis Alonzo",
+      "Christine Joy Malihan",
+      "Demple Agan",
+      "Jean May Bona",
+      "John Edward Padilla",
+      "Maricris Recalde",
+      "Noel Delos Reyes",
+      "Rafael Vincent Canlas",
+      "Robert Apues",
+      "Shiela Katrina Deri"
+    ],
+    "activeTeachers": [
+      "Angelo Luis Alonzo",
+      "Christine Joy Malihan",
+      "Demple Agan",
+      "Jean May Bona",
+      "John Edward Padilla",
+      "Maricris Recalde",
+      "Noel Delos Reyes",
+      "Rafael Vincent Canlas",
+      "Robert Apues",
+      "Shiela Katrina Deri"
+    ],
+    "ratings": {
+      "Study Habits": {
+        "Note-taking": {},
+        "Reviewing": {},
+        "Annotating": {},
+        "Study Time": {},
+        "Asking for Teacher Assistance": {}
+      },
+      "Organization": {
+        "Punctuality": {},
+        "Orderliness": {
+          "Christine Joy Malihan": 89,
+          "Demple Agan": 89,
+          "Jean May Bona": 89
+        },
+        "Work Materials": {},
+        "Learning Transition": {}
+      },
+      "Homework Accomplishment": {
+        "Homework Completion": {},
+        "Time Management": {},
+        "Homework Annotations": {}
+      },
+      "Cooperative Learning Skill": {
+        "Discussion Participation": {},
+        "Group Activity Cooperation": {},
+        "Class Activities Participation": {},
+        "Group Task Distribution": {},
+        "Leadership": {}
+      },
+      "Independent Seat Work": {
+        "Classroom Behaviour": {},
+        "Asking for Teacher Assistance": {},
+        "Efficiency": {},
+        "Output Quality": {},
+        "Dependability": {}
+      },
+      "Motivation": {
+        "Self-Efficacy": {},
+        "Intrinsic Motivation": {},
+        "Extrinsic Motivation": {}
+      }
+    },
+    "createdAt": "2026-02-24T03:27:44.648Z",
+    "updatedAt": "2026-02-25T04:55:09.080Z"
+  },
+  {
+    "id": "7281e2c5-013f-4f2f-a89d-691e2f83c080",
+    "student": "Ahn Jay [안재이]",
+    "type": "final",
+    "season": "2026-01-02_2026-02-24",
+    "teachers": [
+      "Angelo Luis Alonzo",
+      "Christine Joy Malihan",
+      "Demple Agan",
+      "Jean May Bona",
+      "John Edward Padilla",
+      "Maricris Recalde",
+      "Noel Delos Reyes",
+      "Rafael Vincent Canlas",
+      "Robert Apues",
+      "Shiela Katrina Deri"
+    ],
+    "activeTeachers": [
+      "Angelo Luis Alonzo",
+      "Christine Joy Malihan",
+      "Demple Agan",
+      "Jean May Bona",
+      "John Edward Padilla",
+      "Maricris Recalde",
+      "Noel Delos Reyes",
+      "Rafael Vincent Canlas",
+      "Robert Apues",
+      "Shiela Katrina Deri"
+    ],
+    "ratings": {
+      "Study Habits": {
+        "Note-taking": {},
+        "Reviewing": {},
+        "Annotating": {},
+        "Study Time": {},
+        "Asking for Teacher Assistance": {}
+      },
+      "Organization": {
+        "Punctuality": {},
+        "Orderliness": {
+          "Christine Joy Malihan": 99,
+          "Demple Agan": 88,
+          "Jean May Bona": 989
+        },
+        "Work Materials": {},
+        "Learning Transition": {}
+      },
+      "Homework Accomplishment": {
+        "Homework Completion": {},
+        "Time Management": {},
+        "Homework Annotations": {}
+      },
+      "Cooperative Learning Skill": {
+        "Discussion Participation": {},
+        "Group Activity Cooperation": {},
+        "Class Activities Participation": {},
+        "Group Task Distribution": {},
+        "Leadership": {}
+      },
+      "Independent Seat Work": {
+        "Classroom Behaviour": {},
+        "Asking for Teacher Assistance": {},
+        "Efficiency": {},
+        "Output Quality": {},
+        "Dependability": {}
+      },
+      "Motivation": {
+        "Self-Efficacy": {},
+        "Intrinsic Motivation": {},
+        "Extrinsic Motivation": {}
+      }
+    },
+    "createdAt": "2026-02-24T03:27:44.713Z",
+    "updatedAt": "2026-02-25T04:55:09.126Z"
+  },
+  {
+    "id": "733f9237-92d0-4ecb-a54d-834fa0cee226",
+    "student": "Ahn Jay [안재이]",
+    "type": "initial",
+    "season": "2026-01-02_2026-02-25",
+    "teachers": [
+      "Angelo Luis Alonzo",
+      "Christine Joy Malihan",
+      "Demple Agan",
+      "Jean May Bona",
+      "John Edward Padilla",
+      "Maricris Recalde",
+      "Noel Delos Reyes",
+      "Rafael Vincent Canlas",
+      "Robert Apues",
+      "Shiela Katrina Deri"
+    ],
+    "activeTeachers": [
+      "Angelo Luis Alonzo",
+      "Christine Joy Malihan",
+      "Demple Agan",
+      "Jean May Bona",
+      "John Edward Padilla",
+      "Maricris Recalde",
+      "Noel Delos Reyes",
+      "Rafael Vincent Canlas",
+      "Robert Apues",
+      "Shiela Katrina Deri"
+    ],
+    "ratings": {
+      "Study Habits": {
+        "Note-taking": {
+          "John Edward Padilla": 89
+        },
+        "Reviewing": {
+          "John Edward Padilla": 88
+        },
+        "Annotating": {
+          "John Edward Padilla": 88
+        },
+        "Study Time": {
+          "John Edward Padilla": 88
+        },
+        "Asking for Teacher Assistance": {
+          "John Edward Padilla": 88
+        }
+      },
+      "Organization": {
+        "Punctuality": {
+          "John Edward Padilla": 88
+        },
+        "Orderliness": {
+          "John Edward Padilla": 90
+        },
+        "Work Materials": {
+          "John Edward Padilla": 89
+        },
+        "Learning Transition": {
+          "John Edward Padilla": 9
+        }
+      },
+      "Homework Accomplishment": {
+        "Homework Completion": {
+          "John Edward Padilla": 89
+        },
+        "Time Management": {
+          "John Edward Padilla": 7
+        },
+        "Homework Annotations": {}
+      },
+      "Cooperative Learning Skill": {
+        "Discussion Participation": {},
+        "Group Activity Cooperation": {},
+        "Class Activities Participation": {},
+        "Group Task Distribution": {},
+        "Leadership": {}
+      },
+      "Independent Seat Work": {
+        "Classroom Behaviour": {},
+        "Asking for Teacher Assistance": {},
+        "Efficiency": {},
+        "Output Quality": {},
+        "Dependability": {
+          "John Edward Padilla": 8
+        }
+      },
+      "Motivation": {
+        "Self-Efficacy": {},
+        "Intrinsic Motivation": {},
+        "Extrinsic Motivation": {}
+      }
+    },
+    "createdAt": "2026-03-03T07:35:22.244Z",
+    "updatedAt": "2026-03-03T07:38:56.295Z"
+  },
+  {
+    "id": "18a47452-d91a-4f49-bcb9-19ad439230b2",
+    "student": "Ahn Jay [안재이]",
+    "type": "final",
+    "season": "2026-01-02_2026-02-25",
+    "teachers": [
+      "Angelo Luis Alonzo",
+      "Christine Joy Malihan",
+      "Demple Agan",
+      "Jean May Bona",
+      "John Edward Padilla",
+      "Maricris Recalde",
+      "Noel Delos Reyes",
+      "Rafael Vincent Canlas",
+      "Robert Apues",
+      "Shiela Katrina Deri"
+    ],
+    "activeTeachers": [
+      "Angelo Luis Alonzo",
+      "Christine Joy Malihan",
+      "Demple Agan",
+      "Jean May Bona",
+      "John Edward Padilla",
+      "Maricris Recalde",
+      "Noel Delos Reyes",
+      "Rafael Vincent Canlas",
+      "Robert Apues",
+      "Shiela Katrina Deri"
+    ],
+    "ratings": {
+      "Study Habits": {
+        "Note-taking": {
+          "John Edward Padilla": 99
+        },
+        "Reviewing": {
+          "John Edward Padilla": 88
+        },
+        "Annotating": {
+          "John Edward Padilla": 99
+        },
+        "Study Time": {
+          "John Edward Padilla": 88
+        },
+        "Asking for Teacher Assistance": {
+          "John Edward Padilla": 99
+        }
+      },
+      "Organization": {
+        "Punctuality": {
+          "John Edward Padilla": 88
+        },
+        "Orderliness": {
+          "John Edward Padilla": 99
+        },
+        "Work Materials": {
+          "John Edward Padilla": 99
+        },
+        "Learning Transition": {
+          "John Edward Padilla": 89
+        }
+      },
+      "Homework Accomplishment": {
+        "Homework Completion": {
+          "John Edward Padilla": 88
+        },
+        "Time Management": {
+          "John Edward Padilla": 77
+        },
+        "Homework Annotations": {}
+      },
+      "Cooperative Learning Skill": {
+        "Discussion Participation": {},
+        "Group Activity Cooperation": {},
+        "Class Activities Participation": {},
+        "Group Task Distribution": {},
+        "Leadership": {}
+      },
+      "Independent Seat Work": {
+        "Classroom Behaviour": {},
+        "Asking for Teacher Assistance": {},
+        "Efficiency": {},
+        "Output Quality": {},
+        "Dependability": {
+          "John Edward Padilla": 99
+        }
+      },
+      "Motivation": {
+        "Self-Efficacy": {},
+        "Intrinsic Motivation": {},
+        "Extrinsic Motivation": {}
+      }
+    },
+    "createdAt": "2026-03-03T07:35:22.274Z",
+    "updatedAt": "2026-03-03T07:38:56.316Z"
+  }
+]

@@ -1,0 +1,13 @@
+# Your Reserved ngrok Domains
+#
+# After you reserve your domains in the ngrok dashboard,
+# paste them here (one per line):
+
+TEACHER_DOMAIN=icanstellar.ngrok.app
+ATTENDANCE_DOMAIN=teacherattendance.ngrok.app
+REPORT_CARD_DOMAIN=stellarscores.ngrok.app
+
+# Example:
+# TEACHER_DOMAIN=teacher-report-stellar.ngrok.io
+# STUDENT_DOMAIN=student-viewer-stellar.ngrok.io
+# REPORT_CARD_DOMAIN=report-card-stellar.ngrok.io

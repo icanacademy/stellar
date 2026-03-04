@@ -1,0 +1,2673 @@
+{
+  "version": "1.0",
+  "totalTypes": 21,
+  "groups": [
+    {
+      "id": "pioneers",
+      "name": "The Pioneers",
+      "description": "Explorer + Novel-leaning",
+      "types": [
+        "trailblazer",
+        "innovator",
+        "visionary"
+      ]
+    },
+    {
+      "id": "investigators",
+      "name": "The Investigators",
+      "description": "Investigator + Analytical-leaning",
+      "types": [
+        "deep_diver",
+        "strategist",
+        "truth_seeker"
+      ]
+    },
+    {
+      "id": "builders",
+      "name": "The Builders",
+      "description": "Practical + Routine-leaning",
+      "types": [
+        "craftmaster",
+        "foundation_builder",
+        "precision_engineer"
+      ]
+    },
+    {
+      "id": "connectors",
+      "name": "The Connectors",
+      "description": "Social + Explorer-leaning",
+      "types": [
+        "bridge_builder",
+        "catalyst",
+        "guardian"
+      ]
+    },
+    {
+      "id": "thinkers",
+      "name": "The Thinkers",
+      "description": "Theoretical + Global-leaning",
+      "types": [
+        "philosopher",
+        "systems_weaver",
+        "pattern_finder"
+      ]
+    },
+    {
+      "id": "performers",
+      "name": "The Performers",
+      "description": "Decisive + Social-leaning",
+      "types": [
+        "commander",
+        "spark",
+        "storyteller"
+      ]
+    },
+    {
+      "id": "balancers",
+      "name": "The Balancers",
+      "description": "Centered profiles",
+      "types": [
+        "harmonizer",
+        "renaissance_mind",
+        "rising_phoenix"
+      ]
+    }
+  ],
+  "types": {
+    "trailblazer": {
+      "id": "trailblazer",
+      "name": "The Adventurer",
+      "emoji": "🏔️",
+      "tagline": "Loves trying new things and forging new paths",
+      "group": "pioneers",
+      "archetypeScores": {
+        "EI": 25,
+        "SC": 45,
+        "PT": 35,
+        "RN": 80,
+        "AD": 70,
+        "LG": 65
+      },
+      "dominantDimensions": [
+        "RN",
+        "AD",
+        "EI"
+      ],
+      "description": "Trailblazers are fearless explorers who thrive on charting unknown territory. They combine a wide range of interests with a love of novelty and quick decision-making. In the classroom, they're the first to volunteer for new activities and often surprise teachers with unexpected approaches to problems. They learn best when given freedom to experiment and discover.",
+      "hiddenStrengths": [
+        "Natural ability to adapt quickly when plans fall apart",
+        "Unconscious talent for connecting unrelated ideas into original solutions",
+        "Inspires others to try new things just by leading the way",
+        "Resilience that grows stronger with every failed experiment"
+      ],
+      "hiddenWeaknesses": [
+        "May abandon promising projects before seeing results",
+        "Can overlook important details in the rush to move forward",
+        "Sometimes mistakes excitement for understanding",
+        "May unintentionally leave teammates behind when moving fast"
+      ],
+      "futureMiningAssets": [
+        "Cross-disciplinary thinking that connects different fields",
+        "Rapid prototyping mindset perfect for startup culture",
+        "Comfort with uncertainty that others find paralyzing",
+        "Pioneer instinct for spotting opportunities before they're obvious"
+      ],
+      "careerDirections": [
+        {
+          "title": "Holographic Experience Producer",
+          "field": "Immersive Media",
+          "why": "Your boldness and love of new frontiers fits pioneering immersive media experiences"
+        },
+        {
+          "title": "AI Art Director",
+          "field": "Creative AI",
+          "why": "Your adventurous creativity and quick decision-making drive innovative AI-powered art direction"
+        },
+        {
+          "title": "Virtual World Designer",
+          "field": "Metaverse",
+          "why": "Your explorer instinct naturally builds entirely new digital worlds from scratch"
+        },
+        {
+          "title": "Metaverse Experience Writer",
+          "field": "Virtual Worlds",
+          "why": "Your novelty-seeking nature creates groundbreaking stories in emerging virtual formats"
+        }
+      ],
+      "reconstructionPath": [
+        {
+          "phase": "Awareness",
+          "title": "Recognize Your Pattern",
+          "description": "Notice when you're jumping to the next thing. Start a log of projects started vs. finished."
+        },
+        {
+          "phase": "Focus",
+          "title": "Complete One Adventure",
+          "description": "Choose one exploration and see it through to a meaningful endpoint before starting another."
+        },
+        {
+          "phase": "Depth",
+          "title": "Build Your Base Camp",
+          "description": "Develop one area of deep expertise to anchor your explorations. Every explorer needs a home base."
+        },
+        {
+          "phase": "Impact",
+          "title": "Lead an Expedition",
+          "description": "Use your trailblazing skills to guide others into new territory. Your path becomes a trail others can follow."
+        }
+      ],
+      "hopefulGoals": [
+        "Discover a unique intersection of interests that becomes your signature contribution",
+        "Build the confidence to pursue bold ideas even when others doubt them",
+        "Learn to balance adventure with follow-through for maximum impact",
+        "Become known as someone who opens doors that others didn't know existed"
+      ],
+      "keywords": {
+        "coreTrait": "Bold Path Forger",
+        "learnsBy": "Exploring freely",
+        "inClass": "First to volunteer",
+        "strengths": [
+          "Rapid adaptation",
+          "Cross-idea connector",
+          "Leads by example",
+          "Failure-proof resilience"
+        ],
+        "blindSpots": [
+          "Abandons too early",
+          "Skips details",
+          "Confuses hype with depth",
+          "Leaves others behind"
+        ],
+        "assets": [
+          "Cross-disciplinary thinking",
+          "Rapid prototyping",
+          "Thrives in uncertainty",
+          "Spots opportunities early"
+        ],
+        "goals": [
+          "Find signature niche",
+          "Pursue bold ideas",
+          "Balance adventure + follow-through",
+          "Open unseen doors"
+        ],
+        "pathSteps": [
+          "Track your patterns",
+          "Finish one adventure",
+          "Build a home base",
+          "Guide others forward"
+        ]
+      }
+    },
+    "innovator": {
+      "id": "innovator",
+      "name": "The Inventor",
+      "emoji": "💡",
+      "tagline": "Combines ideas in creative, unexpected ways",
+      "group": "pioneers",
+      "archetypeScores": {
+        "EI": 30,
+        "SC": 55,
+        "PT": 60,
+        "RN": 75,
+        "AD": 55,
+        "LG": 70
+      },
+      "dominantDimensions": [
+        "RN",
+        "PT",
+        "LG"
+      ],
+      "description": "Innovators are creative thinkers who combine theoretical understanding with a hunger for the new. They don't just want to try different things—they want to understand WHY things work and then reimagine them. In class, they ask 'what if' questions and see connections others miss. They learn best when they can experiment with ideas and build new frameworks.",
+      "hiddenStrengths": [
+        "Ability to see flaws in existing systems that others accept as normal",
+        "Natural talent for combining ideas from different domains",
+        "Intuitive understanding of how theory applies to real-world problems",
+        "Mental flexibility that allows rapid pivoting between approaches"
+      ],
+      "hiddenWeaknesses": [
+        "Can get lost in theoretical possibilities without taking action",
+        "May overcomplicate simple problems with innovative solutions",
+        "Sometimes dismisses tried-and-true methods too quickly",
+        "Can frustrate others by constantly wanting to reinvent the wheel"
+      ],
+      "futureMiningAssets": [
+        "Design thinking skills that bridge theory and practice",
+        "Ability to envision products and systems that don't yet exist",
+        "Intellectual courage to challenge assumptions",
+        "Pattern recognition across seemingly unrelated fields"
+      ],
+      "careerDirections": [
+        {
+          "title": "Metaverse Experience Writer",
+          "field": "Virtual Worlds",
+          "why": "Your theory-meets-creativity mindset reimagines storytelling in immersive worlds"
+        },
+        {
+          "title": "AI Art Director",
+          "field": "Creative AI",
+          "why": "Your innovative thinking pushes AI tools into new creative territory"
+        },
+        {
+          "title": "Virtual World Designer",
+          "field": "Metaverse",
+          "why": "Your systems thinking plus novelty creates coherent, inventive virtual spaces"
+        },
+        {
+          "title": "Holographic Experience Producer",
+          "field": "Immersive Media",
+          "why": "Your creative vision shapes cutting-edge holographic entertainment"
+        }
+      ],
+      "reconstructionPath": [
+        {
+          "phase": "Awareness",
+          "title": "Catalog Your Ideas",
+          "description": "Start capturing every idea in a dedicated notebook. Notice how many you generate vs. how many you develop."
+        },
+        {
+          "phase": "Focus",
+          "title": "Ship One Innovation",
+          "description": "Take your best idea and build it into something real—a prototype, a presentation, a working model."
+        },
+        {
+          "phase": "Depth",
+          "title": "Master a Method",
+          "description": "Learn a structured innovation framework (design thinking, lean startup) to channel your creativity."
+        },
+        {
+          "phase": "Impact",
+          "title": "Solve a Real Problem",
+          "description": "Apply your innovation skills to a problem that matters to your community. Make your creativity count."
+        }
+      ],
+      "hopefulGoals": [
+        "Create something genuinely new that solves a problem people didn't know they had",
+        "Develop the discipline to bring your best ideas to completion",
+        "Build a reputation as someone who makes the impossible seem obvious",
+        "Find your innovation sweet spot where creativity meets practical impact"
+      ],
+      "keywords": {
+        "coreTrait": "Creative Reimaginer",
+        "learnsBy": "Questioning + experimenting",
+        "inClass": "Asks 'what if'",
+        "strengths": [
+          "Spots system flaws",
+          "Cross-domain combiner",
+          "Theory-to-practice bridge",
+          "Rapid mental pivots"
+        ],
+        "blindSpots": [
+          "Lost in possibilities",
+          "Overcomplicates solutions",
+          "Dismisses proven methods",
+          "Reinvents unnecessarily"
+        ],
+        "assets": [
+          "Design thinking native",
+          "Envisions the unbuilt",
+          "Challenges assumptions",
+          "Cross-field pattern spotter"
+        ],
+        "goals": [
+          "Create something new",
+          "Finish best ideas",
+          "Make impossible obvious",
+          "Creativity meets impact"
+        ],
+        "pathSteps": [
+          "Catalog your ideas",
+          "Ship one innovation",
+          "Master a method",
+          "Solve a real problem"
+        ]
+      }
+    },
+    "visionary": {
+      "id": "visionary",
+      "name": "The Big Dreamer",
+      "emoji": "🔭",
+      "tagline": "Sees future possibilities others miss",
+      "group": "pioneers",
+      "archetypeScores": {
+        "EI": 30,
+        "SC": 50,
+        "PT": 65,
+        "RN": 70,
+        "AD": 60,
+        "LG": 85
+      },
+      "dominantDimensions": [
+        "LG",
+        "RN",
+        "PT"
+      ],
+      "description": "Visionaries see the world not as it is, but as it could be. They naturally think in big pictures and long timelines, connecting dots that others don't even see. In class, they're the students who ask questions about the deeper meaning and future implications. They learn best when they can see how individual lessons fit into a larger story.",
+      "hiddenStrengths": [
+        "Ability to see long-term consequences that others miss completely",
+        "Natural talent for inspiring others with a compelling future picture",
+        "Intuitive sense of emerging trends before they become mainstream",
+        "Capacity to hold complex, multi-layered ideas in mind simultaneously"
+      ],
+      "hiddenWeaknesses": [
+        "Can become frustrated with day-to-day details and routine tasks",
+        "May struggle to communicate vision in concrete, actionable terms",
+        "Sometimes so focused on the future that present opportunities slip by",
+        "Can appear impractical or unrealistic to more grounded peers"
+      ],
+      "futureMiningAssets": [
+        "Strategic foresight that's increasingly valuable in a changing world",
+        "Ability to create roadmaps from abstract goals to concrete steps",
+        "Natural storytelling ability that makes complex ideas accessible",
+        "Ecosystem thinking that sees how all the pieces fit together"
+      ],
+      "careerDirections": [
+        {
+          "title": "AI Art Director",
+          "field": "Creative AI",
+          "why": "Your big-picture creativity directs AI toward transformative artistic visions"
+        },
+        {
+          "title": "Metaverse Experience Writer",
+          "field": "Virtual Worlds",
+          "why": "Your visionary thinking crafts compelling narratives for future platforms"
+        },
+        {
+          "title": "Virtual World Designer",
+          "field": "Metaverse",
+          "why": "Your global perspective designs entire worlds with purpose and meaning"
+        },
+        {
+          "title": "Smart City Systems Manager",
+          "field": "Urban Tech",
+          "why": "Your systems-level vision orchestrates technology across entire urban environments"
+        }
+      ],
+      "reconstructionPath": [
+        {
+          "phase": "Awareness",
+          "title": "Ground Your Vision",
+          "description": "Practice connecting your big ideas to specific, measurable outcomes. Vision without grounding is just daydreaming."
+        },
+        {
+          "phase": "Focus",
+          "title": "Build a Bridge",
+          "description": "Take one of your visions and create a step-by-step plan to make part of it real."
+        },
+        {
+          "phase": "Depth",
+          "title": "Learn to Communicate",
+          "description": "Develop the skill of translating your vision into language that excites and motivates others."
+        },
+        {
+          "phase": "Impact",
+          "title": "Rally a Team",
+          "description": "Gather people around your vision and lead them toward making it real. Visionaries need builders."
+        }
+      ],
+      "hopefulGoals": [
+        "Articulate a vision that inspires others to join you in building it",
+        "Learn to break massive visions into achievable milestones",
+        "Become the person others turn to when they need to understand what's next",
+        "Create a legacy of positive change driven by your unique foresight"
+      ],
+      "keywords": {
+        "coreTrait": "Future-Sight Architect",
+        "learnsBy": "Seeing the big picture",
+        "inClass": "Asks deeper meaning",
+        "strengths": [
+          "Long-term foresight",
+          "Inspires with vision",
+          "Early trend sensor",
+          "Holds complex layers"
+        ],
+        "blindSpots": [
+          "Frustrated by details",
+          "Vague on action steps",
+          "Misses present moments",
+          "Seems impractical"
+        ],
+        "assets": [
+          "Strategic foresight",
+          "Abstract-to-concrete roadmaps",
+          "Natural storytelling",
+          "Ecosystem thinking"
+        ],
+        "goals": [
+          "Articulate inspiring vision",
+          "Break vision into milestones",
+          "Become go-to forecaster",
+          "Legacy of foresight"
+        ],
+        "pathSteps": [
+          "Ground your vision",
+          "Build a bridge",
+          "Learn to communicate",
+          "Rally a team"
+        ]
+      }
+    },
+    "deep_diver": {
+      "id": "deep_diver",
+      "name": "The Specialist",
+      "emoji": "🔬",
+      "tagline": "Goes deep into one topic until they master it",
+      "group": "investigators",
+      "archetypeScores": {
+        "EI": 80,
+        "SC": 70,
+        "PT": 55,
+        "RN": 30,
+        "AD": 25,
+        "LG": 35
+      },
+      "dominantDimensions": [
+        "EI",
+        "AD",
+        "RN"
+      ],
+      "description": "Deep Divers are the students who find a topic and burrow into it until they know more than anyone else in the room. They prefer depth over breadth and will happily spend hours mastering one thing rather than skimming many. In class, they're the ones who ask increasingly specific follow-up questions. They learn best when given time and space to fully explore a subject.",
+      "hiddenStrengths": [
+        "Extraordinary patience and persistence that others lack",
+        "Ability to find fascination in details that others find boring",
+        "Memory for domain-specific knowledge that surprises experts",
+        "Quality of work that improves dramatically with focus time"
+      ],
+      "hiddenWeaknesses": [
+        "Can become so absorbed that broader context is lost",
+        "May resist switching topics even when it's necessary",
+        "Sometimes seen as inflexible or narrow by peers",
+        "Can struggle with tasks that require quick, surface-level responses"
+      ],
+      "futureMiningAssets": [
+        "Deep expertise that becomes increasingly rare and valuable",
+        "Research methodology skills that transfer to any field",
+        "Ability to identify subtle patterns within complex data",
+        "Credibility that comes from genuine, thorough knowledge"
+      ],
+      "careerDirections": [
+        {
+          "title": "Precision Medicine Geneticist",
+          "field": "Healthcare",
+          "why": "Your deep analytical focus masters the complexity of genomic medicine"
+        },
+        {
+          "title": "Quantum Algorithm Developer",
+          "field": "Quantum Computing",
+          "why": "Your investigative depth excels at understanding quantum-level problems"
+        },
+        {
+          "title": "Neural Interface Developer",
+          "field": "BCI Technology",
+          "why": "Your specialized focus suits the deep technical demands of brain-computer interfaces"
+        },
+        {
+          "title": "Synthetic Biology Engineer",
+          "field": "Biotechnology",
+          "why": "Your concentrated research style thrives in detailed lab-based discovery"
+        }
+      ],
+      "reconstructionPath": [
+        {
+          "phase": "Awareness",
+          "title": "Map Your Depth",
+          "description": "Identify the topics where you naturally deep-dive and recognize this as a superpower, not a limitation."
+        },
+        {
+          "phase": "Focus",
+          "title": "Connect to Adjacent Fields",
+          "description": "From your area of depth, explore one neighboring field to broaden your expertise without losing focus."
+        },
+        {
+          "phase": "Depth",
+          "title": "Become the Expert",
+          "description": "Pursue a project where your deep knowledge creates something others can't replicate."
+        },
+        {
+          "phase": "Impact",
+          "title": "Teach What You Know",
+          "description": "Share your expertise with others. Teaching deepens your own understanding and multiplies your impact."
+        }
+      ],
+      "hopefulGoals": [
+        "Become genuinely recognized as an expert in your chosen domain",
+        "Discover that your depth of knowledge opens doors others can't access",
+        "Learn to communicate your expertise in ways that help others",
+        "Build a career where going deeper is rewarded, not punished"
+      ],
+      "keywords": {
+        "coreTrait": "Depth-First Explorer",
+        "learnsBy": "Total immersion",
+        "inClass": "Asks follow-up questions",
+        "strengths": [
+          "Extreme patience",
+          "Finds fascination in detail",
+          "Domain-expert memory",
+          "Quality through focus"
+        ],
+        "blindSpots": [
+          "Loses broader context",
+          "Resists topic switching",
+          "Seen as inflexible",
+          "Struggles with surface tasks"
+        ],
+        "assets": [
+          "Rare deep expertise",
+          "Transferable research skills",
+          "Subtle pattern detection",
+          "Credibility through knowledge"
+        ],
+        "goals": [
+          "Become recognized expert",
+          "Depth opens doors",
+          "Communicate expertise clearly",
+          "Career rewards depth"
+        ],
+        "pathSteps": [
+          "Map your depth",
+          "Connect adjacent fields",
+          "Become the expert",
+          "Teach what you know"
+        ]
+      }
+    },
+    "strategist": {
+      "id": "strategist",
+      "name": "The Planner",
+      "emoji": "♟️",
+      "tagline": "Thinks ahead and maps out the best approach",
+      "group": "investigators",
+      "archetypeScores": {
+        "EI": 65,
+        "SC": 65,
+        "PT": 60,
+        "RN": 35,
+        "AD": 25,
+        "LG": 75
+      },
+      "dominantDimensions": [
+        "AD",
+        "LG",
+        "EI"
+      ],
+      "description": "Strategists combine analytical thinking with big-picture awareness. They don't just solve problems—they think several steps ahead, considering how every decision affects the whole system. In class, they're the students who plan their approach before starting and often develop methods that are more efficient than the teacher's. They learn best when they can see the structure behind the content.",
+      "hiddenStrengths": [
+        "Natural ability to anticipate problems before they occur",
+        "Unconscious talent for organizing chaos into clear plans",
+        "Sees the chess game behind every situation",
+        "Ability to remain calm and think clearly under pressure"
+      ],
+      "hiddenWeaknesses": [
+        "Can over-plan and under-execute, waiting for the perfect strategy",
+        "May appear cold or detached when others need emotional support",
+        "Sometimes underestimates the value of intuition and gut feeling",
+        "Can become rigid when events deviate from the plan"
+      ],
+      "futureMiningAssets": [
+        "Strategic thinking that scales from personal decisions to organizational leadership",
+        "Systems analysis skills transferable to any domain",
+        "Ability to create frameworks that others can follow",
+        "Decision-making under uncertainty that improves with experience"
+      ],
+      "careerDirections": [
+        {
+          "title": "Precision Medicine Geneticist",
+          "field": "Healthcare",
+          "why": "Your strategic, methodical analysis ensures accurate diagnostic decisions"
+        },
+        {
+          "title": "Quantum Algorithm Developer",
+          "field": "Quantum Computing",
+          "why": "Your chess-like planning approach solves complex algorithmic challenges"
+        },
+        {
+          "title": "AI Ethics Governance Officer",
+          "field": "Tech Policy",
+          "why": "Your strategic thinking navigates the complex landscape of AI policy"
+        },
+        {
+          "title": "Digital Twin Architect",
+          "field": "Simulation Tech",
+          "why": "Your systematic planning creates precise digital replicas of real systems"
+        }
+      ],
+      "reconstructionPath": [
+        {
+          "phase": "Awareness",
+          "title": "Recognize Your Strategic Mind",
+          "description": "Notice how naturally you think in systems and plans. This is a rare and valuable ability."
+        },
+        {
+          "phase": "Focus",
+          "title": "Strategy in Action",
+          "description": "Apply your strategic thinking to one real project—a school event, a personal goal, a community initiative."
+        },
+        {
+          "phase": "Depth",
+          "title": "Learn from Failure",
+          "description": "Deliberately test strategies that might fail. Learning what doesn't work is as valuable as what does."
+        },
+        {
+          "phase": "Impact",
+          "title": "Guide Others' Plans",
+          "description": "Help friends and classmates develop their own strategies. Your thinking process is a gift others need."
+        }
+      ],
+      "hopefulGoals": [
+        "Develop strategies that create wins for everyone involved",
+        "Learn to balance careful planning with decisive action",
+        "Become the person others trust when facing complex, high-stakes decisions",
+        "Build a reputation for seeing the path through chaos"
+      ],
+      "keywords": {
+        "coreTrait": "Chess-Mind Planner",
+        "learnsBy": "Seeing the structure",
+        "inClass": "Plans before starting",
+        "strengths": [
+          "Anticipates problems",
+          "Organizes chaos",
+          "Sees hidden chess game",
+          "Calm under pressure"
+        ],
+        "blindSpots": [
+          "Over-plans, under-acts",
+          "Appears emotionally cold",
+          "Undervalues intuition",
+          "Rigid when plans break"
+        ],
+        "assets": [
+          "Scalable strategic thinking",
+          "Systems analysis transfer",
+          "Framework builder",
+          "Decisions under uncertainty"
+        ],
+        "goals": [
+          "Create win-win strategies",
+          "Balance planning + action",
+          "Trusted in high stakes",
+          "Path through chaos"
+        ],
+        "pathSteps": [
+          "Recognize strategic mind",
+          "Put strategy in action",
+          "Learn from failure",
+          "Guide others' plans"
+        ]
+      }
+    },
+    "truth_seeker": {
+      "id": "truth_seeker",
+      "name": "The Questioner",
+      "emoji": "⚖️",
+      "tagline": "Always asking \"why?\" until they find the real answer",
+      "group": "investigators",
+      "archetypeScores": {
+        "EI": 70,
+        "SC": 75,
+        "PT": 50,
+        "RN": 30,
+        "AD": 20,
+        "LG": 50
+      },
+      "dominantDimensions": [
+        "AD",
+        "EI",
+        "SC"
+      ],
+      "description": "Truth Seekers are driven by a deep need for accuracy and understanding. They question assumptions, verify claims, and won't accept answers that don't fully make sense. In class, they're the students who ask 'but how do we know that's true?' They value evidence over opinion and precision over speed. They learn best when they can verify and validate information themselves.",
+      "hiddenStrengths": [
+        "Intellectual honesty that others admire even when it's uncomfortable",
+        "Natural resistance to misinformation and shallow thinking",
+        "Ability to find the flaw in any argument or plan",
+        "Deep respect for evidence that builds genuine credibility"
+      ],
+      "hiddenWeaknesses": [
+        "Can become paralyzed by the need for certainty in uncertain situations",
+        "May alienate peers by constantly questioning or correcting",
+        "Sometimes misses the emotional truth in pursuit of factual truth",
+        "Can take too long to form an opinion, missing the window for action"
+      ],
+      "futureMiningAssets": [
+        "Critical thinking skills increasingly essential in an age of misinformation",
+        "Verification methodology that applies to any knowledge domain",
+        "Ability to distinguish signal from noise in data-heavy environments",
+        "Ethical reasoning grounded in evidence rather than bias"
+      ],
+      "careerDirections": [
+        {
+          "title": "Precision Medicine Geneticist",
+          "field": "Healthcare",
+          "why": "Your evidence-driven approach ensures rigorous, verifiable medical outcomes"
+        },
+        {
+          "title": "Quantum Algorithm Developer",
+          "field": "Quantum Computing",
+          "why": "Your truth-seeking nature demands the mathematical proof quantum computing requires"
+        },
+        {
+          "title": "Synthetic Biology Engineer",
+          "field": "Biotechnology",
+          "why": "Your verification mindset ensures reliable, reproducible biological results"
+        },
+        {
+          "title": "Neural Interface Developer",
+          "field": "BCI Technology",
+          "why": "Your analytical rigor validates the safety and accuracy of neural interfaces"
+        }
+      ],
+      "reconstructionPath": [
+        {
+          "phase": "Awareness",
+          "title": "Embrace Your Questioning Nature",
+          "description": "Recognize that your drive for truth is valuable. The world needs people who refuse to accept easy answers."
+        },
+        {
+          "phase": "Focus",
+          "title": "Question with Purpose",
+          "description": "Direct your questioning toward one important topic. Focused inquiry produces deeper insights than scattered skepticism."
+        },
+        {
+          "phase": "Depth",
+          "title": "Build Your Evidence Toolkit",
+          "description": "Learn formal methods of analysis—statistics, logic, research design—to strengthen your truth-seeking."
+        },
+        {
+          "phase": "Impact",
+          "title": "Defend the Truth",
+          "description": "Use your skills to protect others from misinformation. Be the person who helps others see clearly."
+        }
+      ],
+      "hopefulGoals": [
+        "Develop the wisdom to know when perfect accuracy matters and when good enough is sufficient",
+        "Build a reputation as someone whose word can always be trusted",
+        "Learn to present truth in ways that inspire rather than intimidate",
+        "Become a guardian of honest thinking in your community and career"
+      ],
+      "keywords": {
+        "coreTrait": "Evidence-Driven Verifier",
+        "learnsBy": "Validating personally",
+        "inClass": "Asks 'how do we know'",
+        "strengths": [
+          "Radical intellectual honesty",
+          "Misinformation-resistant",
+          "Finds any flaw",
+          "Evidence builds credibility"
+        ],
+        "blindSpots": [
+          "Paralyzed by uncertainty",
+          "Alienates with corrections",
+          "Misses emotional truth",
+          "Too slow to decide"
+        ],
+        "assets": [
+          "Critical thinking edge",
+          "Verification methodology",
+          "Signal-from-noise filter",
+          "Ethics grounded in evidence"
+        ],
+        "goals": [
+          "Know when enough is enough",
+          "Trusted word always",
+          "Present truth inspiringly",
+          "Guardian of honesty"
+        ],
+        "pathSteps": [
+          "Embrace questioning nature",
+          "Question with purpose",
+          "Build evidence toolkit",
+          "Defend the truth"
+        ]
+      }
+    },
+    "craftmaster": {
+      "id": "craftmaster",
+      "name": "The Maker",
+      "emoji": "🛠️",
+      "tagline": "Learns by building and creating with their hands",
+      "group": "builders",
+      "archetypeScores": {
+        "EI": 60,
+        "SC": 60,
+        "PT": 20,
+        "RN": 30,
+        "AD": 40,
+        "LG": 30
+      },
+      "dominantDimensions": [
+        "PT",
+        "RN",
+        "LG"
+      ],
+      "description": "Craftmasters learn by doing. They're the students whose hands are always busy—building, drawing, fixing, creating. They understand the world through physical interaction and develop deep skills through repetition and refinement. In class, they shine during practical activities and may struggle with purely abstract lessons. They learn best when they can touch, build, and create.",
+      "hiddenStrengths": [
+        "Spatial intelligence and physical problem-solving that textbooks can't teach",
+        "Patience for iterative improvement that produces exceptional quality",
+        "Ability to see solutions in three dimensions when others think in two",
+        "Kinesthetic memory that makes complex procedures feel natural"
+      ],
+      "hiddenWeaknesses": [
+        "May undervalue their skills because they're 'not academic'",
+        "Can resist learning through reading or lectures even when it would help",
+        "Sometimes perfectionism about physical work slows overall progress",
+        "May struggle to explain how they do what they do in words"
+      ],
+      "futureMiningAssets": [
+        "Maker skills that are increasingly valued in a digital world",
+        "Understanding of materials and processes that AI cannot replicate",
+        "Prototyping ability that turns ideas into tangible reality",
+        "Quality craftsmanship that stands out in an era of mass production"
+      ],
+      "careerDirections": [
+        {
+          "title": "Robotics Maintenance Technician",
+          "field": "Automation",
+          "why": "Your hands-on precision keeps complex robotic systems running perfectly"
+        },
+        {
+          "title": "Space Habitat Engineer",
+          "field": "Space Industry",
+          "why": "Your practical mastery builds the reliable life-support systems space demands"
+        },
+        {
+          "title": "Vertical Farm Technician",
+          "field": "AgriTech",
+          "why": "Your meticulous hands-on skill maintains delicate automated growing systems"
+        },
+        {
+          "title": "Synthetic Biology Engineer",
+          "field": "Biotechnology",
+          "why": "Your lab precision executes the careful protocols biotech requires"
+        }
+      ],
+      "reconstructionPath": [
+        {
+          "phase": "Awareness",
+          "title": "Value Your Hands",
+          "description": "Recognize that your practical skills are intelligence. Making things is a powerful form of knowing."
+        },
+        {
+          "phase": "Focus",
+          "title": "Master One Craft",
+          "description": "Choose one making skill and pursue deliberate practice. Track your improvement over time."
+        },
+        {
+          "phase": "Depth",
+          "title": "Add Theory to Practice",
+          "description": "Learn the science behind your craft. Understanding why things work makes your hands even more skilled."
+        },
+        {
+          "phase": "Impact",
+          "title": "Create Something Lasting",
+          "description": "Build something that serves others and showcases your mastery. Your craft becomes your signature."
+        }
+      ],
+      "hopefulGoals": [
+        "Create work of such quality that it speaks for itself",
+        "Discover that practical intelligence is just as valuable as academic intelligence",
+        "Build the confidence to share your craft with the world",
+        "Find a career where making things with care is celebrated and rewarded"
+      ],
+      "keywords": {
+        "coreTrait": "Hands-On Perfectionist",
+        "learnsBy": "Building and doing",
+        "inClass": "Shines in practicals",
+        "strengths": [
+          "Spatial problem-solver",
+          "Iterative refinement",
+          "3D solution vision",
+          "Kinesthetic memory"
+        ],
+        "blindSpots": [
+          "Undervalues own skills",
+          "Resists non-hands-on learning",
+          "Perfectionism slows progress",
+          "Hard to explain process"
+        ],
+        "assets": [
+          "Maker skills in demand",
+          "Material intelligence",
+          "Ideas to tangible reality",
+          "Standout craftsmanship"
+        ],
+        "goals": [
+          "Quality speaks for itself",
+          "Practical smarts valued",
+          "Confidence to share craft",
+          "Career celebrates making"
+        ],
+        "pathSteps": [
+          "Value your hands",
+          "Master one craft",
+          "Add theory to practice",
+          "Create something lasting"
+        ]
+      }
+    },
+    "foundation_builder": {
+      "id": "foundation_builder",
+      "name": "The Steady Builder",
+      "emoji": "🧱",
+      "tagline": "Works step by step to create something solid",
+      "group": "builders",
+      "archetypeScores": {
+        "EI": 55,
+        "SC": 60,
+        "PT": 30,
+        "RN": 20,
+        "AD": 35,
+        "LG": 30
+      },
+      "dominantDimensions": [
+        "RN",
+        "PT",
+        "AD"
+      ],
+      "description": "Foundation Builders are the steady, reliable learners who create solid structures in everything they do. They value consistency, follow through on commitments, and build skills methodically, brick by brick. In class, they're the dependable students who always complete their work and prefer clear instructions. They learn best through structured, step-by-step approaches.",
+      "hiddenStrengths": [
+        "Reliability that makes them the person everyone counts on",
+        "Ability to build habits and systems that compound over time",
+        "Quiet perseverance that outlasts more flashy but inconsistent peers",
+        "Organizational skills that keep complex projects on track"
+      ],
+      "hiddenWeaknesses": [
+        "Can become too dependent on structure and freeze without clear instructions",
+        "May avoid creative or ambiguous tasks that lack a clear process",
+        "Sometimes confuses repetition with learning—doing the same thing without growing",
+        "Can be resistant to change even when current methods aren't working"
+      ],
+      "futureMiningAssets": [
+        "Project management instincts that keep teams and organizations running",
+        "Systematic approach that scales beautifully with responsibility",
+        "Reliability that builds trust and opens doors to leadership",
+        "Process optimization skills that improve efficiency everywhere"
+      ],
+      "careerDirections": [
+        {
+          "title": "Robotics Maintenance Technician",
+          "field": "Automation",
+          "why": "Your steady, reliable approach ensures consistent robotic system uptime"
+        },
+        {
+          "title": "Vertical Farm Technician",
+          "field": "AgriTech",
+          "why": "Your routine-oriented consistency maintains reliable crop production cycles"
+        },
+        {
+          "title": "Synthetic Biology Engineer",
+          "field": "Biotechnology",
+          "why": "Your methodical process follows lab protocols with dependable precision"
+        },
+        {
+          "title": "Space Habitat Engineer",
+          "field": "Space Industry",
+          "why": "Your foundation-building mindset creates safe, stable space infrastructure"
+        }
+      ],
+      "reconstructionPath": [
+        {
+          "phase": "Awareness",
+          "title": "Appreciate Your Steadiness",
+          "description": "In a world that celebrates flash, recognize that foundations are what everything else is built on."
+        },
+        {
+          "phase": "Focus",
+          "title": "Build Something Structured",
+          "description": "Take on a project that lets you use your systematic approach—organize an event, create a system, plan a curriculum."
+        },
+        {
+          "phase": "Depth",
+          "title": "Add Flexibility to Your Foundation",
+          "description": "Practice adapting your plans when circumstances change. Strong foundations can also be flexible."
+        },
+        {
+          "phase": "Impact",
+          "title": "Build the Platform Others Need",
+          "description": "Create structures and systems that enable others to do their best work. Your foundation becomes their launchpad."
+        }
+      ],
+      "hopefulGoals": [
+        "Build something that stands the test of time and serves many people",
+        "Develop the confidence to know that steady progress beats scattered brilliance",
+        "Learn to embrace change as a chance to build something even better",
+        "Become the backbone that every successful team needs"
+      ],
+      "keywords": {
+        "coreTrait": "Steady Brick-Layer",
+        "learnsBy": "Step-by-step building",
+        "inClass": "Always completes work",
+        "strengths": [
+          "Rock-solid reliability",
+          "Compounding habit builder",
+          "Quiet perseverance wins",
+          "Keeps projects on track"
+        ],
+        "blindSpots": [
+          "Freezes without structure",
+          "Avoids ambiguous tasks",
+          "Repetition without growth",
+          "Resists needed change"
+        ],
+        "assets": [
+          "Project management instinct",
+          "Scales with responsibility",
+          "Trust-building reliability",
+          "Process optimization"
+        ],
+        "goals": [
+          "Build something lasting",
+          "Steady beats scattered",
+          "Embrace change as upgrade",
+          "Team backbone"
+        ],
+        "pathSteps": [
+          "Appreciate your steadiness",
+          "Build something structured",
+          "Add flexibility",
+          "Build others' launchpad"
+        ]
+      }
+    },
+    "precision_engineer": {
+      "id": "precision_engineer",
+      "name": "The Perfectionist",
+      "emoji": "📐",
+      "tagline": "Cares about getting every detail exactly right",
+      "group": "builders",
+      "archetypeScores": {
+        "EI": 65,
+        "SC": 70,
+        "PT": 25,
+        "RN": 25,
+        "AD": 20,
+        "LG": 25
+      },
+      "dominantDimensions": [
+        "AD",
+        "PT",
+        "LG"
+      ],
+      "description": "Precision Engineers combine hands-on skill with meticulous attention to detail. They don't just make things—they make things precisely right. They notice when something is one degree off, one pixel misaligned, one note flat. In class, they produce careful, high-quality work and may take longer because they refuse to submit anything less than their best. They learn best when precision is valued and rewarded.",
+      "hiddenStrengths": [
+        "Quality standard that produces work others trust implicitly",
+        "Ability to detect errors that pass everyone else's inspection",
+        "Methodical approach that reduces mistakes and rework",
+        "Deep satisfaction in doing things correctly that sustains long-term motivation"
+      ],
+      "hiddenWeaknesses": [
+        "Perfectionism can turn into procrastination or paralysis",
+        "May judge others harshly for lower quality standards",
+        "Can miss the forest for the trees—perfect parts, mediocre whole",
+        "Speed-dependent tasks can cause anxiety and underperformance"
+      ],
+      "futureMiningAssets": [
+        "Precision skills that become more valuable as technology demands more accuracy",
+        "Quality assurance mindset essential in safety-critical systems",
+        "Technical documentation abilities that preserve critical knowledge",
+        "Calibration instincts that keep complex systems running correctly"
+      ],
+      "careerDirections": [
+        {
+          "title": "Robotics Maintenance Technician",
+          "field": "Automation",
+          "why": "Your detail-obsessed approach diagnoses and fixes robotic issues with exactness"
+        },
+        {
+          "title": "Vertical Farm Technician",
+          "field": "AgriTech",
+          "why": "Your precision monitoring optimizes every variable in automated farming"
+        },
+        {
+          "title": "Space Habitat Engineer",
+          "field": "Space Industry",
+          "why": "Your engineering precision ensures zero-tolerance safety in space systems"
+        },
+        {
+          "title": "Neural Interface Developer",
+          "field": "BCI Technology",
+          "why": "Your exacting standards meet the microscopic precision brain interfaces demand"
+        }
+      ],
+      "reconstructionPath": [
+        {
+          "phase": "Awareness",
+          "title": "Own Your Precision",
+          "description": "Your attention to detail is a superpower. Notice where it creates exceptional results."
+        },
+        {
+          "phase": "Focus",
+          "title": "Precision with Purpose",
+          "description": "Apply your precision to a project that matters. Channel perfectionism toward a meaningful goal."
+        },
+        {
+          "phase": "Depth",
+          "title": "Learn Strategic Imperfection",
+          "description": "Practice identifying where precision matters most and where 'good enough' actually is good enough."
+        },
+        {
+          "phase": "Impact",
+          "title": "Set the Standard",
+          "description": "Become the person who defines quality standards for your team. Your precision lifts everyone's work."
+        }
+      ],
+      "hopefulGoals": [
+        "Find a field where your precision is celebrated as a critical asset",
+        "Learn to channel perfectionism productively rather than letting it block progress",
+        "Develop the wisdom to know when precision is essential and when speed matters more",
+        "Create work so precise that it sets the standard for others"
+      ],
+      "keywords": {
+        "coreTrait": "Detail-Obsessed Maker",
+        "learnsBy": "Perfecting accuracy",
+        "inClass": "Refuses anything less",
+        "strengths": [
+          "Implicitly trusted quality",
+          "Error-detection radar",
+          "Methodical mistake reducer",
+          "Satisfaction sustains drive"
+        ],
+        "blindSpots": [
+          "Perfectionism paralysis",
+          "Judges others harshly",
+          "Misses the big picture",
+          "Anxiety under time pressure"
+        ],
+        "assets": [
+          "Precision scales with tech",
+          "Safety-critical mindset",
+          "Technical documentation pro",
+          "Calibration instincts"
+        ],
+        "goals": [
+          "Precision celebrated",
+          "Channel perfectionism well",
+          "Know when speed wins",
+          "Set the quality standard"
+        ],
+        "pathSteps": [
+          "Own your precision",
+          "Precision with purpose",
+          "Learn strategic imperfection",
+          "Set the standard"
+        ]
+      }
+    },
+    "bridge_builder": {
+      "id": "bridge_builder",
+      "name": "The Connector",
+      "emoji": "🌉",
+      "tagline": "Brings people and ideas together naturally",
+      "group": "connectors",
+      "archetypeScores": {
+        "EI": 35,
+        "SC": 25,
+        "PT": 40,
+        "RN": 55,
+        "AD": 50,
+        "LG": 65
+      },
+      "dominantDimensions": [
+        "SC",
+        "LG",
+        "EI"
+      ],
+      "description": "Bridge Builders are social learners who naturally connect different people, ideas, and groups. They see the links between what others consider separate and bring together perspectives that would otherwise stay apart. In class, they're the ones who say 'this is like what we learned in...' and who naturally help classmates understand each other. They learn best through discussion and collaboration.",
+      "hiddenStrengths": [
+        "Natural networking ability that creates opportunities others never see",
+        "Ability to translate between different 'languages'—technical to creative, emotional to logical",
+        "Intuitive understanding of group dynamics and unspoken tensions",
+        "Talent for finding common ground where others see only differences"
+      ],
+      "hiddenWeaknesses": [
+        "Can spread themselves too thin trying to connect everyone",
+        "May avoid conflict to maintain connections, even when conflict is necessary",
+        "Sometimes prioritizes harmony over truth or efficiency",
+        "Can lose their own identity trying to be the bridge for everyone else"
+      ],
+      "futureMiningAssets": [
+        "Cross-functional collaboration skills essential in modern organizations",
+        "Cultural intelligence that bridges diverse teams and perspectives",
+        "Mediation skills increasingly needed in polarized environments",
+        "Network building that creates compounding value over time"
+      ],
+      "careerDirections": [
+        {
+          "title": "Human-AI Collaboration Facilitator",
+          "field": "Future of Work",
+          "why": "Your natural ability to connect people makes you ideal for bridging human-AI teams"
+        },
+        {
+          "title": "Climate Restoration Engineer",
+          "field": "Climate Tech",
+          "why": "Your collaborative mindset unites diverse stakeholders around climate solutions"
+        },
+        {
+          "title": "Virtual World Designer",
+          "field": "Metaverse",
+          "why": "Your people-first perspective designs virtual spaces that truly connect users"
+        },
+        {
+          "title": "Holographic Experience Producer",
+          "field": "Immersive Media",
+          "why": "Your social skills coordinate creative teams to produce immersive experiences"
+        }
+      ],
+      "reconstructionPath": [
+        {
+          "phase": "Awareness",
+          "title": "See Your Connections",
+          "description": "Map the relationships and idea connections you naturally make. Notice how often you're the link between groups."
+        },
+        {
+          "phase": "Focus",
+          "title": "Build a Meaningful Bridge",
+          "description": "Choose two groups or ideas that need connecting and deliberately bring them together."
+        },
+        {
+          "phase": "Depth",
+          "title": "Strengthen Your Own Foundation",
+          "description": "Develop your own expertise and identity so your bridges are built on solid ground."
+        },
+        {
+          "phase": "Impact",
+          "title": "Create Lasting Connections",
+          "description": "Build bridges that stand without you. The best connections eventually sustain themselves."
+        }
+      ],
+      "hopefulGoals": [
+        "Create connections between people and ideas that produce something greater than the sum",
+        "Develop the strength to be a bridge without losing yourself in the process",
+        "Build a network so rich that opportunities naturally flow through it",
+        "Become known as the person who makes collaboration actually work"
+      ],
+      "keywords": {
+        "coreTrait": "Human Connector",
+        "learnsBy": "Discussion + collaboration",
+        "inClass": "Links ideas across subjects",
+        "strengths": [
+          "Natural networker",
+          "Translates between worlds",
+          "Reads group dynamics",
+          "Finds common ground"
+        ],
+        "blindSpots": [
+          "Spread too thin",
+          "Avoids needed conflict",
+          "Harmony over truth",
+          "Loses own identity"
+        ],
+        "assets": [
+          "Cross-functional collaborator",
+          "Cultural intelligence",
+          "Mediation in polarization",
+          "Compounding network value"
+        ],
+        "goals": [
+          "Greater than the sum",
+          "Bridge without losing self",
+          "Opportunities flow naturally",
+          "Make collaboration work"
+        ],
+        "pathSteps": [
+          "See your connections",
+          "Build meaningful bridge",
+          "Strengthen own foundation",
+          "Create lasting connections"
+        ]
+      }
+    },
+    "catalyst": {
+      "id": "catalyst",
+      "name": "The Energizer",
+      "emoji": "⚡",
+      "tagline": "Gets everyone excited and moving",
+      "group": "connectors",
+      "archetypeScores": {
+        "EI": 30,
+        "SC": 20,
+        "PT": 40,
+        "RN": 65,
+        "AD": 65,
+        "LG": 60
+      },
+      "dominantDimensions": [
+        "SC",
+        "RN",
+        "AD"
+      ],
+      "description": "Catalysts are the energizers of any group. They spark action, inspire change, and make things happen through the sheer force of their social energy and decisiveness. In class, they're the students who get group projects moving, volunteer first, and create excitement around ideas. They learn best when learning involves people, action, and visible results.",
+      "hiddenStrengths": [
+        "Ability to ignite motivation in people who have given up",
+        "Natural talent for reading a room and knowing what it needs",
+        "Speed at turning abstract ideas into concrete group action",
+        "Social courage to be the first one to speak, act, or volunteer"
+      ],
+      "hiddenWeaknesses": [
+        "Can burn out from constantly being 'on' and energizing others",
+        "May start more initiatives than can be sustained",
+        "Sometimes mistakes excitement for commitment—in themselves and others",
+        "Can overwhelm quieter personalities with their intensity"
+      ],
+      "futureMiningAssets": [
+        "Change management skills that organizations desperately need",
+        "Ability to energize and mobilize teams toward bold goals",
+        "Sales and persuasion instincts that create buy-in",
+        "Event and campaign management abilities that scale with experience"
+      ],
+      "careerDirections": [
+        {
+          "title": "Human-AI Collaboration Facilitator",
+          "field": "Future of Work",
+          "why": "Your social energy ignites productive collaboration between humans and AI"
+        },
+        {
+          "title": "AI Art Director",
+          "field": "Creative AI",
+          "why": "Your energizing presence rallies creative teams toward bold AI-powered projects"
+        },
+        {
+          "title": "Holographic Experience Producer",
+          "field": "Immersive Media",
+          "why": "Your catalyst nature sparks innovation in emerging immersive media production"
+        },
+        {
+          "title": "Virtual World Designer",
+          "field": "Metaverse",
+          "why": "Your enthusiasm for connection designs virtual worlds built for social interaction"
+        }
+      ],
+      "reconstructionPath": [
+        {
+          "phase": "Awareness",
+          "title": "Recognize Your Energy",
+          "description": "Notice how your presence changes the room. Your energy is a resource—learn to use it wisely."
+        },
+        {
+          "phase": "Focus",
+          "title": "Channel Your Spark",
+          "description": "Direct your catalytic energy toward one meaningful cause or project instead of scattering it."
+        },
+        {
+          "phase": "Depth",
+          "title": "Sustain the Fire",
+          "description": "Learn to maintain momentum after the initial excitement fades. Sustainable change requires endurance."
+        },
+        {
+          "phase": "Impact",
+          "title": "Ignite Leaders",
+          "description": "Use your catalyst energy not just to start fires but to help others become catalysts themselves."
+        }
+      ],
+      "hopefulGoals": [
+        "Learn to channel your incredible energy into lasting, meaningful change",
+        "Develop the discipline to sustain what you start without burning out",
+        "Become the person who transforms 'we can't' into 'we did'",
+        "Create a ripple effect of positive energy wherever you go"
+      ],
+      "keywords": {
+        "coreTrait": "Social Energizer",
+        "learnsBy": "Action with people",
+        "inClass": "Gets groups moving",
+        "strengths": [
+          "Ignites lost motivation",
+          "Reads the room fast",
+          "Ideas to group action",
+          "Social courage first"
+        ],
+        "blindSpots": [
+          "Burns out energizing",
+          "Starts too many things",
+          "Excitement isn't commitment",
+          "Overwhelms quiet types"
+        ],
+        "assets": [
+          "Change management natural",
+          "Mobilizes toward bold goals",
+          "Persuasion creates buy-in",
+          "Event management scales"
+        ],
+        "goals": [
+          "Energy into lasting change",
+          "Sustain without burnout",
+          "Turn 'can't' into 'did'",
+          "Ripple effect everywhere"
+        ],
+        "pathSteps": [
+          "Recognize your energy",
+          "Channel your spark",
+          "Sustain the fire",
+          "Ignite other leaders"
+        ]
+      }
+    },
+    "guardian": {
+      "id": "guardian",
+      "name": "The Protector",
+      "emoji": "🛡️",
+      "tagline": "Looks out for others and keeps things stable",
+      "group": "connectors",
+      "archetypeScores": {
+        "EI": 45,
+        "SC": 30,
+        "PT": 35,
+        "RN": 30,
+        "AD": 40,
+        "LG": 40
+      },
+      "dominantDimensions": [
+        "SC",
+        "RN",
+        "AD"
+      ],
+      "description": "Guardians are the caring, stabilizing presence in any group. They naturally watch out for others, maintain harmony, and ensure everyone feels included and safe. In class, they're the students who help struggling classmates, notice when someone is left out, and keep group dynamics positive. They learn best in environments that feel emotionally safe and supportive.",
+      "hiddenStrengths": [
+        "Emotional intelligence that detects needs others don't even express",
+        "Natural ability to create safe spaces where others can take risks",
+        "Loyalty and dependability that builds unshakeable trust",
+        "Conflict resolution instincts that maintain group functionality"
+      ],
+      "hiddenWeaknesses": [
+        "May neglect their own needs while caring for everyone else",
+        "Can avoid necessary confrontation in the name of keeping peace",
+        "Sometimes enables underperformance by being too supportive",
+        "May struggle to lead boldly because they fear upsetting others"
+      ],
+      "futureMiningAssets": [
+        "People management skills essential for leadership roles",
+        "Emotional safety expertise increasingly valued in workplace culture",
+        "Mentoring and coaching instincts that develop others' potential",
+        "Team cohesion skills that make the difference between good and great teams"
+      ],
+      "careerDirections": [
+        {
+          "title": "Space Habitat Engineer",
+          "field": "Space Industry",
+          "why": "Your protective instinct designs life-support systems that keep people safe"
+        },
+        {
+          "title": "Vertical Farm Technician",
+          "field": "AgriTech",
+          "why": "Your caring nature nurtures sustainable food systems for communities"
+        },
+        {
+          "title": "Synthetic Biology Engineer",
+          "field": "Biotechnology",
+          "why": "Your guardian mindset ensures biotechnology serves and protects society"
+        },
+        {
+          "title": "Human-AI Collaboration Facilitator",
+          "field": "Future of Work",
+          "why": "Your protective awareness ensures AI adoption benefits everyone fairly"
+        }
+      ],
+      "reconstructionPath": [
+        {
+          "phase": "Awareness",
+          "title": "Acknowledge Your Care",
+          "description": "Your instinct to protect and support others is a form of strength, not weakness."
+        },
+        {
+          "phase": "Focus",
+          "title": "Guard Yourself Too",
+          "description": "Practice setting boundaries. You can't protect others if you don't protect your own energy and wellbeing."
+        },
+        {
+          "phase": "Depth",
+          "title": "From Support to Leadership",
+          "description": "Develop the skills to lead from your caring nature. The best leaders are guardians who also guide."
+        },
+        {
+          "phase": "Impact",
+          "title": "Build Safe Spaces",
+          "description": "Create environments—teams, communities, organizations—where everyone can thrive because of the safety you provide."
+        }
+      ],
+      "hopefulGoals": [
+        "Create environments where others feel safe enough to be their best selves",
+        "Learn that caring for yourself is not selfish—it's necessary",
+        "Discover that your protective nature is a leadership strength, not just a support role",
+        "Build communities where kindness and accountability coexist"
+      ],
+      "keywords": {
+        "coreTrait": "Caring Stabilizer",
+        "learnsBy": "Safe environments",
+        "inClass": "Helps struggling peers",
+        "strengths": [
+          "Detects unspoken needs",
+          "Creates safe spaces",
+          "Unshakeable loyalty",
+          "Resolves conflict naturally"
+        ],
+        "blindSpots": [
+          "Neglects own needs",
+          "Avoids confrontation",
+          "Enables underperformance",
+          "Fears upsetting others"
+        ],
+        "assets": [
+          "People management ready",
+          "Emotional safety expert",
+          "Mentoring instincts",
+          "Team cohesion maker"
+        ],
+        "goals": [
+          "Others thrive through safety",
+          "Self-care isn't selfish",
+          "Caring as leadership",
+          "Kindness meets accountability"
+        ],
+        "pathSteps": [
+          "Acknowledge your care",
+          "Guard yourself too",
+          "Support to leadership",
+          "Build safe spaces"
+        ]
+      }
+    },
+    "philosopher": {
+      "id": "philosopher",
+      "name": "The Deep Thinker",
+      "emoji": "🤔",
+      "tagline": "Loves exploring big questions and abstract ideas",
+      "group": "thinkers",
+      "archetypeScores": {
+        "EI": 55,
+        "SC": 65,
+        "PT": 80,
+        "RN": 45,
+        "AD": 30,
+        "LG": 75
+      },
+      "dominantDimensions": [
+        "PT",
+        "LG",
+        "AD"
+      ],
+      "description": "Philosophers are deep, abstract thinkers who are driven to understand not just what is, but why it is and what it means. They naturally question assumptions and seek the underlying principles behind everything. In class, they ask the questions that make teachers pause and think. They learn best when ideas are explored for their own sake, without pressure for immediate practical application.",
+      "hiddenStrengths": [
+        "Ability to see the assumptions hiding behind 'obvious' truths",
+        "Natural depth of thought that produces genuinely original insights",
+        "Comfort with ambiguity and complexity that others find overwhelming",
+        "Ethical reasoning that considers implications others overlook"
+      ],
+      "hiddenWeaknesses": [
+        "Can get stuck in abstract thinking and fail to act on insights",
+        "May seem disconnected or 'in their head' to more practical peers",
+        "Sometimes overcomplicates simple situations with philosophical depth",
+        "Can become cynical when others don't share their depth of questioning"
+      ],
+      "futureMiningAssets": [
+        "Ethical thinking increasingly essential in AI, biotech, and governance",
+        "Critical analysis skills that cut through surface-level understanding",
+        "Questioning mindset that drives genuine innovation",
+        "Wisdom orientation that becomes more valuable with maturity"
+      ],
+      "careerDirections": [
+        {
+          "title": "Quantum Algorithm Developer",
+          "field": "Quantum Computing",
+          "why": "Your deep theoretical thinking grasps the abstract concepts quantum computing demands"
+        },
+        {
+          "title": "AI Ethics Governance Officer",
+          "field": "Tech Policy",
+          "why": "Your philosophical questioning shapes the ethical frameworks AI needs"
+        },
+        {
+          "title": "AGI Safety Researcher",
+          "field": "AI Safety",
+          "why": "Your contemplative nature considers the profound implications of artificial general intelligence"
+        },
+        {
+          "title": "Digital Twin Architect",
+          "field": "Simulation Tech",
+          "why": "Your theoretical depth models complex systems with philosophical precision"
+        }
+      ],
+      "reconstructionPath": [
+        {
+          "phase": "Awareness",
+          "title": "Honor Your Depth",
+          "description": "Your tendency to think deeply is not overthinking—it's how you process the world. Own it."
+        },
+        {
+          "phase": "Focus",
+          "title": "Explore One Big Question",
+          "description": "Choose a philosophical question that genuinely matters to you and pursue it seriously."
+        },
+        {
+          "phase": "Depth",
+          "title": "Connect Thinking to Action",
+          "description": "Practice turning your philosophical insights into practical proposals. Ideas gain power when they touch the real world."
+        },
+        {
+          "phase": "Impact",
+          "title": "Ask the Questions That Matter",
+          "description": "Bring your philosophical depth to the conversations that shape the future. The world needs your questions."
+        }
+      ],
+      "hopefulGoals": [
+        "Ask a question so profound that it changes how people see the world",
+        "Learn to bridge the gap between deep thinking and practical action",
+        "Become the person others seek when they need perspective on what really matters",
+        "Find a community of thinkers who challenge and inspire your deepest reflections"
+      ],
+      "keywords": {
+        "coreTrait": "Deep Question Asker",
+        "learnsBy": "Exploring ideas freely",
+        "inClass": "Makes teachers pause",
+        "strengths": [
+          "Exposes hidden assumptions",
+          "Genuinely original insights",
+          "Comfortable with ambiguity",
+          "Ethical depth others miss"
+        ],
+        "blindSpots": [
+          "Stuck in abstraction",
+          "Seems disconnected",
+          "Overcomplicates the simple",
+          "Cynical when unmatched"
+        ],
+        "assets": [
+          "Ethics for AI age",
+          "Cuts through surface level",
+          "Questioning drives innovation",
+          "Wisdom grows with time"
+        ],
+        "goals": [
+          "World-changing question",
+          "Bridge thinking to action",
+          "Go-to for perspective",
+          "Find fellow deep thinkers"
+        ],
+        "pathSteps": [
+          "Honor your depth",
+          "Explore one big question",
+          "Connect thinking to action",
+          "Ask questions that matter"
+        ]
+      }
+    },
+    "systems_weaver": {
+      "id": "systems_weaver",
+      "name": "The Pattern Spotter",
+      "emoji": "🕸️",
+      "tagline": "Sees how everything connects to everything else",
+      "group": "thinkers",
+      "archetypeScores": {
+        "EI": 45,
+        "SC": 55,
+        "PT": 70,
+        "RN": 50,
+        "AD": 35,
+        "LG": 85
+      },
+      "dominantDimensions": [
+        "LG",
+        "PT",
+        "AD"
+      ],
+      "description": "Systems Weavers see the invisible threads connecting everything. Where others see separate subjects, they see an interconnected web of ideas, causes, and effects. In class, they're the ones who say 'this relates to...' and draw diagrams showing how everything fits together. They learn best when they can map out relationships and understand the whole system.",
+      "hiddenStrengths": [
+        "Ability to see cause-and-effect chains that span across domains",
+        "Natural talent for predicting unintended consequences",
+        "Mental model building that simplifies overwhelming complexity",
+        "Intuitive understanding of feedback loops and emergent behavior"
+      ],
+      "hiddenWeaknesses": [
+        "Can become overwhelmed by the complexity they perceive",
+        "May struggle to explain their systems thinking to linear thinkers",
+        "Sometimes sees connections where none actually exist",
+        "Can get lost in mapping systems instead of working within them"
+      ],
+      "futureMiningAssets": [
+        "Systems thinking increasingly essential for solving complex global problems",
+        "Data visualization and modeling skills that make complexity manageable",
+        "Holistic perspective essential for sustainable business and environmental planning",
+        "Integration ability that bridges specialized knowledge silos"
+      ],
+      "careerDirections": [
+        {
+          "title": "AI Ethics Governance Officer",
+          "field": "Tech Policy",
+          "why": "Your invisible-thread-seeing ability maps the interconnected impacts of AI policy"
+        },
+        {
+          "title": "Digital Twin Architect",
+          "field": "Simulation Tech",
+          "why": "Your systems perspective creates comprehensive digital replicas of complex realities"
+        },
+        {
+          "title": "Smart City Systems Manager",
+          "field": "Urban Tech",
+          "why": "Your web-of-connections thinking manages interdependent urban infrastructure"
+        },
+        {
+          "title": "AGI Safety Researcher",
+          "field": "AI Safety",
+          "why": "Your systems awareness identifies cascading risks in artificial intelligence"
+        }
+      ],
+      "reconstructionPath": [
+        {
+          "phase": "Awareness",
+          "title": "Trust Your Pattern Sense",
+          "description": "Your ability to see connections is a genuine cognitive gift. Start documenting the systems you naturally perceive."
+        },
+        {
+          "phase": "Focus",
+          "title": "Map One System Deeply",
+          "description": "Choose one system—ecological, social, technological—and create a detailed map of how it works."
+        },
+        {
+          "phase": "Depth",
+          "title": "Learn Formal Systems Tools",
+          "description": "Study systems dynamics, network theory, or complexity science to add rigor to your intuitive understanding."
+        },
+        {
+          "phase": "Impact",
+          "title": "Help Others See the Web",
+          "description": "Use your systems understanding to help others make better decisions by showing them the connections they're missing."
+        }
+      ],
+      "hopefulGoals": [
+        "Map a system so clearly that it changes how people understand a complex problem",
+        "Develop the ability to communicate your systems insights in ways others can grasp",
+        "Become the person organizations turn to when they need to understand complexity",
+        "Use your systems thinking to identify leverage points for positive change"
+      ],
+      "keywords": {
+        "coreTrait": "Invisible Thread Seer",
+        "learnsBy": "Mapping connections",
+        "inClass": "Says 'this relates to...'",
+        "strengths": [
+          "Cross-domain cause-effect",
+          "Predicts unintended outcomes",
+          "Simplifies overwhelming complexity",
+          "Grasps feedback loops"
+        ],
+        "blindSpots": [
+          "Overwhelmed by complexity",
+          "Hard to explain thinking",
+          "Sees false connections",
+          "Maps instead of acts"
+        ],
+        "assets": [
+          "Systems thinking essential",
+          "Data visualization skills",
+          "Holistic sustainability view",
+          "Bridges knowledge silos"
+        ],
+        "goals": [
+          "Map changes understanding",
+          "Communicate systems clearly",
+          "Go-to for complexity",
+          "Find leverage for change"
+        ],
+        "pathSteps": [
+          "Trust your pattern sense",
+          "Map one system deeply",
+          "Learn formal systems tools",
+          "Help others see the web"
+        ]
+      }
+    },
+    "pattern_finder": {
+      "id": "pattern_finder",
+      "name": "The Code Cracker",
+      "emoji": "🔍",
+      "tagline": "Finds hidden structures and rules in information",
+      "group": "thinkers",
+      "archetypeScores": {
+        "EI": 60,
+        "SC": 70,
+        "PT": 65,
+        "RN": 40,
+        "AD": 25,
+        "LG": 60
+      },
+      "dominantDimensions": [
+        "AD",
+        "PT",
+        "EI"
+      ],
+      "description": "Pattern Finders have an analytical mind that naturally detects structure, regularity, and hidden order in apparent chaos. They're the students who notice mathematical relationships, grammatical patterns, and historical cycles that others miss. In class, they often find shortcuts and underlying rules that make complex material simpler. They learn best when they can analyze and discover structure for themselves.",
+      "hiddenStrengths": [
+        "Ability to simplify complex information by finding the underlying pattern",
+        "Natural talent for learning new systems quickly by recognizing familiar structures",
+        "Pattern matching across domains that produces creative analogies",
+        "Efficiency in problem-solving that comes from seeing the structure"
+      ],
+      "hiddenWeaknesses": [
+        "Can force patterns onto random data—seeing structure where there is none",
+        "May become overconfident in predictions based on past patterns",
+        "Sometimes dismisses anomalies that don't fit the pattern instead of learning from them",
+        "Can struggle with genuinely novel situations where no pattern exists yet"
+      ],
+      "futureMiningAssets": [
+        "Data analysis skills essential in every modern industry",
+        "Machine learning intuition—understanding how algorithms find patterns",
+        "Trend identification that gives organizations competitive advantage",
+        "Debugging and troubleshooting skills that find root causes efficiently"
+      ],
+      "careerDirections": [
+        {
+          "title": "Precision Medicine Geneticist",
+          "field": "Healthcare",
+          "why": "Your pattern-finding gift decodes the genetic sequences that determine health outcomes"
+        },
+        {
+          "title": "Quantum Algorithm Developer",
+          "field": "Quantum Computing",
+          "why": "Your hidden-structure detection solves problems in quantum information patterns"
+        },
+        {
+          "title": "Synthetic Biology Engineer",
+          "field": "Biotechnology",
+          "why": "Your pattern recognition identifies biological structures others overlook"
+        },
+        {
+          "title": "Neural Interface Developer",
+          "field": "BCI Technology",
+          "why": "Your data pattern skills decode the neural signals brain interfaces rely on"
+        }
+      ],
+      "reconstructionPath": [
+        {
+          "phase": "Awareness",
+          "title": "Catalogue Your Patterns",
+          "description": "Start noticing and recording the patterns you naturally detect. This awareness sharpens your gift."
+        },
+        {
+          "phase": "Focus",
+          "title": "Test Your Pattern Hypotheses",
+          "description": "When you spot a pattern, design a test to verify it. Real pattern-finding requires validation."
+        },
+        {
+          "phase": "Depth",
+          "title": "Study Pattern Science",
+          "description": "Learn statistics, probability, and data science to add mathematical rigor to your pattern intuition."
+        },
+        {
+          "phase": "Impact",
+          "title": "Reveal Hidden Patterns to Others",
+          "description": "Use your pattern-finding to help others see the structure in their problems. Your insight becomes their advantage."
+        }
+      ],
+      "hopefulGoals": [
+        "Discover a pattern that no one else has seen and use it to solve a real problem",
+        "Develop the discipline to validate patterns rather than just detect them",
+        "Become the person others call when they're lost in complex data",
+        "Build a career where your natural pattern detection is your greatest asset"
+      ],
+      "keywords": {
+        "coreTrait": "Hidden Structure Decoder",
+        "learnsBy": "Analyzing for structure",
+        "inClass": "Finds rules and shortcuts",
+        "strengths": [
+          "Simplifies via patterns",
+          "Learns systems rapidly",
+          "Cross-domain analogies",
+          "Structural efficiency"
+        ],
+        "blindSpots": [
+          "Forces false patterns",
+          "Overconfident in predictions",
+          "Dismisses anomalies",
+          "Lost without precedent"
+        ],
+        "assets": [
+          "Data analysis essential",
+          "Machine learning intuition",
+          "Trend identification edge",
+          "Root cause debugging"
+        ],
+        "goals": [
+          "Discover unseen patterns",
+          "Validate, don't just detect",
+          "Called for complex data",
+          "Pattern detection as career"
+        ],
+        "pathSteps": [
+          "Catalogue your patterns",
+          "Test pattern hypotheses",
+          "Study pattern science",
+          "Reveal hidden patterns"
+        ]
+      }
+    },
+    "commander": {
+      "id": "commander",
+      "name": "The Leader",
+      "emoji": "👑",
+      "tagline": "Takes charge and makes things happen",
+      "group": "performers",
+      "archetypeScores": {
+        "EI": 45,
+        "SC": 35,
+        "PT": 45,
+        "RN": 55,
+        "AD": 85,
+        "LG": 65
+      },
+      "dominantDimensions": [
+        "AD",
+        "SC",
+        "LG"
+      ],
+      "description": "Commanders are natural leaders who make decisions quickly and inspire others to follow. They combine social awareness with decisive action and big-picture thinking. In class, they naturally take charge of group projects, delegate tasks, and drive results. They learn best when they have some authority and can see how the lesson connects to real-world action.",
+      "hiddenStrengths": [
+        "Ability to make difficult decisions that others avoid",
+        "Natural authority that others recognize and follow without being told",
+        "Capacity to stay decisive under pressure when others freeze",
+        "Vision for how to organize people and resources for maximum impact"
+      ],
+      "hiddenWeaknesses": [
+        "Can become domineering or dismissive of others' input",
+        "May make decisions too quickly without enough information",
+        "Sometimes confuses being in charge with being right",
+        "Can struggle to follow when someone else is leading"
+      ],
+      "futureMiningAssets": [
+        "Executive presence that accelerates career advancement",
+        "Crisis leadership skills needed in every organization",
+        "Strategic decision-making that improves with experience",
+        "Team mobilization ability that scales from small groups to organizations"
+      ],
+      "careerDirections": [
+        {
+          "title": "AI-Assisted Emergency Responder",
+          "field": "Public Safety",
+          "why": "Your decisive leadership makes split-second calls that save lives in crisis"
+        },
+        {
+          "title": "Holographic Experience Producer",
+          "field": "Immersive Media",
+          "why": "Your commanding presence directs teams to deliver ambitious immersive projects"
+        },
+        {
+          "title": "Human-AI Collaboration Facilitator",
+          "field": "Future of Work",
+          "why": "Your decisive nature cuts through ambiguity to drive effective human-AI teamwork"
+        },
+        {
+          "title": "AI Art Director",
+          "field": "Creative AI",
+          "why": "Your leadership vision guides creative teams toward bold AI-enhanced outcomes"
+        }
+      ],
+      "reconstructionPath": [
+        {
+          "phase": "Awareness",
+          "title": "Understand Your Leadership",
+          "description": "Notice how naturally you take charge. This is a strength—but leadership is also a responsibility."
+        },
+        {
+          "phase": "Focus",
+          "title": "Lead a Real Project",
+          "description": "Take ownership of something meaningful and practice leading through both success and setbacks."
+        },
+        {
+          "phase": "Depth",
+          "title": "Learn to Listen",
+          "description": "The strongest commanders know when to listen. Develop the discipline to hear others before deciding."
+        },
+        {
+          "phase": "Impact",
+          "title": "Lead by Empowering",
+          "description": "Shift from commanding to empowering. The greatest leaders create more leaders, not more followers."
+        }
+      ],
+      "hopefulGoals": [
+        "Develop a leadership style that brings out the best in everyone around you",
+        "Learn that the strongest command includes the wisdom to listen and adapt",
+        "Build something significant by mobilizing and inspiring a team",
+        "Become a leader people choose to follow, not just one they have to"
+      ],
+      "keywords": {
+        "coreTrait": "Decisive Force Leader",
+        "learnsBy": "Leading with authority",
+        "inClass": "Takes charge of groups",
+        "strengths": [
+          "Makes hard decisions",
+          "Natural authority aura",
+          "Decisive under pressure",
+          "Organizes for max impact"
+        ],
+        "blindSpots": [
+          "Domineering tendencies",
+          "Decides too fast",
+          "Confuses charge with right",
+          "Struggles to follow"
+        ],
+        "assets": [
+          "Executive presence ready",
+          "Crisis leadership skills",
+          "Strategic decision-making",
+          "Team mobilization scales"
+        ],
+        "goals": [
+          "Bring out others' best",
+          "Strength includes listening",
+          "Build through mobilizing",
+          "Chosen leader, not forced"
+        ],
+        "pathSteps": [
+          "Understand your leadership",
+          "Lead a real project",
+          "Learn to listen",
+          "Lead by empowering"
+        ]
+      }
+    },
+    "spark": {
+      "id": "spark",
+      "name": "The Motivator",
+      "emoji": "✨",
+      "tagline": "Brings energy and inspires others to act",
+      "group": "performers",
+      "archetypeScores": {
+        "EI": 30,
+        "SC": 25,
+        "PT": 35,
+        "RN": 75,
+        "AD": 80,
+        "LG": 55
+      },
+      "dominantDimensions": [
+        "AD",
+        "RN",
+        "SC"
+      ],
+      "description": "Sparks are the spontaneous, high-energy personalities who light up every room they enter. They combine quick decisiveness with love of novelty and social magnetism. In class, they're the students who make learning fun, come up with creative answers on the spot, and energize group work. They learn best in dynamic, fast-paced environments with lots of interaction.",
+      "hiddenStrengths": [
+        "Ability to create enthusiasm and momentum from nothing",
+        "Quick thinking that produces surprisingly creative solutions under pressure",
+        "Social magnetism that naturally draws people and attention",
+        "Improvisational skill that turns unexpected situations into opportunities"
+      ],
+      "hiddenWeaknesses": [
+        "Can struggle with sustained, quiet, focused work",
+        "May sacrifice depth for entertainment value",
+        "Sometimes relies too much on charm and quick thinking instead of preparation",
+        "Can become restless and disruptive when not engaged"
+      ],
+      "futureMiningAssets": [
+        "Performance skills valued in media, entertainment, and public-facing roles",
+        "Improvisation ability essential in fast-changing business environments",
+        "Social media and content creation instincts",
+        "Team morale and culture contribution that organizations increasingly value"
+      ],
+      "careerDirections": [
+        {
+          "title": "Holographic Experience Producer",
+          "field": "Immersive Media",
+          "why": "Your spontaneous energy brings excitement and originality to immersive productions"
+        },
+        {
+          "title": "AI-Assisted Emergency Responder",
+          "field": "Public Safety",
+          "why": "Your quick-fire instincts and bold action thrive in high-pressure rescue scenarios"
+        },
+        {
+          "title": "Human-AI Collaboration Facilitator",
+          "field": "Future of Work",
+          "why": "Your infectious enthusiasm gets teams excited about adopting AI workflows"
+        },
+        {
+          "title": "AI Art Director",
+          "field": "Creative AI",
+          "why": "Your spark of inspiration pushes AI art in unexpected, exciting directions"
+        }
+      ],
+      "reconstructionPath": [
+        {
+          "phase": "Awareness",
+          "title": "Name Your Spark",
+          "description": "Recognize that your energy and spontaneity are genuine strengths, not just personality quirks."
+        },
+        {
+          "phase": "Focus",
+          "title": "Spark with Direction",
+          "description": "Choose one area where your spark energy can create real results, not just excitement."
+        },
+        {
+          "phase": "Depth",
+          "title": "Build Substance Behind the Spark",
+          "description": "Develop deep knowledge or skill in one area so your spark has lasting fuel, not just flash."
+        },
+        {
+          "phase": "Impact",
+          "title": "Ignite Others",
+          "description": "Use your spark to help others find their own energy and enthusiasm. Light that spreads changes the world."
+        }
+      ],
+      "hopefulGoals": [
+        "Channel your incredible energy into something that creates lasting impact",
+        "Develop the discipline to complement your spontaneity with depth",
+        "Become known not just for your spark but for what you set ablaze with purpose",
+        "Learn that your ability to inspire joy and energy in others is a genuine superpower"
+      ],
+      "keywords": {
+        "coreTrait": "Spontaneous Igniter",
+        "learnsBy": "Fast-paced interaction",
+        "inClass": "Makes learning fun",
+        "strengths": [
+          "Creates momentum from nothing",
+          "Creative under pressure",
+          "Natural social magnet",
+          "Turns chaos into opportunity"
+        ],
+        "blindSpots": [
+          "Struggles with quiet focus",
+          "Depth for entertainment",
+          "Charm over preparation",
+          "Restless when disengaged"
+        ],
+        "assets": [
+          "Performance skills transfer",
+          "Improvisation in business",
+          "Content creation instincts",
+          "Team morale booster"
+        ],
+        "goals": [
+          "Energy into lasting impact",
+          "Spontaneity plus depth",
+          "Known for purpose, not flash",
+          "Joy-giving is superpower"
+        ],
+        "pathSteps": [
+          "Name your spark",
+          "Spark with direction",
+          "Build substance behind it",
+          "Ignite others"
+        ]
+      }
+    },
+    "storyteller": {
+      "id": "storyteller",
+      "name": "The Storyteller",
+      "emoji": "📖",
+      "tagline": "Communicators who give ideas meaning",
+      "group": "performers",
+      "archetypeScores": {
+        "EI": 35,
+        "SC": 30,
+        "PT": 55,
+        "RN": 50,
+        "AD": 65,
+        "LG": 70
+      },
+      "dominantDimensions": [
+        "AD",
+        "LG",
+        "SC"
+      ],
+      "description": "Storytellers have a gift for taking ideas—abstract or concrete—and weaving them into narratives that others remember and care about. They understand that information becomes meaningful only when it's given a story. In class, they excel in presentations, essays, and any assignment where communication matters. They learn best when content is presented as a narrative with characters, conflict, and resolution.",
+      "hiddenStrengths": [
+        "Ability to make complex ideas accessible and engaging to any audience",
+        "Natural empathy that helps them understand what audiences need to hear",
+        "Memory for stories and narratives that serves as a vast reference library",
+        "Persuasion skills grounded in authentic emotional connection"
+      ],
+      "hiddenWeaknesses": [
+        "Can prioritize narrative appeal over factual accuracy",
+        "May oversimplify complex topics for the sake of a good story",
+        "Sometimes uses storytelling to avoid direct confrontation or difficult truths",
+        "Can become dependent on audience approval for motivation"
+      ],
+      "futureMiningAssets": [
+        "Communication skills essential in every leadership and client-facing role",
+        "Brand storytelling expertise increasingly central to business success",
+        "Data storytelling ability that makes analytics actionable",
+        "Content strategy skills valued across all media platforms"
+      ],
+      "careerDirections": [
+        {
+          "title": "AI Art Director",
+          "field": "Creative AI",
+          "why": "Your narrative gift shapes AI-generated art into meaningful, emotionally resonant stories"
+        },
+        {
+          "title": "Metaverse Experience Writer",
+          "field": "Virtual Worlds",
+          "why": "Your storytelling mastery creates immersive narratives in virtual worlds"
+        },
+        {
+          "title": "Climate Restoration Engineer",
+          "field": "Climate Tech",
+          "why": "Your ability to communicate big ideas rallies communities around climate action"
+        },
+        {
+          "title": "Human-AI Collaboration Facilitator",
+          "field": "Future of Work",
+          "why": "Your storytelling bridges the gap between technical AI concepts and human understanding"
+        }
+      ],
+      "reconstructionPath": [
+        {
+          "phase": "Awareness",
+          "title": "Recognize Your Gift",
+          "description": "Notice how naturally you frame things as stories. This is a genuine communication superpower."
+        },
+        {
+          "phase": "Focus",
+          "title": "Tell One Important Story",
+          "description": "Choose a story that matters—about yourself, your community, or an issue you care about—and tell it well."
+        },
+        {
+          "phase": "Depth",
+          "title": "Master Your Craft",
+          "description": "Study storytelling formally—narrative structure, rhetoric, writing techniques—to elevate your natural talent."
+        },
+        {
+          "phase": "Impact",
+          "title": "Give Others a Voice",
+          "description": "Use your storytelling to amplify voices that aren't heard. The most powerful stories are the ones that change perspectives."
+        }
+      ],
+      "hopefulGoals": [
+        "Tell a story that genuinely changes how someone sees the world",
+        "Develop the discipline to pair your narrative gift with rigorous truth",
+        "Become known as someone who makes the complex feel simple and the important feel urgent",
+        "Use your voice to give voice to those who don't have a platform"
+      ],
+      "keywords": {
+        "coreTrait": "Narrative Weaver",
+        "learnsBy": "Stories and narratives",
+        "inClass": "Excels in presentations",
+        "strengths": [
+          "Makes complex accessible",
+          "Empathic audience sense",
+          "Vast narrative memory",
+          "Authentic persuasion"
+        ],
+        "blindSpots": [
+          "Narrative over accuracy",
+          "Oversimplifies for story",
+          "Avoids hard truths",
+          "Needs audience approval"
+        ],
+        "assets": [
+          "Essential communication edge",
+          "Brand storytelling expert",
+          "Data storytelling bridge",
+          "Content strategy native"
+        ],
+        "goals": [
+          "Change someone's worldview",
+          "Narrative meets rigor",
+          "Complex feels simple",
+          "Give voice to voiceless"
+        ],
+        "pathSteps": [
+          "Recognize your gift",
+          "Tell one important story",
+          "Master your craft",
+          "Give others a voice"
+        ]
+      }
+    },
+    "harmonizer": {
+      "id": "harmonizer",
+      "name": "The Balancer",
+      "emoji": "☯️",
+      "tagline": "Adapts well and keeps everything in balance",
+      "group": "balancers",
+      "archetypeScores": {
+        "EI": 50,
+        "SC": 50,
+        "PT": 50,
+        "RN": 50,
+        "AD": 50,
+        "LG": 50
+      },
+      "dominantDimensions": [],
+      "description": "Harmonizers are uniquely balanced learners who don't lean strongly in any single direction. This isn't weakness—it's a rare form of adaptability. They can shift between social and independent work, between practical and theoretical thinking, between routine and novelty, as the situation demands. In class, they're the students who perform consistently across different types of activities. They learn well in almost any environment.",
+      "hiddenStrengths": [
+        "Adaptability that lets them thrive in situations that would derail specialists",
+        "Ability to understand and bridge between different personality types",
+        "Emotional balance that provides stability in chaotic environments",
+        "Jack-of-all-trades competence that makes them valuable in any team configuration"
+      ],
+      "hiddenWeaknesses": [
+        "May struggle to identify a clear passion or direction",
+        "Can appear to lack strong opinions or preferences",
+        "Risk of being 'good at everything, great at nothing'",
+        "May let others define their direction instead of choosing their own"
+      ],
+      "futureMiningAssets": [
+        "Versatility increasingly valued in roles that require wearing many hats",
+        "Mediation and diplomacy skills from understanding all perspectives",
+        "Adaptability that's essential in rapidly changing career landscapes",
+        "Generalist skills perfect for leadership and management roles"
+      ],
+      "careerDirections": [
+        {
+          "title": "Synthetic Biology Engineer",
+          "field": "Biotechnology",
+          "why": "Your balanced approach harmonizes the competing demands of biotech research"
+        },
+        {
+          "title": "Human-AI Collaboration Facilitator",
+          "field": "Future of Work",
+          "why": "Your equilibrium nature mediates smoothly between human needs and AI capabilities"
+        },
+        {
+          "title": "Neural Interface Developer",
+          "field": "BCI Technology",
+          "why": "Your adaptive balance navigates the interdisciplinary demands of brain-computer tech"
+        },
+        {
+          "title": "Precision Medicine Geneticist",
+          "field": "Healthcare",
+          "why": "Your harmonizing perspective integrates diverse genetic data into holistic diagnoses"
+        }
+      ],
+      "reconstructionPath": [
+        {
+          "phase": "Awareness",
+          "title": "See Balance as Strength",
+          "description": "Your balanced nature isn't indecisiveness—it's versatility. Recognize this as a rare and valuable trait."
+        },
+        {
+          "phase": "Focus",
+          "title": "Choose a Challenge",
+          "description": "Pick one area where you deliberately push beyond balance to develop a standout strength."
+        },
+        {
+          "phase": "Depth",
+          "title": "Develop Your Signature",
+          "description": "Find the intersection of your balanced abilities that creates something uniquely yours."
+        },
+        {
+          "phase": "Impact",
+          "title": "Be the Bridge",
+          "description": "Use your balanced perspective to help teams, organizations, and communities find harmony when others are in conflict."
+        }
+      ],
+      "hopefulGoals": [
+        "Discover that being balanced is one of the rarest and most valuable traits in a world of specialists",
+        "Find your unique intersection where your diverse abilities create something no specialist could",
+        "Become the person everyone trusts to see the full picture and find the right path",
+        "Build a life and career that leverages your adaptability as your greatest asset"
+      ],
+      "keywords": {
+        "coreTrait": "Adaptive Equilibrium",
+        "learnsBy": "Flexing to context",
+        "inClass": "Consistent across activities",
+        "strengths": [
+          "Thrives where specialists fail",
+          "Bridges personality types",
+          "Emotional stability anchor",
+          "Versatile team player"
+        ],
+        "blindSpots": [
+          "Unclear passion direction",
+          "Seems opinion-less",
+          "Good but not great risk",
+          "Lets others define path"
+        ],
+        "assets": [
+          "Multi-hat versatility",
+          "Mediation and diplomacy",
+          "Change-proof adaptability",
+          "Generalist leadership fit"
+        ],
+        "goals": [
+          "Balance is rarest trait",
+          "Unique ability intersection",
+          "Trusted for full picture",
+          "Adaptability as superpower"
+        ],
+        "pathSteps": [
+          "See balance as strength",
+          "Choose a challenge",
+          "Develop your signature",
+          "Be the bridge"
+        ]
+      }
+    },
+    "renaissance_mind": {
+      "id": "renaissance_mind",
+      "name": "The All-Rounder",
+      "emoji": "🎨",
+      "tagline": "Good at many things, versatile learner",
+      "group": "balancers",
+      "archetypeScores": {
+        "EI": 35,
+        "SC": 45,
+        "PT": 50,
+        "RN": 55,
+        "AD": 55,
+        "LG": 60
+      },
+      "dominantDimensions": [
+        "EI",
+        "LG"
+      ],
+      "description": "Renaissance Minds are the versatile, multi-talented learners who refuse to be put in a box. They have genuine ability across multiple domains and a curiosity that spans art, science, technology, and humanities. In class, they're strong across different subjects and often surprise teachers by connecting ideas from completely different fields. They learn best when given freedom to explore widely.",
+      "hiddenStrengths": [
+        "Cross-pollination thinking that creates innovations specialists can't imagine",
+        "Ability to be competent conversation partners in almost any domain",
+        "Natural versatility that makes them invaluable in interdisciplinary teams",
+        "Breadth of knowledge that provides unexpected solutions to narrow problems"
+      ],
+      "hiddenWeaknesses": [
+        "Can struggle to choose a direction when many paths are appealing",
+        "May feel pressure to specialize in a world that rewards expertise",
+        "Sometimes spreads effort too thin to achieve mastery in any one area",
+        "Can feel like an impostor in rooms full of specialists"
+      ],
+      "futureMiningAssets": [
+        "Interdisciplinary thinking increasingly essential for innovation",
+        "T-shaped skills profile valued by forward-thinking organizations",
+        "Ability to lead diverse teams because they understand each domain",
+        "Creative problem-solving that comes from seeing beyond single-discipline boundaries"
+      ],
+      "careerDirections": [
+        {
+          "title": "AI Art Director",
+          "field": "Creative AI",
+          "why": "Your multi-domain knowledge fuses art, technology, and strategy into creative AI direction"
+        },
+        {
+          "title": "Metaverse Experience Writer",
+          "field": "Virtual Worlds",
+          "why": "Your wide-ranging interests create rich, multi-layered virtual world narratives"
+        },
+        {
+          "title": "Human-AI Collaboration Facilitator",
+          "field": "Future of Work",
+          "why": "Your polymath perspective sees connections across fields that enhance AI teamwork"
+        },
+        {
+          "title": "Virtual World Designer",
+          "field": "Metaverse",
+          "why": "Your diverse expertise builds virtual worlds with authentic depth across disciplines"
+        }
+      ],
+      "reconstructionPath": [
+        {
+          "phase": "Awareness",
+          "title": "Embrace Your Breadth",
+          "description": "Being a Renaissance person is not a flaw—it's a tradition that includes Leonardo da Vinci and Benjamin Franklin."
+        },
+        {
+          "phase": "Focus",
+          "title": "Find Your Anchor",
+          "description": "Choose one domain as your home base, while keeping your other interests as complementary strengths."
+        },
+        {
+          "phase": "Depth",
+          "title": "Create Your Unique Combination",
+          "description": "Find the intersection of 2-3 of your interests that no specialist occupies. That's your unique value."
+        },
+        {
+          "phase": "Impact",
+          "title": "Connect the Worlds",
+          "description": "Use your broad competence to bridge disciplines and create innovations that only a Renaissance Mind could see."
+        }
+      ],
+      "hopefulGoals": [
+        "Find the unique intersection of your interests that becomes your signature contribution",
+        "Build the confidence to resist pressure to specialize when your breadth is your strength",
+        "Create something that could only exist because of your multi-domain perspective",
+        "Become living proof that versatility and depth can coexist"
+      ],
+      "keywords": {
+        "coreTrait": "Multi-Domain Polymath",
+        "learnsBy": "Exploring widely",
+        "inClass": "Strong across subjects",
+        "strengths": [
+          "Cross-pollination thinking",
+          "Competent in any domain",
+          "Interdisciplinary natural",
+          "Breadth solves narrow problems"
+        ],
+        "blindSpots": [
+          "Paralyzed by many paths",
+          "Pressure to specialize",
+          "Effort spread too thin",
+          "Impostor among specialists"
+        ],
+        "assets": [
+          "Interdisciplinary innovator",
+          "T-shaped skills valued",
+          "Leads diverse teams",
+          "Beyond single-discipline walls"
+        ],
+        "goals": [
+          "Find signature intersection",
+          "Resist specialization pressure",
+          "Only a polymath could",
+          "Versatility meets depth"
+        ],
+        "pathSteps": [
+          "Embrace your breadth",
+          "Find your anchor",
+          "Create unique combination",
+          "Connect the worlds"
+        ]
+      }
+    },
+    "rising_phoenix": {
+      "id": "rising_phoenix",
+      "name": "The Late Bloomer",
+      "emoji": "🔥",
+      "tagline": "Still growing — potential hasn't fully shown yet",
+      "group": "balancers",
+      "archetypeScores": {
+        "EI": 50,
+        "SC": 50,
+        "PT": 50,
+        "RN": 50,
+        "AD": 50,
+        "LG": 50
+      },
+      "dominantDimensions": [],
+      "description": "The Rising Phoenix is a learner whose full personality is still taking shape. This isn't a limitation—it's a sign of someone in the exciting early stages of self-discovery. Their profile hasn't crystallized yet because they're still exploring who they are and how they learn best. Every great learner started here. The phoenix is rising, and the best is yet to come.",
+      "hiddenStrengths": [
+        "Openness to growth that more established personalities may have lost",
+        "Potential that is genuinely unlimited because nothing has been closed off yet",
+        "Fresh perspective uncontaminated by assumptions about what they 'should' be",
+        "Resilience from navigating uncertainty about identity and direction"
+      ],
+      "hiddenWeaknesses": [
+        "May feel anxious about not having a clear identity or direction yet",
+        "Can be influenced by strong personalities to become something that isn't authentic",
+        "Might interpret 'still developing' as 'not good enough'",
+        "May avoid commitment to any direction out of fear of choosing wrong"
+      ],
+      "futureMiningAssets": [
+        "Maximum flexibility to develop in any direction that emerges",
+        "Growth mindset that treats every experience as data for self-discovery",
+        "Empathy for others going through similar identity exploration",
+        "Ability to reinvent without the baggage of a fixed self-concept"
+      ],
+      "careerDirections": [
+        {
+          "title": "Synthetic Biology Engineer",
+          "field": "Biotechnology",
+          "why": "Your emerging potential can grow into the interdisciplinary demands of biotech"
+        },
+        {
+          "title": "Human-AI Collaboration Facilitator",
+          "field": "Future of Work",
+          "why": "Your developing versatility suits the evolving landscape of human-AI teams"
+        },
+        {
+          "title": "Neural Interface Developer",
+          "field": "BCI Technology",
+          "why": "Your growth trajectory aligns with this rapidly developing technology field"
+        },
+        {
+          "title": "Precision Medicine Geneticist",
+          "field": "Healthcare",
+          "why": "Your unfolding potential matches the expanding frontier of personalized medicine"
+        }
+      ],
+      "reconstructionPath": [
+        {
+          "phase": "Awareness",
+          "title": "Embrace the Journey",
+          "description": "Not knowing who you are yet is perfectly normal. Every great person had a chapter of exploration."
+        },
+        {
+          "phase": "Focus",
+          "title": "Try Three Things",
+          "description": "Deliberately try three very different activities, subjects, or skills. Notice what energizes you."
+        },
+        {
+          "phase": "Depth",
+          "title": "Follow the Energy",
+          "description": "When you find something that makes you lose track of time, go deeper. That's a clue to your emerging identity."
+        },
+        {
+          "phase": "Impact",
+          "title": "Rise",
+          "description": "As your personality crystallizes, bring everything you've learned in the exploration phase. Your journey makes you stronger."
+        }
+      ],
+      "hopefulGoals": [
+        "Trust that not knowing yet is the beginning of knowing deeply",
+        "Discover that your identity will emerge from experience, not from waiting",
+        "Build the courage to try things even when you're not sure they're 'you'",
+        "Look back one day and realize that the rising was the most important part of the journey"
+      ],
+      "keywords": {
+        "coreTrait": "Emerging Potential",
+        "learnsBy": "Trying everything",
+        "inClass": "Still discovering self",
+        "strengths": [
+          "Wide-open growth mindset",
+          "Unlimited potential",
+          "Fresh unbiased perspective",
+          "Resilience through uncertainty"
+        ],
+        "blindSpots": [
+          "Anxious without direction",
+          "Swayed by strong voices",
+          "Reads 'developing' as 'lacking'",
+          "Fears wrong commitment"
+        ],
+        "assets": [
+          "Maximum flexibility",
+          "Every experience is data",
+          "Empathy for fellow seekers",
+          "Reinvents without baggage"
+        ],
+        "goals": [
+          "Not knowing starts knowing",
+          "Identity through experience",
+          "Courage to try anyway",
+          "Rising is the journey"
+        ],
+        "pathSteps": [
+          "Embrace the journey",
+          "Try three things",
+          "Follow the energy",
+          "Rise"
+        ]
+      }
+    }
+  }
+}

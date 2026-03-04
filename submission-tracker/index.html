@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellar Submission Tracker</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="app-header">
+            <div class="header-content">
+                <img src="assets/ican-logo.png" alt="ICAN Logo" class="header-logo">
+                <div class="header-text">
+                    <h1>Stellar Submission Tracker</h1>
+                    <p class="subtitle">Daily Report Status Monitor</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Tab Navigation -->
+        <div class="tab-navigation">
+            <button class="tab-btn active" data-tab="tracker">Daily Tracker</button>
+            <button class="tab-btn" data-tab="analytics">Teacher Analytics</button>
+        </div>
+
+        <!-- TRACKER TAB -->
+        <div id="trackerTab" class="tab-content active">
+            <div class="controls-section">
+                <div class="date-picker-group">
+                    <label for="datePicker">Select Date:</label>
+                    <input type="date" id="datePicker" />
+                    <button id="todayBtn" class="btn btn-secondary">Today</button>
+                    <button id="refreshBtn" class="btn btn-primary">Refresh</button>
+                    <button id="demoBtn" class="btn btn-demo">Demo Mode</button>
+                </div>
+
+                <div class="filter-group">
+                    <div class="filter-item">
+                        <label for="studentFilter">Student:</label>
+                        <select id="studentFilter">
+                            <option value="">All Students</option>
+                        </select>
+                    </div>
+                    <div class="filter-item">
+                        <label for="teacherFilter">Teacher:</label>
+                        <select id="teacherFilter">
+                            <option value="">All Teachers</option>
+                        </select>
+                    </div>
+                    <div class="filter-item">
+                        <label for="statusFilter">Status:</label>
+                        <select id="statusFilter">
+                            <option value="">All</option>
+                            <option value="submitted">Submitted</option>
+                            <option value="missing">Missing</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div id="demoBanner" class="demo-banner">
+                DEMO MODE - Showing sample data for preview purposes
+            </div>
+
+            <div id="dateDisplay" class="date-display">
+                <span class="date-label">Report Date:</span>
+                <span id="displayDate" class="date-value"></span>
+            </div>
+
+            <div id="summaryBar" class="summary-bar">
+                <div class="summary-content">
+                    <span class="summary-text">Loading...</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="errorMessage" class="error-message" style="display: none;"></div>
+
+            <div id="noDataMessage" class="no-data-message" style="display: none;">
+                <div class="no-data-icon">📋</div>
+                <div class="no-data-text">No classes scheduled for this date</div>
+            </div>
+
+            <table id="trackerTable" class="tracker-table">
+                <thead id="tableHead">
+                    <tr>
+                        <th class="student-col">Student</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+            </table>
+
+            <div class="actions-section">
+                <button id="printMissingBtn" class="btn btn-warning">Print Missing Reports</button>
+                <button id="exportBtn" class="btn btn-secondary">Export to CSV</button>
+                <button id="clearOverridesBtn" class="btn btn-override">Clear Overrides</button>
+            </div>
+        </div>
+
+        <!-- ANALYTICS TAB -->
+        <div id="analyticsTab" class="tab-content">
+            <div class="controls-section">
+                <div class="date-range-group">
+                    <label>Date Range:</label>
+                    <input type="date" id="analyticsStartDate" />
+                    <span class="date-separator">to</span>
+                    <input type="date" id="analyticsEndDate" />
+                    <button id="loadAnalyticsBtn" class="btn btn-primary">Load Analytics</button>
+                    <button id="lastWeekBtn" class="btn btn-secondary">Last 7 Days</button>
+                    <button id="lastMonthBtn" class="btn btn-secondary">Last 30 Days</button>
+                </div>
+            </div>
+
+            <div id="analyticsError" class="error-message" style="display: none;"></div>
+
+            <div id="analyticsLoading" class="loading-message" style="display: none;">
+                Loading analytics data...
+            </div>
+
+            <!-- Summary Cards -->
+            <div id="analyticsSummary" class="analytics-summary" style="display: none;">
+                <div class="summary-card">
+                    <div class="card-value" id="totalReportsCard">-</div>
+                    <div class="card-label">Total Expected</div>
+                </div>
+                <div class="summary-card">
+                    <div class="card-value" id="submissionRateCard">-</div>
+                    <div class="card-label">Submission Rate</div>
+                </div>
+                <div class="summary-card">
+                    <div class="card-value" id="onTimeRateCard">-</div>
+                    <div class="card-label">On-Time Rate</div>
+                </div>
+                <div class="summary-card warning">
+                    <div class="card-value" id="missedReportsCard">-</div>
+                    <div class="card-label">Missed Reports</div>
+                </div>
+            </div>
+
+            <!-- Needs Attention Section -->
+            <div id="needsAttentionSection" class="analytics-section" style="display: none;">
+                <h3 class="section-title warning-title">Teachers Needing Attention</h3>
+                <table class="analytics-table" id="needsAttentionTable">
+                    <thead>
+                        <tr>
+                            <th>Teacher</th>
+                            <th>Expected</th>
+                            <th>Submitted</th>
+                            <th>Missed</th>
+                            <th>Submission Rate</th>
+                            <th>On-Time Rate</th>
+                            <th>Score</th>
+                        </tr>
+                    </thead>
+                    <tbody id="needsAttentionBody"></tbody>
+                </table>
+            </div>
+
+            <!-- Top Performers Section -->
+            <div id="topPerformersSection" class="analytics-section" style="display: none;">
+                <h3 class="section-title success-title">Top Performers</h3>
+                <table class="analytics-table" id="topPerformersTable">
+                    <thead>
+                        <tr>
+                            <th>Teacher</th>
+                            <th>Expected</th>
+                            <th>Submitted</th>
+                            <th>Submission Rate</th>
+                            <th>On-Time Rate</th>
+                            <th>Score</th>
+                        </tr>
+                    </thead>
+                    <tbody id="topPerformersBody"></tbody>
+                </table>
+            </div>
+
+            <!-- All Teachers Section -->
+            <div id="allTeachersSection" class="analytics-section" style="display: none;">
+                <div class="section-header">
+                    <h3 class="section-title">All Teachers</h3>
+                    <button id="exportAnalyticsBtn" class="btn btn-secondary">Export to CSV</button>
+                </div>
+                <table class="analytics-table sortable" id="allTeachersTable">
+                    <thead>
+                        <tr>
+                            <th data-sort="teacherName">Teacher</th>
+                            <th data-sort="expectedReports">Expected</th>
+                            <th data-sort="actualReports">Submitted</th>
+                            <th data-sort="missedReports">Missed</th>
+                            <th data-sort="submissionRate">Submission %</th>
+                            <th data-sort="onTimeRate">On-Time %</th>
+                            <th data-sort="avgDelay">Avg Delay</th>
+                            <th data-sort="performanceScore">Score</th>
+                        </tr>
+                    </thead>
+                    <tbody id="allTeachersBody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

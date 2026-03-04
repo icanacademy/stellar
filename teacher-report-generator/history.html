@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report History - Stellar Daily Report</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/history.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="container history-container">
+        <div class="history-header">
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <img src="assets/ican-logo.png" alt="ICAN Logo" class="header-logo" style="height: 50px;">
+                <h1>Report History</h1>
+            </div>
+            <a href="index.html" class="back-link">Back to Report Form</a>
+        </div>
+
+        <div class="form-section search-section">
+            <h2>Search Reports</h2>
+            <form id="searchForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="searchStudent">Student Name:</label>
+                        <div class="searchable-dropdown">
+                            <div class="search-input-wrapper">
+                                <input type="text" id="searchStudent" placeholder="Loading students..." autocomplete="off">
+                                <button type="button" class="dropdown-arrow" id="studentDropdownArrow">▼</button>
+                            </div>
+                            <div class="dropdown-list" id="studentDropdown"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="searchTeacher">Teacher Name:</label>
+                        <div class="searchable-dropdown">
+                            <div class="search-input-wrapper">
+                                <input type="text" id="searchTeacher" placeholder="Loading teachers..." autocomplete="off">
+                                <button type="button" class="dropdown-arrow" id="teacherDropdownArrow">▼</button>
+                            </div>
+                            <div class="dropdown-list" id="teacherDropdown"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="searchDateFrom">Date From:</label>
+                        <input type="date" id="searchDateFrom">
+                    </div>
+                    <div class="form-group">
+                        <label for="searchDateTo">Date To:</label>
+                        <input type="date" id="searchDateTo">
+                    </div>
+                </div>
+                <div class="button-group">
+                    <button type="submit">Search</button>
+                    <button type="button" id="clearSearch">Clear</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="resultsSection" class="form-section results-section" style="display:none;">
+            <h2>Results <span id="resultsCount"></span></h2>
+            <div class="table-wrapper">
+                <table id="resultsTable">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Student</th>
+                            <th>Teacher</th>
+                            <th>Subject</th>
+                            <th>SF Met</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resultsBody"></tbody>
+                </table>
+            </div>
+            <div id="pagination" class="pagination"></div>
+        </div>
+    </div>
+
+    <!-- Report Preview Modal -->
+    <div id="reportModal" class="modal-overlay" style="display:none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="modal-close" id="modalClose">&times;</button>
+            </div>
+            <div id="modalReportContainer"></div>
+            <div class="modal-actions">
+                <button class="download-button" id="modalDownload">Download as Image</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/history.js"></script>
+</body>
+</html>

@@ -1,0 +1,701 @@
+/* Academic Enabler page-specific styles (common styles in common.css) */
+
+/* Override controls-content max-width for wider form */
+.controls-content {
+    max-width: 1400px;
+}
+
+/* Action Buttons */
+.btn-action {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    white-space: nowrap;
+}
+
+.btn-save {
+    background: #00b894;
+    color: white;
+}
+
+.btn-save:hover:not(:disabled) {
+    background: #00a383;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 10px rgba(0, 184, 148, 0.4);
+}
+
+.btn-delete {
+    background: #d63031;
+    color: white;
+}
+
+.btn-delete:hover {
+    background: #c0392b;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 10px rgba(214, 48, 49, 0.4);
+}
+
+.btn-action:disabled {
+    background: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.5);
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+
+/* Student Info Bar */
+.student-info-bar {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    padding: 18px 24px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.student-name {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #333;
+}
+
+.teacher-list {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.teacher-tag {
+    padding: 5px 14px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 20px;
+    font-size: 0.82em;
+    font-weight: 600;
+}
+
+.season-tag {
+    padding: 5px 14px;
+    background: linear-gradient(135deg, #fdcb6e 0%, #e17055 100%);
+    color: white;
+    border-radius: 20px;
+    font-size: 0.82em;
+    font-weight: 600;
+}
+
+/* Form Container */
+.form-container {
+    max-width: 1400px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Domain Sections */
+.domain-section {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.domain-header {
+    padding: 16px 24px;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.domain-number {
+    background: rgba(255, 255, 255, 0.25);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9em;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+/* Domain colors */
+.domain-section:nth-child(1) .domain-header { background: linear-gradient(135deg, #667eea, #764ba2); }
+.domain-section:nth-child(2) .domain-header { background: linear-gradient(135deg, #0984e3, #6c5ce7); }
+.domain-section:nth-child(3) .domain-header { background: linear-gradient(135deg, #00b894, #00cec9); }
+.domain-section:nth-child(4) .domain-header { background: linear-gradient(135deg, #fdcb6e, #e17055); }
+.domain-section:nth-child(5) .domain-header { background: linear-gradient(135deg, #e17055, #d63031); }
+.domain-section:nth-child(6) .domain-header { background: linear-gradient(135deg, #a29bfe, #6c5ce7); }
+
+.domain-section:nth-child(1) { border-left: 5px solid #667eea; }
+.domain-section:nth-child(2) { border-left: 5px solid #0984e3; }
+.domain-section:nth-child(3) { border-left: 5px solid #00b894; }
+.domain-section:nth-child(4) { border-left: 5px solid #fdcb6e; }
+.domain-section:nth-child(5) { border-left: 5px solid #e17055; }
+.domain-section:nth-child(6) { border-left: 5px solid #a29bfe; }
+
+/* Table scroll wrapper */
+.table-scroll {
+    overflow-x: auto;
+}
+
+/* Domain Tables */
+.domain-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px;
+}
+
+.domain-table th {
+    padding: 10px 12px;
+    font-size: 0.85em;
+    font-weight: 600;
+    text-align: center;
+    background: #f8f9fa;
+    color: #555;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.domain-table th.skill-col {
+    text-align: left;
+    min-width: 180px;
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    background: #f8f9fa;
+}
+
+/* Phase group headers (row 1) */
+.phase-group-header-initial {
+    background: #dde2ff;
+    color: #4a55c2;
+    border-left: 3px solid #667eea;
+    font-weight: 700;
+    font-size: 0.9em;
+    text-align: center;
+    padding: 8px 6px;
+}
+
+.phase-group-header-final {
+    background: #c8f7e8;
+    color: #00896b;
+    border-left: 3px solid #00b894;
+    font-weight: 700;
+    font-size: 0.9em;
+    text-align: center;
+    padding: 8px 6px;
+}
+
+/* Teacher name sub-headers (row 2) */
+.teacher-sub-header {
+    font-size: 0.78em;
+    font-weight: 700;
+    white-space: nowrap;
+    padding: 6px 8px;
+}
+
+/* Per-teacher group header spanning 2 cols (I + F) */
+.teacher-group-header {
+    background: linear-gradient(135deg, #a29bfe 0%, #6c5ce7 100%);
+    color: white;
+    font-weight: 700;
+    font-size: 0.85em;
+    text-align: center;
+    padding: 8px 6px;
+    white-space: nowrap;
+    border-left: 3px solid #6c5ce7;
+}
+
+/* Left border on first cell (I column) of each teacher group */
+.teacher-group-first {
+    border-left: 3px solid #6c5ce7 !important;
+}
+
+/* Phase-disabled cell: greyed out with disabled input */
+.phase-disabled {
+    background: #f0f0f0 !important;
+}
+
+.phase-disabled .score-input {
+    background: #e8e8e8 !important;
+    color: #bbb;
+    border-color: #d0d0d0;
+    cursor: not-allowed;
+}
+
+/* Legacy phase-group-first (kept for compatibility) */
+.phase-group-first {
+    border-left: 3px solid #667eea !important;
+}
+
+td.cell-final.phase-group-first,
+th.sub-final.phase-group-first {
+    border-left: 3px solid #00b894 !important;
+}
+
+.avg-group-header {
+    text-align: center;
+    font-size: 0.85em;
+    font-weight: 700;
+    color: #444;
+    background: #e0e4f8;
+    padding: 8px 6px;
+    border-left: 3px solid #667eea;
+}
+
+.grade-group-header {
+    text-align: center;
+    font-size: 0.85em;
+    font-weight: 700;
+    color: #444;
+    background: #e0e4f8;
+    padding: 8px 6px;
+    border-left: 3px solid #667eea;
+}
+
+/* I / F sub-column headers */
+.sub-col {
+    font-size: 0.78em;
+    font-weight: 800;
+    padding: 6px 8px;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.sub-col.sub-initial {
+    background: #dde2ff;
+    color: #4a55c2;
+}
+
+.sub-col.sub-final {
+    background: #c8f7e8;
+    color: #00896b;
+}
+
+/* Initial cells — blue tint */
+td.cell-initial {
+    background: #f2f4ff;
+}
+
+/* Final cells — green tint */
+td.cell-final {
+    background: #edfcf6;
+}
+
+/* Hover preserves tint */
+.domain-table tbody tr:hover td.cell-initial {
+    background: #e8ebff;
+}
+.domain-table tbody tr:hover td.cell-final {
+    background: #e0f8ef;
+}
+
+/* Remove old teacher-grouped border; phase-group-first handles it now */
+
+/* Separator between avg/grade block */
+td[data-avg^="initial-"],
+td[data-domain-avg-val^="initial-"] {
+    border-left: 3px solid #667eea;
+}
+td[data-grade^="initial-"],
+td[data-domain-avg-grade^="initial-"] {
+    border-left: 3px solid #667eea;
+}
+
+.domain-table th.teacher-col {
+    min-width: 80px;
+}
+
+.domain-table th.avg-col {
+    min-width: 70px;
+    background: #f0f0ff;
+}
+
+.domain-table th.grade-col {
+    min-width: 60px;
+    background: #f0f0ff;
+}
+
+.domain-table td {
+    padding: 8px 10px;
+    border-bottom: 1px solid #f0f0f0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.domain-table td:first-child {
+    text-align: left;
+    font-size: 0.9em;
+    color: #333;
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    background: white;
+}
+
+.domain-table tbody tr:hover td:first-child {
+    background: #f8f9ff;
+}
+
+.domain-table tbody tr:hover {
+    background: #f8f9ff;
+}
+
+/* Skill name cell */
+.skill-name {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.tooltip-trigger {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #e0e0e0;
+    color: #888;
+    font-size: 0.7em;
+    font-weight: 700;
+    cursor: help;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.tooltip-trigger:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    left: calc(100% + 8px);
+    top: 50%;
+    transform: translateY(-50%);
+    background: #333;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 400;
+    white-space: normal;
+    width: 250px;
+    z-index: 200;
+    line-height: 1.4;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Score Inputs */
+.score-input {
+    width: 60px;
+    padding: 6px 4px;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: 600;
+    transition: all 0.3s;
+    -moz-appearance: textfield;
+}
+
+.score-input::-webkit-outer-spin-button,
+.score-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.score-input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.15);
+}
+
+/* Default input background matches column tint */
+.cell-initial .score-input {
+    background: #fafaff;
+}
+
+.cell-final .score-input {
+    background: #f5fdf9;
+}
+
+.score-input.grade-e { border-color: #00b894; background: #f0fff4; }
+.score-input.grade-g { border-color: #0984e3; background: #f0f7ff; }
+.score-input.grade-p { border-color: #e17055; background: #fff8f0; }
+.score-input.grade-vp { border-color: #d63031; background: #fff0f0; }
+
+/* Average cell */
+.avg-value {
+    font-weight: 700;
+    font-size: 0.95em;
+    color: #333;
+}
+
+/* Grade Badges */
+.grade-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.grade-badge.grade-e { background: #00b894; color: white; }
+.grade-badge.grade-g { background: #0984e3; color: white; }
+.grade-badge.grade-p { background: #e17055; color: white; }
+.grade-badge.grade-vp { background: #d63031; color: white; }
+.grade-badge.grade-none { background: #ddd; color: #999; }
+
+/* Domain Average Row */
+.domain-avg-row td {
+    font-weight: 700;
+    border-top: 2px solid #e0e0e0;
+    background: #f3f4f6;
+}
+
+.domain-avg-row td.cell-initial {
+    background: #e8ebff;
+}
+
+.domain-avg-row td.cell-final {
+    background: #ddf5ec;
+}
+
+/* Summary Bar */
+.summary-bar {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    padding: 24px;
+    margin-bottom: 40px;
+}
+
+.summary-title {
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 16px;
+}
+
+.summary-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+}
+
+.summary-card {
+    padding: 16px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid #f0f0f0;
+}
+
+.summary-card .domain-name {
+    font-size: 0.8em;
+    font-weight: 600;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.summary-card .domain-avg {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.summary-pair {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.summary-phase {
+    flex: 1;
+    text-align: center;
+}
+
+.phase-label {
+    font-size: 0.7em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+    color: #aaa;
+}
+
+.summary-phase:first-child .phase-label { color: #667eea; }
+.summary-phase:last-child .phase-label { color: #00b894; }
+
+/* Toast */
+.toast {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 14px 24px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 0.95em;
+    z-index: 1000;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.4s ease;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.toast.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.toast.success { background: #00b894; }
+.toast.error { background: #d63031; }
+
+/* Teacher Participation Management Bar */
+.teacher-mgmt-bar {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-left: 5px solid #6c5ce7;
+}
+
+.teacher-mgmt-header {
+    padding: 14px 24px;
+    background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+    color: white;
+    font-weight: 700;
+    font-size: 0.95em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    user-select: none;
+}
+
+.teacher-mgmt-header:hover {
+    filter: brightness(1.05);
+}
+
+.teacher-mgmt-chevron {
+    transition: transform 0.3s ease;
+    font-size: 0.8em;
+}
+
+.teacher-mgmt-bar.collapsed .teacher-mgmt-chevron {
+    transform: rotate(-90deg);
+}
+
+.teacher-mgmt-body {
+    padding: 16px 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    transition: max-height 0.3s ease, padding 0.3s ease, opacity 0.3s ease;
+    max-height: 400px;
+    opacity: 1;
+    overflow: hidden;
+}
+
+.teacher-mgmt-bar.collapsed .teacher-mgmt-body {
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    opacity: 0;
+}
+
+.teacher-mgmt-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border: 2px solid #e8e8f0;
+    transition: all 0.2s ease;
+}
+
+.teacher-mgmt-row.fully-inactive {
+    opacity: 0.45;
+    border-color: #e0e0e0;
+    background: #f0f0f0;
+}
+
+.teacher-mgmt-name {
+    font-weight: 600;
+    font-size: 0.88em;
+    color: #333;
+    min-width: 60px;
+}
+
+.teacher-mgmt-phases {
+    display: flex;
+    gap: 6px;
+}
+
+.teacher-mgmt-phases label {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 0.78em;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 3px 8px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.teacher-mgmt-phases label.phase-initial {
+    color: #6c5ce7;
+}
+
+.teacher-mgmt-phases label.phase-final {
+    color: #00b894;
+}
+
+.teacher-mgmt-phases label:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.teacher-mgmt-phases input[type="checkbox"] {
+    accent-color: #6c5ce7;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.teacher-mgmt-phases label.phase-final input[type="checkbox"] {
+    accent-color: #00b894;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .student-info-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .form-container {
+        padding: 0 10px;
+    }
+    .score-input {
+        width: 50px;
+        font-size: 0.8em;
+    }
+    .domain-table th:first-child {
+        min-width: 120px;
+    }
+}

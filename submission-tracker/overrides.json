@@ -1,0 +1,720 @@
+{
+  "2026-01-28|Hong Ji Woo [홍지우]|Ashley|3PM to 5PM": true,
+  "test": true,
+  "2026-01-29|Ko Yun Seo [고윤서]|Analyn|5PM to 6PM": true,
+  "2026-01-29|Hong Seong Wook 홍성욱|Marc|3PM to 5PM": true,
+  "2026-01-29|Lee Sung Heon 이성헌|Marc|3PM to 5PM": true,
+  "2026-01-29|Song Jun Ho [송준호]|Argel|1PM to 3PM": true,
+  "2026-01-29|Song Jun Ho [송준호]|Deena|10AM to 12PM": true,
+  "2026-01-28|Choi Da El [최다엘]|Ezra|4PM to 5PM": true,
+  "2026-01-28|Hong Seo Hoon (Chris) [홍서훈]|Raf|4PM to 5PM": true,
+  "2026-01-28|Hong Seo Yoo (Sam) [홍서유]|Deena|4PM to 5PM": true,
+  "2026-01-28|Choi Seo Yun [최서윤]|Chester|8AM to 10AM": true,
+  "2026-01-28|Hwang In Seong () [황인성]|Leah|8AM to 10AM": true,
+  "2026-01-28|Jeong Ye Won [정예원]|Lian|10AM to 12PM": true,
+  "2026-01-28|Jung Geon Woo [정건우]|Chester|10AM to 12PM": true,
+  "2026-01-28|Kim Ra On [김라온]|Marc|8AM to 10AM": true,
+  "2026-01-28|Lee Seon Yul [이선율]|Gaile|8AM to 10AM": true,
+  "2026-01-28|Kim Jo Han (John) [김조한]|AJ|8AM to 10AM": true,
+  "2026-01-28|Lee Yeon Je [이연제]|Lian|8AM to 10AM": true,
+  "2026-01-28|Kim Do Hyun (Lucas) [김도현]|Rio|8AM to 10AM": true,
+  "2026-01-28|Kim Joi (Lupi) [김조이]|Rose|8AM to 10AM": true,
+  "2026-01-28|Oh Hae Rang (Sophia) [오해랑]|Leah|10AM to 12PM": true,
+  "2026-01-28|Park Ye Ha [박예하]|Rozeil|3PM to 5PM": true,
+  "2026-01-28|Park Si Woong [박시웅]|Karen|5PM to 7PM": true,
+  "2026-01-28|Kim Ji Yong [김지용]|Eunice|1PM to 3PM": true,
+  "2026-01-29|Hong Ji Woo [홍지우]|Ashley|3PM to 5PM": true,
+  "2026-01-29|Park Si Woong [박시웅]|Karen|5PM to 7PM": true,
+  "2026-01-29|Park Chan Hwi [박찬휘]|Noel|5PM to 7PM": true,
+  "2026-01-28|Bae Da Hye (Dahye) [배다혜]|Iann|3PM to 5PM": true,
+  "2026-01-28|Ko Yun Seo [고윤서]|Analyn|5PM to 6PM": true,
+  "2026-01-28|Woo Jun Hyeok [우준혁]|Chrystal|5PM to 7PM": true,
+  "2026-01-28|Jun Min Woo [전민우]|Faye|5PM to 7PM": true,
+  "2026-01-29|Woo Jun Hyeok [우준혁]|Chrystal|5PM to 7PM": true,
+  "2026-01-29|Yoo Ayoung [유아영]|Camille|5PM to 7PM": true,
+  "2026-01-30|Jun Min Woo [전민우]|Faye|5PM to 7PM": true,
+  "2026-01-29|Chae Su A [채수아]|Chrystal|3PM to 5PM": true,
+  "2026-01-30|Hong Seo Yoo (Sam) [홍서유]|Deena|4PM to 5PM": true,
+  "2026-01-29|Woo Na Eun [우나은]|Ruzzel|5PM to 7PM": true,
+  "2026-01-30|Jeong Ye Won [정예원]|Lian|10AM to 12PM": true,
+  "2026-01-29|Han Ju Yi [한주이]|Lian|8AM to 10AM": true,
+  "2026-01-29|Jeong Ye Won [정예원]|Mari|8AM to 10AM": true,
+  "2026-01-29|Jeong Ye Won [정예원]|Lian|10AM to 12PM": true,
+  "2026-01-29|Jeong Ye Won [정예원]|Karen|1PM to 5PM": true,
+  "2026-01-29|Han Dong Yun (John) [한동윤]|Noel|1PM to 3PM": true,
+  "2026-01-29|Jung Geon Woo [정건우]|Greg|8AM to 10AM": true,
+  "2026-01-29|Kim Ji Yong [김지용]|Eunice|1PM to 3PM": true,
+  "2026-01-29|Kim Ji Min [김지민]|Frenz|5PM to 7PM": true,
+  "2026-01-29|Kim Ra On [김라온]|JC|10AM to 12PM": true,
+  "2026-01-29|Shin Chae Min [신채민]|Eloisa|8AM to 10AM": true,
+  "2026-01-29|Lee Jeong Won [이정원]|Eunice|8AM to 10AM": true,
+  "2026-01-29|Lee Yeon Je [이연제]|JM|10AM to 12PM": true,
+  "2026-01-29|Mok Min Chan [목민찬]|Eloisa|10AM to 12PM": true,
+  "2026-01-30|Lee Yeon Je [이연제]|Lian|8AM to 10AM": true,
+  "2026-01-30|Choi Da El [최다엘]|Ezra|4PM to 5PM": {
+    "value": true,
+    "reason": "Student Absent",
+    "reasonCode": "student_absent",
+    "timestamp": "2026-01-30T04:32:53.331Z"
+  },
+  "2026-01-30|Jun Min Woo [전민우]|Faye|5PM to 6PM": {
+    "value": true,
+    "reason": "Student Absent",
+    "reasonCode": "student_absent",
+    "timestamp": "2026-01-30T04:33:26.269Z"
+  },
+  "2026-01-30|Lee Sung Heon 이성헌|Marc|1PM to 5PM": {
+    "value": true,
+    "reason": "Class Cancelled",
+    "reasonCode": "class_cancelled",
+    "timestamp": "2026-01-30T04:41:56.753Z"
+  },
+  "2026-01-30|Hong Seong Wook 홍성욱|AJ|1PM to 3PM": {
+    "value": true,
+    "reason": "Class Cancelled",
+    "reasonCode": "class_cancelled",
+    "timestamp": "2026-01-30T04:43:40.283Z"
+  },
+  "2026-01-30|Hong Seong Wook 홍성욱|Marc|3PM to 5PM": {
+    "value": true,
+    "reason": "Class Cancelled",
+    "reasonCode": "class_cancelled",
+    "timestamp": "2026-01-30T04:43:47.795Z"
+  },
+  "2026-01-30|Han Dong Yun (John) [한동윤]|Luis|8AM to 10AM": {
+    "value": true,
+    "reason": "Student Absent (Sick)",
+    "reasonCode": "student_absent_sick",
+    "timestamp": "2026-01-30T04:45:42.963Z"
+  },
+  "2026-01-30|Kim Jo Han (John) [김조한]|AJ|8AM to 10AM": {
+    "value": true,
+    "reason": "Student Absent (Sick)",
+    "reasonCode": "student_absent_sick",
+    "timestamp": "2026-01-30T04:45:52.706Z"
+  },
+  "2026-01-30|Kim Ji Yong [김지용]|Rose|10AM to 12PM": {
+    "value": true,
+    "reason": "Student Absent (No Show)",
+    "reasonCode": "student_absent_noshow",
+    "timestamp": "2026-01-30T04:46:09.848Z"
+  },
+  "2026-01-30|Han Dong Yun (John) [한동윤]|Noel|1PM to 3PM": {
+    "value": true,
+    "reason": "Student Absent",
+    "reasonCode": "student_absent",
+    "timestamp": "2026-01-30T09:11:43.259Z"
+  },
+  "2026-02-02|Ha Tae Jun (David) [하태준]|AJ|3PM to 5PM": {
+    "value": true,
+    "reason": "10am sub didn't click 'sub' (T.Madel)",
+    "reasonCode": "other",
+    "timestamp": "2026-02-03T00:31:27.202Z"
+  },
+  "2026-02-03|Song Jun Ho [송준호]|Deena|10AM to 12PM": {
+    "value": true,
+    "reason": "subteacher didn't click sub",
+    "reasonCode": "other",
+    "timestamp": "2026-02-04T00:22:41.970Z"
+  },
+  "2026-02-03|Song Jun Ho [송준호]|Argel|1PM to 3PM": {
+    "value": true,
+    "reason": "Student Absent",
+    "reasonCode": "student_absent",
+    "timestamp": "2026-02-04T00:22:50.285Z"
+  },
+  "2026-02-04|Hwang In Seong () [황인성]|Janice|3PM to 5PM": {
+    "value": true,
+    "reason": "subteacher didn't click 'sub'",
+    "reasonCode": "other",
+    "timestamp": "2026-02-05T02:42:25.866Z"
+  },
+  "2026-02-04|Shin Chae Min [신채민]|Janice|3PM to 5PM": {
+    "value": true,
+    "reason": "subteacher didn't click 'sub'",
+    "reasonCode": "other",
+    "timestamp": "2026-02-05T02:44:43.114Z"
+  },
+  "2026-02-04|Chae Su A [채수아]|Joyce|8AM to 10AM": {
+    "value": true,
+    "reason": "subteacher didn't click 'sub'",
+    "reasonCode": "other",
+    "timestamp": "2026-02-05T02:52:03.819Z"
+  },
+  "2026-02-04|Hong Seo Yoo (Sam) [홍서유]|Deena|4PM to 5PM": {
+    "value": true,
+    "reason": "Math Class with Mr. Choi",
+    "reasonCode": "other",
+    "timestamp": "2026-02-05T03:30:43.025Z"
+  },
+  "2026-02-05|Hong Seo Yoo (Sam) [홍서유]|Deena|4PM to 5PM": {
+    "value": true,
+    "reason": "Student Absent",
+    "reasonCode": "student_absent",
+    "timestamp": "2026-02-05T09:11:35.066Z"
+  },
+  "2026-02-05|Mok Min Jun [목민준]|Marc|1PM to 3PM": {
+    "value": true,
+    "reason": "subteacher didn't click 'sub'",
+    "reasonCode": "other",
+    "timestamp": "2026-02-06T02:42:16.581Z"
+  },
+  "2026-02-05|Song Jun Ho [송준호]|Argel|1PM to 3PM": {
+    "value": true,
+    "reason": "Student Absent (Vacation)",
+    "reasonCode": "student_absent_vacation",
+    "timestamp": "2026-02-06T02:42:29.662Z"
+  },
+  "2026-02-05|Park Si Yeon [박시연]|Joyce|10AM to 12PM": {
+    "value": true,
+    "reason": "subteacher didn't click 'sub'",
+    "reasonCode": "other",
+    "timestamp": "2026-02-06T02:43:06.822Z"
+  },
+  "2026-02-06|Hong Seo Yoo (Sam) [홍서유]|Deena|4PM to 5PM": {
+    "value": true,
+    "reason": "no scheduled class",
+    "reasonCode": "other",
+    "timestamp": "2026-02-09T02:22:01.489Z"
+  },
+  "2026-02-09|Mok Min Jun [목민준]|Marc|1PM to 3PM": {
+    "value": true,
+    "reason": "Student Absent (Sick)",
+    "reasonCode": "student_absent_sick",
+    "timestamp": "2026-02-10T02:27:35.407Z"
+  },
+  "2026-02-09|Mok Min Jun [목민준]|Greg|3PM to 5PM": {
+    "value": true,
+    "reason": "Student Absent (Sick)",
+    "reasonCode": "student_absent_sick",
+    "timestamp": "2026-02-10T02:27:40.694Z"
+  },
+  "2026-02-09|Song Jun Ho [송준호]|Melody|3PM to 5PM": {
+    "value": true,
+    "reason": "Schedule Change",
+    "reasonCode": "schedule_change",
+    "timestamp": "2026-02-10T02:28:32.687Z"
+  },
+  "2026-02-09|Yoon In Soon [윤인순]|Ashley|1PM to 3PM": {
+    "value": true,
+    "reason": "Student Absent (Sick)",
+    "reasonCode": "student_absent_sick",
+    "timestamp": "2026-02-10T02:28:40.015Z"
+  },
+  "2026-02-09|Yoon In Soon [윤인순]|Jessica|3PM to 5PM": {
+    "value": true,
+    "reason": "Student Absent (Sick)",
+    "reasonCode": "student_absent_sick",
+    "timestamp": "2026-02-10T02:28:44.446Z"
+  },
+  "2026-02-09|Jeong Ye Won [정예원]|Lian|10AM to 12PM": {
+    "value": true,
+    "reason": "teacher is absent, no sub for online",
+    "reasonCode": "other",
+    "timestamp": "2026-02-10T02:29:09.926Z"
+  },
+  "2026-02-09|Hwang Chae Min [황채민]|Iya|8AM to 10AM": {
+    "value": true,
+    "reason": "Student Absent (No Show)",
+    "reasonCode": "student_absent_noshow",
+    "timestamp": "2026-02-10T02:29:20.009Z"
+  },
+  "2026-02-09|Hwang Chae Min [황채민]|Ashley|10AM to 12PM": {
+    "value": true,
+    "reason": "Student Absent (No Show)",
+    "reasonCode": "student_absent_noshow",
+    "timestamp": "2026-02-10T02:29:25.104Z"
+  },
+  "2026-02-09|Hong Seo Hoon (Chris) [홍서훈]|Mr. Choi|4PM to 5PM": {
+    "value": true,
+    "reason": "not included",
+    "reasonCode": "other",
+    "timestamp": "2026-02-10T02:31:31.515Z"
+  },
+  "2026-02-06|Choi Seo Yun [최서윤]|Cha|3PM to 5PM": {
+    "value": true,
+    "reason": "Student's last day",
+    "reasonCode": "other",
+    "timestamp": "2026-02-10T02:32:54.767Z"
+  },
+  "2026-02-06|Choi Ji Yun [최지윤]|Deena|1PM to 3PM": {
+    "value": true,
+    "reason": "Student's last day",
+    "reasonCode": "other",
+    "timestamp": "2026-02-10T02:33:05.047Z"
+  },
+  "2026-02-10|Lee Seon Yul [이선율]|Gaile|8AM to 10AM": {
+    "value": true,
+    "reason": "subteacher didn't click 'sub'",
+    "reasonCode": "other",
+    "timestamp": "2026-02-10T02:54:17.703Z"
+  },
+  "2026-02-10|Song Jun Ho [송준호]|Chester|8AM to 10AM": {
+    "value": true,
+    "reason": "Student Absent",
+    "reasonCode": "student_absent",
+    "timestamp": "2026-02-10T02:54:36.978Z"
+  },
+  "2026-02-10|Song Jun Ho [송준호]|Deena|10AM to 12PM": {
+    "value": true,
+    "reason": "Student Absent",
+    "reasonCode": "student_absent",
+    "timestamp": "2026-02-10T03:38:03.584Z"
+  },
+  "2026-02-10|Ha Tae Jun (David) [하태준]|Eloisa|1PM to 3PM": {
+    "value": true,
+    "reason": "Student Absent (Sick)",
+    "reasonCode": "student_absent_sick",
+    "timestamp": "2026-02-10T07:43:28.198Z"
+  },
+  "2026-02-10|Jung Geon Woo [정건우]|Elle|1PM to 3PM": {
+    "value": true,
+    "reason": "subteacher didn't click 'sub'",
+    "reasonCode": "other",
+    "timestamp": "2026-02-11T00:30:55.032Z"
+  },
+  "2026-02-10|Hong Seo Hoon (Chris) [홍서훈]|Mr. Choi|4PM to 5PM": {
+    "value": true,
+    "reason": "Math Class with Mr. Choi",
+    "reasonCode": "other",
+    "timestamp": "2026-02-11T00:32:16.903Z"
+  },
+  "2026-02-11|Hwang In Seong () [황인성]|Iya|10AM to 12PM": {
+    "value": true,
+    "reason": "Student Absent (Sick)",
+    "reasonCode": "student_absent_sick",
+    "timestamp": "2026-02-11T04:48:26.417Z"
+  },
+  "2026-02-11|Kang Seung Ji [강승지]|Greg|1PM to 3PM": {
+    "value": true,
+    "reason": "Student Absent (Sick)",
+    "reasonCode": "student_absent_sick",
+    "timestamp": "2026-02-11T06:36:43.480Z"
+  },
+  "2026-02-11|Hwang In Seong () [황인성]|Iann|1PM to 3PM": {
+    "value": true,
+    "reason": "Student Absent (Sick)",
+    "reasonCode": "student_absent_sick",
+    "timestamp": "2026-02-11T06:36:54.429Z"
+  },
+  "2026-02-11|Hwang Chae Min [황채민]|Iya|8AM to 10AM": {
+    "value": true,
+    "reason": "Student Absent (No Show)",
+    "reasonCode": "student_absent_noshow",
+    "timestamp": "2026-02-11T06:37:09.078Z"
+  },
+  "2026-02-11|Hwang Chae Min [황채민]|Ashley|10AM to 12PM": {
+    "value": true,
+    "reason": "Student Absent (No Show)",
+    "reasonCode": "student_absent_noshow",
+    "timestamp": "2026-02-11T06:37:22.585Z"
+  },
+  "2026-02-11|Chae Min Jae [채민재]|Rozeil|1PM to 3PM": {
+    "value": true,
+    "reason": "subteacher didn't click 'sub'",
+    "reasonCode": "other",
+    "timestamp": "2026-02-11T07:12:28.713Z"
+  },
+  "2026-02-11|Yoon In Soon [윤인순]|Jessica|3PM to 5PM": {
+    "value": true,
+    "reason": "Student doesn't want sub.",
+    "reasonCode": "other",
+    "timestamp": "2026-02-11T07:25:20.204Z"
+  },
+  "2026-02-11|Hong Seo Hoon (Chris) [홍서훈]|Raf|4PM to 5PM": {
+    "value": true,
+    "reason": "Student Absent (No Show)",
+    "reasonCode": "student_absent_noshow",
+    "timestamp": "2026-02-12T01:35:07.076Z"
+  },
+  "2026-02-11|Hong Seo Hoon (Chris) [홍서훈]|Mr. Choi|5PM to 6PM": {
+    "value": true,
+    "reason": "Math Class with Mr. Choi",
+    "reasonCode": "other",
+    "timestamp": "2026-02-12T01:35:23.613Z"
+  },
+  "2026-02-11|Hong Seo Yoo (Sam) [홍서유]|Mr. Choi|4PM to 5PM": {
+    "value": true,
+    "reason": "Math Class with Mr. Choi",
+    "reasonCode": "other",
+    "timestamp": "2026-02-12T01:35:37.852Z"
+  },
+  "2026-02-10|Noh Hee Chul [노희철]|Annabelle|10AM to 12PM": {
+    "value": true,
+    "reason": "no scheduled class",
+    "reasonCode": "other",
+    "timestamp": "2026-02-12T03:31:41.784Z"
+  },
+  "2026-02-11|Woo Jun Hyeok [우준혁]|Chrystal|5PM to 7PM": {
+    "value": true,
+    "reason": "coding class with Khirvie",
+    "reasonCode": "other",
+    "timestamp": "2026-02-12T06:20:01.814Z"
+  },
+  "2026-02-12|Hwang Chae Min [황채민]|Ashley|10AM to 12PM": {
+    "value": true,
+    "reason": "Student Absent (No Show)",
+    "reasonCode": "student_absent_noshow",
+    "timestamp": "2026-02-13T00:32:00.622Z"
+  },
+  "2026-02-12|Han Ju Yi [한주이]|Camille|3PM to 5PM": {
+    "value": true,
+    "reason": "teacher has stellar report uploaded",
+    "reasonCode": "other",
+    "timestamp": "2026-02-13T00:34:10.368Z"
+  },
+  "2026-02-12|Hong Ju Young [홍주영]|Analyn|3PM to 5PM": {
+    "value": true,
+    "reason": "teacher has stellar report uploaded",
+    "reasonCode": "other",
+    "timestamp": "2026-02-13T00:36:44.138Z"
+  },
+  "2026-02-12|Choi Da El [최다엘]|Ezra|4PM to 5PM": {
+    "value": true,
+    "reason": "teacher has stellar report uploaded",
+    "reasonCode": "other",
+    "timestamp": "2026-02-13T00:37:18.988Z"
+  },
+  "2026-02-12|Hong Seo Yoo (Sam) [홍서유]|Mr. Choi|4PM to 5PM": {
+    "value": true,
+    "reason": "teacher has stellar report uploaded",
+    "reasonCode": "other",
+    "timestamp": "2026-02-13T00:37:43.627Z"
+  },
+  "2026-02-12|Hong Seo Hoon (Chris) [홍서훈]|Raf|4PM to 5PM": {
+    "value": true,
+    "reason": "teacher has stellar report uploaded",
+    "reasonCode": "other",
+    "timestamp": "2026-02-13T00:38:07.749Z"
+  },
+  "2026-02-12|Ahn Jay [안재이]|Shiela|1PM to 3PM": {
+    "value": true,
+    "reason": "subteacher didn't click 'sub'",
+    "reasonCode": "other",
+    "timestamp": "2026-02-13T00:40:21.953Z"
+  },
+  "2026-02-12|Kwon Soo Ah [권수아]|Analyn|1PM to 3PM": {
+    "value": true,
+    "reason": "teacher has stellar report uploaded",
+    "reasonCode": "other",
+    "timestamp": "2026-02-13T00:42:35.305Z"
+  },
+  "2026-02-12|Kwon Soo Ah [권수아]|Argel|3PM to 5PM": {
+    "value": true,
+    "reason": "teacher has stellar report uploaded",
+    "reasonCode": "other",
+    "timestamp": "2026-02-13T00:42:43.545Z"
+  },
+  "2026-02-12|Mok Min Chan [목민찬]|Shiela|1PM to 3PM": {
+    "value": true,
+    "reason": "subteacher didn't click 'sub'",
+    "reasonCode": "other",
+    "timestamp": "2026-02-13T00:42:52.523Z"
+  },
+  "2026-02-12|Mok Min Chan [목민찬]|Justine|3PM to 5PM": {
+    "value": true,
+    "reason": "teacher has stellar report uploaded",
+    "reasonCode": "other",
+    "timestamp": "2026-02-13T00:43:20.250Z"
+  },
+  "2026-02-12|Song Jun Ho [송준호]|Ezra|1PM to 3PM": {
+    "value": true,
+    "reason": "Student Absent (Sick)",
+    "reasonCode": "student_absent_sick",
+    "timestamp": "2026-02-13T00:43:30.449Z"
+  },
+  "2026-02-12|Song Jun Ho [송준호]|Melody|3PM to 5PM": {
+    "value": true,
+    "reason": "Student Absent (Sick)",
+    "reasonCode": "student_absent_sick",
+    "timestamp": "2026-02-13T00:43:35.197Z"
+  },
+  "2026-02-12|Hong Seo Yoo (Sam) [홍서유]|Raf|5PM to 7PM": {
+    "value": true,
+    "reason": "teacher has stellar report uploaded",
+    "reasonCode": "other",
+    "timestamp": "2026-02-13T00:44:50.944Z"
+  },
+  "2026-02-13|Hong Seo Yoo (Sam) [홍서유]|Mr. Choi|4PM to 5PM": {
+    "value": true,
+    "reason": "Math Class with Mr. Choi",
+    "reasonCode": "other",
+    "timestamp": "2026-02-16T01:31:24.223Z"
+  },
+  "2026-02-13|Choi Da El [최다엘]|Ezra|4PM to 5PM": {
+    "value": true,
+    "reason": "no scheduled class",
+    "reasonCode": "other",
+    "timestamp": "2026-02-16T01:34:07.180Z"
+  },
+  "2026-02-13|Hong Seo Hoon (Chris) [홍서훈]|Mr. Choi|5PM to 6PM": {
+    "value": true,
+    "reason": "Math Class with Mr. Choi",
+    "reasonCode": "other",
+    "timestamp": "2026-02-16T01:34:23.879Z"
+  },
+  "2026-02-13|Kim Ra On [김라온]|Noel|3PM to 5PM": {
+    "value": true,
+    "reason": "Student Absent (Sick)",
+    "reasonCode": "student_absent_sick",
+    "timestamp": "2026-02-16T01:38:20.122Z"
+  },
+  "2026-02-13|Kim Se Eun [김세은]|Paula|1PM to 3PM": {
+    "value": true,
+    "reason": "Student's last day",
+    "reasonCode": "other",
+    "timestamp": "2026-02-16T01:38:51.881Z"
+  },
+  "2026-02-13|Mok Min Chan [목민찬]|Shiela|1PM to 3PM": {
+    "value": true,
+    "reason": "subteacher didn't click 'sub'",
+    "reasonCode": "other",
+    "timestamp": "2026-02-16T01:39:05.484Z"
+  },
+  "2026-02-13|Yoon In Soon [윤인순]|Ashley|1PM to 3PM": {
+    "value": true,
+    "reason": "Student Absent (Sick)",
+    "reasonCode": "student_absent_sick",
+    "timestamp": "2026-02-16T01:39:58.151Z"
+  },
+  "2026-02-13|Yoon In Soon [윤인순]|Jessica|3PM to 5PM": {
+    "value": true,
+    "reason": "Student Absent (Sick)",
+    "reasonCode": "student_absent_sick",
+    "timestamp": "2026-02-16T01:40:04.521Z"
+  },
+  "2026-02-13|Ahn Jay [안재이]|Shiela|1PM to 3PM": {
+    "value": true,
+    "reason": "subteacher didn't click 'sub'",
+    "reasonCode": "other",
+    "timestamp": "2026-02-16T02:36:51.281Z"
+  },
+  "2026-02-13|Kim Ra On [김라온]|JM|1PM to 3PM": {
+    "value": true,
+    "reason": "Student Absent (Sick)",
+    "reasonCode": "student_absent_sick",
+    "timestamp": "2026-02-16T02:37:05.805Z"
+  },
+  "2026-02-16|Hwang Chae Min [황채민]|Iya|8AM to 10AM": {
+    "value": true,
+    "reason": "Student Absent (No Show)",
+    "reasonCode": "student_absent_noshow",
+    "timestamp": "2026-02-16T05:24:08.897Z"
+  },
+  "2026-02-16|Hwang Chae Min [황채민]|Ashley|10AM to 12PM": {
+    "value": true,
+    "reason": "Student Absent (No Show)",
+    "reasonCode": "student_absent_noshow",
+    "timestamp": "2026-02-16T05:24:13.882Z"
+  },
+  "2026-02-16|Hong Seo Yoo (Sam) [홍서유]|Mr. Choi|4PM to 5PM": {
+    "value": true,
+    "reason": "Math Class with Mr. Choi",
+    "reasonCode": "other",
+    "timestamp": "2026-02-17T02:36:22.469Z"
+  },
+  "2026-02-16|Kang Seung Ji [강승지]|Faye|10AM to 12PM": {
+    "value": true,
+    "reason": "subteacher didn't click 'sub'",
+    "reasonCode": "other",
+    "timestamp": "2026-02-17T02:36:38.173Z"
+  },
+  "2026-02-16|Kwon Soo Ah [권수아]|Analyn|1PM to 3PM": {
+    "value": true,
+    "reason": "teacher has stellar report uploaded",
+    "reasonCode": "other",
+    "timestamp": "2026-02-17T02:37:19.061Z"
+  },
+  "2026-02-17|Mok Min Jun [목민준]|AJ|10AM to 12PM": {
+    "value": true,
+    "reason": "Student Absent (Sick)",
+    "reasonCode": "student_absent_sick",
+    "timestamp": "2026-02-17T02:47:00.951Z"
+  },
+  "2026-02-17|Lee Jeong Won [이정원]|Rio|10AM to 12PM": {
+    "value": true,
+    "reason": "subteacher didn't click 'sub'",
+    "reasonCode": "other",
+    "timestamp": "2026-02-17T05:45:52.111Z"
+  },
+  "2026-02-17|Hwang Chae Min [황채민]|Iya|8AM to 10AM": {
+    "value": true,
+    "reason": "Student Absent (No Show)",
+    "reasonCode": "student_absent_noshow",
+    "timestamp": "2026-02-17T07:08:30.180Z"
+  },
+  "2026-02-17|Hwang Chae Min [황채민]|Ashley|10AM to 12PM": {
+    "value": true,
+    "reason": "Student Absent (No Show)",
+    "reasonCode": "student_absent_noshow",
+    "timestamp": "2026-02-17T07:08:39.055Z"
+  },
+  "2026-02-17|Lee Jeong Won [이정원]|Gaile|3PM to 5PM": {
+    "value": true,
+    "reason": "subteacher Eloisa sent report and clicked 'sub'",
+    "reasonCode": "other",
+    "timestamp": "2026-02-18T00:19:32.429Z"
+  },
+  "2026-02-17|Hong Seo Hoon (Chris) [홍서훈]|Mr. Choi|5PM to 6PM": {
+    "value": true,
+    "reason": "Justine should submit",
+    "reasonCode": "other",
+    "timestamp": "2026-02-18T00:43:28.724Z"
+  },
+  "2026-02-17|Hong Seo Yoo (Sam) [홍서유]|Mr. Choi|4PM to 5PM": {
+    "value": true,
+    "reason": "T.Deena submitted.",
+    "reasonCode": "other",
+    "timestamp": "2026-02-18T00:43:55.556Z"
+  },
+  "2026-02-17|Yoon In Soon [윤인순]|Jessica|3PM to 5PM": {
+    "value": true,
+    "reason": "student stopped",
+    "reasonCode": "other",
+    "timestamp": "2026-02-18T05:11:50.544Z"
+  },
+  "2026-02-18|Song Jun Ho [송준호]|Chester|8AM to 10AM": {
+    "value": true,
+    "reason": "Student Absent",
+    "reasonCode": "student_absent",
+    "timestamp": "2026-02-19T02:41:31.899Z"
+  },
+  "2026-02-18|Song Jun Ho [송준호]|Deena|10AM to 12PM": {
+    "value": true,
+    "reason": "Student Absent",
+    "reasonCode": "student_absent",
+    "timestamp": "2026-02-19T02:41:36.377Z"
+  },
+  "2026-02-18|Song Jun Ho [송준호]|Melody|3PM to 5PM": {
+    "value": true,
+    "reason": "Student Absent",
+    "reasonCode": "student_absent",
+    "timestamp": "2026-02-19T02:41:42.592Z"
+  },
+  "2026-02-18|Hong Seo Yoo (Sam) [홍서유]|Mr. Choi|4PM to 5PM": {
+    "value": true,
+    "reason": "Math Class with Mr. Choi",
+    "reasonCode": "other",
+    "timestamp": "2026-02-19T02:41:57.398Z"
+  },
+  "2026-02-18|Hong Seo Hoon (Chris) [홍서훈]|Mr. Choi|5PM to 6PM": {
+    "value": true,
+    "reason": "Math Class with Mr. Choi",
+    "reasonCode": "other",
+    "timestamp": "2026-02-19T02:42:17.146Z"
+  },
+  "2026-02-20|Kim Ji Yong [김지용]|Ruzzel|3PM to 5PM": {
+    "value": true,
+    "reason": "subteacher didn't click 'sub'",
+    "reasonCode": "other",
+    "timestamp": "2026-02-23T05:59:20.158Z"
+  },
+  "2026-02-20|Bae Da Hye (Dahye) [배다혜]|Iann|3PM to 5PM": {
+    "value": true,
+    "reason": "Student's last day",
+    "reasonCode": "other",
+    "timestamp": "2026-02-23T05:59:32.738Z"
+  },
+  "2026-02-20|Hong Seo Yoo (Sam) [홍서유]|Mr. Choi|4PM to 5PM": {
+    "value": true,
+    "reason": "Math Class with Mr. Choi",
+    "reasonCode": "other",
+    "timestamp": "2026-02-23T05:59:46.634Z"
+  },
+  "2026-02-20|Hong Seo Hoon (Chris) [홍서훈]|Mr. Choi|5PM to 6PM": {
+    "value": true,
+    "reason": "Math Class with Mr. Choi",
+    "reasonCode": "other",
+    "timestamp": "2026-02-23T05:59:55.640Z"
+  },
+  "2026-02-20|Hwang Chae Min [황채민]|Iya|8AM to 10AM": {
+    "value": true,
+    "reason": "Student Absent (No Show)",
+    "reasonCode": "student_absent_noshow",
+    "timestamp": "2026-02-23T06:00:02.626Z"
+  },
+  "2026-02-20|Hwang Chae Min [황채민]|Ashley|10AM to 12PM": {
+    "value": true,
+    "reason": "Student Absent (No Show)",
+    "reasonCode": "student_absent_noshow",
+    "timestamp": "2026-02-23T06:00:07.606Z"
+  },
+  "2026-02-23|Hong Seo Yoo (Sam) [홍서유]|Deena|4PM to 5PM": {
+    "value": true,
+    "reason": "Math Class with Mr. Choi",
+    "reasonCode": "other",
+    "timestamp": "2026-02-24T00:22:25.257Z"
+  },
+  "2026-02-23|Lee Ha Jun [이하준]|Paula|1PM to 3PM": {
+    "value": true,
+    "reason": "Student Absent",
+    "reasonCode": "student_absent",
+    "timestamp": "2026-02-24T00:22:36.518Z"
+  },
+  "2026-02-23|Lee Ha Jun [이하준]|Demple|3PM to 5PM": {
+    "value": true,
+    "reason": "Student Absent",
+    "reasonCode": "student_absent",
+    "timestamp": "2026-02-24T00:22:41.189Z"
+  },
+  "2026-02-23|Hong Seo Hoon (Chris) [홍서훈]|Mr. Choi|5PM to 6PM": {
+    "value": true,
+    "reason": "Math Class with Mr. Choi",
+    "reasonCode": "other",
+    "timestamp": "2026-02-24T00:25:20.992Z"
+  },
+  "2026-03-02|Kim Sang Il [김상일]|Cha|10AM to 12PM": {
+    "value": true,
+    "reason": "teacher didn't use stellar for reporting",
+    "reasonCode": "other",
+    "timestamp": "2026-03-03T05:22:56.718Z"
+  },
+  "2026-03-02|Song Jun Ho [송준호]|Ezra|1PM to 3PM": {
+    "value": true,
+    "reason": "Student Absent",
+    "reasonCode": "student_absent",
+    "timestamp": "2026-03-03T05:23:03.465Z"
+  },
+  "2026-03-02|Song Jun Ho [송준호]|Cha|3PM to 5PM": {
+    "value": true,
+    "reason": "Student Absent",
+    "reasonCode": "student_absent",
+    "timestamp": "2026-03-03T05:23:08.357Z"
+  },
+  "2026-03-02|Woo Na Eun [우나은]|Ceige|5PM to 7PM": {
+    "value": true,
+    "reason": "teacher didn't use stellar for reporting",
+    "reasonCode": "other",
+    "timestamp": "2026-03-03T05:25:12.733Z"
+  },
+  "2026-03-02|Hong Seo Hoon (Chris) [홍서훈]|Mr. Choi|4PM to 5PM": {
+    "value": true,
+    "reason": "teacher has stellar report uploaded",
+    "reasonCode": "other",
+    "timestamp": "2026-03-03T05:29:49.964Z"
+  },
+  "2026-03-02|Hong Seo Yoo (Sam) [홍서유]|Deena|4PM to 5PM": {
+    "value": true,
+    "reason": "Math Class with Mr. Choi",
+    "reasonCode": "other",
+    "timestamp": "2026-03-03T05:30:00.037Z"
+  },
+  "2026-03-03|Hong Seo Hoon (Chris) [홍서훈]|Raf|4PM to 5PM": {
+    "value": true,
+    "reason": "student was late",
+    "reasonCode": "other",
+    "timestamp": "2026-03-04T01:40:50.215Z"
+  },
+  "2026-03-03|Hong Seo Yoo (Sam) [홍서유]|Deena|4PM to 5PM": {
+    "value": true,
+    "reason": "teacher has stellar report uploaded",
+    "reasonCode": "other",
+    "timestamp": "2026-03-04T01:41:25.598Z"
+  },
+  "2026-03-03|Lee Ha Jun [이하준]|Demple|3PM to 5PM": {
+    "value": true,
+    "reason": "Student Absent",
+    "reasonCode": "student_absent",
+    "timestamp": "2026-03-04T01:41:39.891Z"
+  }
+}

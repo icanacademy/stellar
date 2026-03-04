@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Card Data Generator</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Controls Bar -->
+    <div class="controls-bar no-print">
+        <div class="controls-content">
+            <div class="controls-top">
+                <div class="controls-left">
+                    <img src="/assets/ican-logo.png" alt="ICAN Logo" class="controls-logo">
+                    <div>
+                        <h1 class="controls-title">Data Generator</h1>
+                        <p class="controls-subtitle">Generate score data for easy spreadsheet import</p>
+                    </div>
+                </div>
+                <div class="controls-right">
+                    <select id="studentSelect">
+                        <option value="">-- Select Student --</option>
+                    </select>
+                </div>
+            </div>
+            <nav class="controls-nav">
+                <a href="/" class="btn-nav" data-href="/">Data Generator</a>
+                <a href="/academic-enabler" class="btn-nav" data-href="/academic-enabler">Academic Enabler</a>
+                <a href="/report-card" class="btn-nav" data-href="/report-card">Full Report Card</a>
+                <a href="/data-manager" class="btn-nav" data-href="/data-manager">Data Manager</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="page-content">
+        <div class="filters-section">
+            <div class="filter-group">
+                <label for="subjectSelect">Select Subject:</label>
+                <select id="subjectSelect">
+                    <option value="">-- Select Subject --</option>
+                </select>
+            </div>
+
+            <div class="filter-actions">
+                <button id="generateBtn" class="btn-primary" disabled>Generate Report</button>
+                <button id="clearBtn" class="btn-secondary">Clear</button>
+            </div>
+        </div>
+
+        <div id="resultsSection" class="results-section" style="display: none;">
+            <div class="results-header">
+                <div class="results-info">
+                    <h2>Report Card Data</h2>
+                    <p id="filterInfo" class="filter-info"></p>
+                    <p id="recordCount" class="record-count"></p>
+                </div>
+                <button id="copyBtn" class="btn-copy">Copy to Clipboard</button>
+            </div>
+
+            <div class="table-wrapper">
+                <div class="table-container">
+                    <table id="dataTable">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th colspan="2">Book Materials</th>
+                                <th colspan="2">Vocabulary</th>
+                                <th colspan="2">Class Video</th>
+                                <th colspan="2">Homework</th>
+                                <th colspan="2">Homework Vocab</th>
+                                <th colspan="2">Weekly Test</th>
+                            </tr>
+                            <tr class="subheader">
+                                <th></th>
+                                <th>Score</th>
+                                <th>Total</th>
+                                <th>Score</th>
+                                <th>Total</th>
+                                <th>Score</th>
+                                <th>Total</th>
+                                <th>Score</th>
+                                <th>Total</th>
+                                <th>Score</th>
+                                <th>Total</th>
+                                <th>Score</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                            <!-- Data will be populated here -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="teacher-column">
+                    <div class="teacher-header">
+                        <div class="teacher-title">Teacher</div>
+                        <div class="teacher-subtitle">Name</div>
+                    </div>
+                    <div id="teacherBody" class="teacher-body">
+                        <!-- Teacher names will be populated here -->
+                    </div>
+                </div>
+            </div>
+
+            <div id="copyConfirmation" class="copy-confirmation" style="display: none;">
+                Data copied to clipboard! Ready to paste into your spreadsheet.
+            </div>
+        </div>
+
+        <!-- AI Analysis Section -->
+        <div id="aiAnalysisSection" class="ai-analysis-section" style="display: none;">
+            <div class="section-header">
+                <h2>AI-Powered Analysis</h2>
+                <button id="generateAiBtn" class="btn-ai">Generate AI Analysis</button>
+            </div>
+
+            <div id="aiLoadingState" class="loading-state" style="display: none;">
+                <div class="loading-spinner"></div>
+                <p>AI is analyzing performance data...</p>
+            </div>
+
+            <div id="aiContent" class="ai-content" style="display: none;">
+                <div class="analysis-card strengths-card">
+                    <h3>Strengths</h3>
+                    <div id="strengthsContent" class="card-content"></div>
+                </div>
+
+                <div class="analysis-card improvements-card">
+                    <h3>Points for Improvement</h3>
+                    <div id="improvementsContent" class="card-content"></div>
+                </div>
+
+                <div class="analysis-card recommendations-card">
+                    <h3>Recommendations</h3>
+                    <div id="recommendationsContent" class="card-content"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="empty-state" id="emptyState">
+            <p>Select a student and subject to generate report card data</p>
+        </div>
+    </div>
+
+    <script src="js/common.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

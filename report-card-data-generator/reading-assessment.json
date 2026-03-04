@@ -1,0 +1,209 @@
+[
+  {
+    "id": "54f73006-c0b1-4816-ae18-d0da6937a33a",
+    "student": "Ahn Jay [안재이]",
+    "season": "2026-01-02_2026-02-24",
+    "readingLevel": {
+      "initial": 77,
+      "final": 778
+    },
+    "readingProgress": {
+      "initial": 67,
+      "final": 76
+    },
+    "gbwt": {
+      "initial": "55",
+      "final": "57"
+    },
+    "readingSpeed": {
+      "initial": 67,
+      "final": 676
+    },
+    "createdAt": "2026-02-24T03:27:58.229Z",
+    "updatedAt": "2026-03-03T07:37:06.025Z"
+  },
+  {
+    "id": "fabd8a3e-0a50-4d93-9da0-445c56fefa9f",
+    "student": "Kim Min Ji [김민지]",
+    "season": "2026-01-04_2026-02-24",
+    "readingLevel": {
+      "initial": null,
+      "final": null
+    },
+    "readingProgress": {
+      "initial": null,
+      "final": null
+    },
+    "gbwt": {
+      "initial": "",
+      "final": ""
+    },
+    "readingSpeed": {
+      "initial": null,
+      "final": null
+    },
+    "createdAt": "2026-02-24T03:28:19.032Z",
+    "updatedAt": "2026-02-24T03:28:19.032Z"
+  },
+  {
+    "id": "cc9f1d8a-6b9d-4c7e-b68a-8fbc724866fc",
+    "student": "Chae Min Jae [채민재]",
+    "season": "2026-01-19_2026-02-24",
+    "readingLevel": {
+      "initial": null,
+      "final": null
+    },
+    "readingProgress": {
+      "initial": null,
+      "final": null
+    },
+    "gbwt": {
+      "initial": "",
+      "final": ""
+    },
+    "readingSpeed": {
+      "initial": null,
+      "final": null
+    },
+    "createdAt": "2026-02-24T05:05:18.101Z",
+    "updatedAt": "2026-02-24T05:05:18.101Z"
+  },
+  {
+    "id": "a8c02763-74df-4f7c-ab4e-fc4063d5ebe3",
+    "student": "Hong Ju Young [홍주영]",
+    "season": "2026-01-05_2026-02-24",
+    "readingLevel": {
+      "initial": null,
+      "final": null
+    },
+    "readingProgress": {
+      "initial": null,
+      "final": null
+    },
+    "gbwt": {
+      "initial": "",
+      "final": ""
+    },
+    "readingSpeed": {
+      "initial": null,
+      "final": null
+    },
+    "createdAt": "2026-02-24T05:35:44.023Z",
+    "updatedAt": "2026-02-24T05:35:44.023Z"
+  },
+  {
+    "id": "8cc97d71-9327-4d45-81f9-102d01c64c2a",
+    "student": "Hwang In Seong () [황인성]",
+    "season": "2026-01-05_2026-02-24",
+    "readingLevel": {
+      "initial": null,
+      "final": null
+    },
+    "readingProgress": {
+      "initial": null,
+      "final": null
+    },
+    "gbwt": {
+      "initial": "",
+      "final": ""
+    },
+    "readingSpeed": {
+      "initial": null,
+      "final": null
+    },
+    "createdAt": "2026-02-25T00:40:45.478Z",
+    "updatedAt": "2026-02-25T00:40:45.478Z"
+  },
+  {
+    "id": "7a10e28c-11ef-40e4-814b-0420571957c4",
+    "student": "Chae Su A [채수아]",
+    "season": "2026-01-18_2026-02-25",
+    "readingLevel": {
+      "initial": null,
+      "final": null
+    },
+    "readingProgress": {
+      "initial": null,
+      "final": null
+    },
+    "gbwt": {
+      "initial": "",
+      "final": ""
+    },
+    "readingSpeed": {
+      "initial": null,
+      "final": null
+    },
+    "createdAt": "2026-02-25T07:39:34.058Z",
+    "updatedAt": "2026-02-25T07:39:34.058Z"
+  },
+  {
+    "id": "5bfee688-c983-4e73-86e8-89762c5ed707",
+    "student": "Mok Min Jun [목민준]",
+    "season": "2026-01-12_2026-02-26",
+    "readingLevel": {
+      "initial": null,
+      "final": null
+    },
+    "readingProgress": {
+      "initial": null,
+      "final": null
+    },
+    "gbwt": {
+      "initial": "",
+      "final": ""
+    },
+    "readingSpeed": {
+      "initial": null,
+      "final": null
+    },
+    "createdAt": "2026-02-26T07:07:03.653Z",
+    "updatedAt": "2026-02-26T07:07:03.653Z"
+  },
+  {
+    "id": "a7053c84-7917-4e19-980f-a1eebad845df",
+    "student": " Pyun Soo Been [편수빈]",
+    "season": "2025-10-21_2025-12-08",
+    "readingLevel": {
+      "initial": null,
+      "final": null
+    },
+    "readingProgress": {
+      "initial": null,
+      "final": null
+    },
+    "gbwt": {
+      "initial": "",
+      "final": ""
+    },
+    "readingSpeed": {
+      "initial": null,
+      "final": null
+    },
+    "createdAt": "2026-03-02T03:51:13.673Z",
+    "updatedAt": "2026-03-02T03:51:13.673Z"
+  },
+  {
+    "id": "7377b5e4-6e1b-4afe-b4e0-bf8befeff440",
+    "student": "Mok Min Chan [목민찬]",
+    "season": "2026-01-12_2026-03-02",
+    "readingLevel": {
+      "initial": null,
+      "final": null
+    },
+    "readingProgress": {
+      "initial": null,
+      "final": null
+    },
+    "gbwt": {
+      "initial": "",
+      "final": ""
+    },
+    "readingSpeed": {
+      "initial": null,
+      "final": null
+    },
+    "createdAt": "2026-03-02T05:16:31.908Z",
+    "updatedAt": "2026-03-02T05:16:31.908Z"
+  }
+]

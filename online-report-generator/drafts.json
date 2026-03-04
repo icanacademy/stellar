@@ -1,0 +1,187 @@
+{
+  "Rozeil|||Kwon Na Yoon": {
+    "timestamp": 1772537931299,
+    "teacherName": "Rozeil",
+    "studentName": "Kwon Na Yoon",
+    "data": {
+      "fields": {
+        "studentSearch": "Kwon Na Yun",
+        "studentName": "Kwon Na Yoon",
+        "studentId": "ICN-OST-19",
+        "gradeLevel": "TBD",
+        "studentGender": "Female",
+        "date": "2026-03-03",
+        "dayOfWeek": "Tuesday",
+        "teacherSearch": "Rozeil",
+        "teacherName": "Rozeil",
+        "teacherId": "IOT-27",
+        "subjectSearch": "Reading and Vocab",
+        "subject": "Reading and Vocab",
+        "materials": "Cause and Effect",
+        "currentLesson": "Informative Article Writing Checking; Unit 5 Medicine Lesson 2 : Sleep and Dreams pp. 245 - 250A",
+        "homework": "Vocabulary; Cause and Effect Comprehensive Question Re: Sleep Apnea",
+        "attention": "5",
+        "retention": "5",
+        "comprehension": "5",
+        "cooperation": "5",
+        "engagement": "5",
+        "conversation": "5",
+        "activitiesFinished": "Today, Nayun and I moved on to the second lesson of Unit 5, where we explored the topic of sleep and dreams. She answered both the pre-reading questions from the book and the teacher’s questions well, demonstrating good understanding and engagement. Prior to this, we also reviewed the article she had written in the previous class, focusing on grammar corrections and the explanations behind them. Nayun was receptive to the feedback and made an effort to understand her mistakes. On the whole, she participated actively in the lesson and showed steady improvement in both comprehension and writing skills.",
+        "activitiesNotFinished": "Unit 5: Lesson 2 Sleep and Dreams Vocabulary Exercise B"
+      },
+      "starRatings": {
+        "attention": "5",
+        "retention": "5",
+        "comprehension": "5",
+        "cooperation": "5",
+        "engagement": "5",
+        "conversation": "5"
+      },
+      "skillsRatings": {
+        "Comprehension  ": 4,
+        "Digital Literacy": 5,
+        "Text Navigation": 4,
+        "Information Processing": 4,
+        "Study Methods": 5,
+        "Critical Analysis": 4
+      }
+    }
+  },
+  "Deena|||Kim Cho Eun": {
+    "timestamp": 1772596000370,
+    "teacherName": "Deena",
+    "studentName": "Kim Cho Eun",
+    "data": {
+      "fields": {
+        "studentSearch": "Kim Cho Eun",
+        "studentName": "Kim Cho Eun",
+        "studentId": "ICN-OST-56",
+        "gradeLevel": "2",
+        "studentGender": "Female",
+        "date": "2026-03-04",
+        "dayOfWeek": "Wednesday",
+        "teacherSearch": "Deena",
+        "teacherName": "Deena",
+        "teacherId": "IOT-5",
+        "subjectSearch": "",
+        "subject": "",
+        "materials": "",
+        "currentLesson": "",
+        "homework": "",
+        "attention": "0",
+        "retention": "0",
+        "comprehension": "0",
+        "cooperation": "0",
+        "engagement": "0",
+        "conversation": "0",
+        "activitiesFinished": "",
+        "activitiesNotFinished": ""
+      },
+      "starRatings": {
+        "attention": "0",
+        "retention": "0",
+        "comprehension": "0",
+        "cooperation": "0",
+        "engagement": "0",
+        "conversation": "0"
+      },
+      "skillsRatings": {}
+    }
+  },
+  "Janice|||Oh Yu Kyung": {
+    "timestamp": 1772602788922,
+    "teacherName": "Janice",
+    "studentName": "Oh Yu Kyung",
+    "data": {
+      "fields": {
+        "studentSearch": "Oh Yu Kyung",
+        "studentName": "Oh Yu Kyung",
+        "studentId": "ICN-OST-36",
+        "gradeLevel": "5",
+        "studentGender": "Female",
+        "date": "2026-03-04",
+        "dayOfWeek": "Wednesday",
+        "teacherSearch": "Janice",
+        "teacherName": "Janice",
+        "teacherId": "IOT-12",
+        "subjectSearch": "Comprehensive Writing",
+        "subject": "Comprehensive Writing",
+        "materials": "Write Right Paragraph to Essay 3",
+        "currentLesson": "Write Right Paragraph to Essay 3 P. 22 (Writing to Give Advice)",
+        "homework": "Send a report of what you’ve learned from the class (must be in a video form).",
+        "attention": "5",
+        "retention": "4",
+        "comprehension": "5",
+        "cooperation": "5",
+        "engagement": "4",
+        "conversation": "4",
+        "activitiesFinished": "Tonight, the student did well in Sentence Building, focusing on writing advice using words like \"instead,\" \"should,\" and \"help.\" We also studied Cause and Effect and imperative sentences. She grasped the lessons quickly without needing repetition and achieved high scores on her writing activities, completing them independently. Well done, Isla!\n",
+        "activitiesNotFinished": "None. "
+      },
+      "starRatings": {
+        "attention": "5",
+        "retention": "4",
+        "comprehension": "5",
+        "cooperation": "5",
+        "engagement": "4",
+        "conversation": "4"
+      },
+      "skillsRatings": {
+        "Publishing": 4,
+        "Idea Development": 4,
+        "Argumentation ": 4,
+        "Clarity & Style ": 4,
+        "Revision ": 4,
+        "Structure  ": 4
+      }
+    }
+  },
+  "Janice|||Kim Min Jae": {
+    "timestamp": 1772601961503,
+    "teacherName": "Janice",
+    "studentName": "Kim Min Jae",
+    "data": {
+      "fields": {
+        "studentSearch": "Kim Min Jae",
+        "studentName": "Kim Min Jae",
+        "studentId": "ICN-OST-26",
+        "gradeLevel": "6",
+        "studentGender": "Female",
+        "date": "2026-03-04",
+        "dayOfWeek": "Wednesday",
+        "teacherSearch": "Janice",
+        "teacherName": "Janice",
+        "teacherId": "IOT-12",
+        "subjectSearch": "Reading and Vocab",
+        "subject": "Reading and Vocab",
+        "materials": "Can You Believe It 2 ",
+        "currentLesson": "Can You Believe It 2 P. 8 (Comprehension Exercises)",
+        "homework": "Send a report of what you’ve learned from the class (must be in a video form).",
+        "attention": "5",
+        "retention": "5",
+        "comprehension": "5",
+        "cooperation": "5",
+        "engagement": "5",
+        "conversation": "5",
+        "activitiesFinished": "Bella performed very well in class today. We began with a catch-up session, after which we focused on comprehension exercises and idioms related to the story we read last time. Bella demonstrated a strong grasp of the material, recalling most of the idioms and achieving perfect scores without needing assistance. Well done, Bella!",
+        "activitiesNotFinished": "None. "
+      },
+      "starRatings": {
+        "attention": "5",
+        "retention": "5",
+        "comprehension": "5",
+        "cooperation": "5",
+        "engagement": "5",
+        "conversation": "5"
+      },
+      "skillsRatings": {
+        "Comprehension  ": 5,
+        "Digital Literacy": 5,
+        "Text Navigation": 5,
+        "Information Processing": 5,
+        "Study Methods": 5,
+        "Critical Analysis": 5
+      }
+    }
+  }
+}

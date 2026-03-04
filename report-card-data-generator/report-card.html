@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Report Card - ICAN Language Center</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/report-card.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+</head>
+<body>
+    <!-- Controls Bar (hidden on print) -->
+    <div class="controls-bar no-print">
+        <div class="controls-content">
+            <div class="controls-top">
+                <div class="controls-left">
+                    <img src="/assets/ican-logo.png" alt="ICAN Logo" class="controls-logo">
+                    <div>
+                        <h1 class="controls-title">Full Report Card</h1>
+                        <p class="controls-subtitle">Generate printable student report cards</p>
+                    </div>
+                </div>
+                <div class="controls-right">
+                    <select id="studentSelect">
+                        <option value="">-- Select Student --</option>
+                    </select>
+                    <div class="date-range-group" id="dateRangeGroup" style="display:none;">
+                        <label>From</label>
+                        <input type="date" id="dateFrom">
+                        <label>To</label>
+                        <input type="date" id="dateTo">
+                    </div>
+                    <button id="generateBtn" class="btn-generate" disabled>Generate</button>
+                    <button id="printBtn" class="btn-print" style="display:none;">Print Report Card</button>
+                </div>
+            </div>
+            <nav class="controls-nav">
+                <a href="/" class="btn-nav" data-href="/">Data Generator</a>
+                <a href="/academic-enabler" class="btn-nav" data-href="/academic-enabler">Academic Enabler</a>
+                <a href="/report-card" class="btn-nav" data-href="/report-card">Full Report Card</a>
+                <a href="/data-manager" class="btn-nav" data-href="/data-manager">Data Manager</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Loading State -->
+    <div id="loadingState" class="loading-overlay no-print" style="display:none;">
+        <div class="loading-spinner"></div>
+        <p>Generating report card...</p>
+    </div>
+
+    <!-- Empty State -->
+    <div id="emptyState" class="empty-state no-print">
+        <p>Select a student and click Generate to create a printable report card</p>
+    </div>
+
+    <!-- Report Card Document -->
+    <div id="reportCard" class="report-card" style="display:none;">
+        <!-- Header -->
+        <div class="rc-header">
+            <img src="/assets/ican-logo.png" alt="ICAN Language Center" class="rc-logo">
+            <div class="rc-header-text">
+                <h1>ICAN Language Center</h1>
+                <h2>Student Report Card <span id="rcYear"></span></h2>
+            </div>
+        </div>
+
+        <p class="rc-certificate-text">
+            This is to certify that
+            <span id="rcCertName" class="rc-cert-name"></span>
+            has successfully completed the following coursework in English as a Second Language.
+        </p>
+
+        <div class="rc-student-info">
+            <div class="rc-info-row">
+                <div class="rc-info-item">
+                    <span class="rc-label">Student Name:</span>
+                    <span id="rcStudentName" class="rc-value"></span>
+                </div>
+                <div class="rc-info-item">
+                    <span class="rc-label">Grade Level:</span>
+                    <span id="rcGradeLevel" class="rc-value"></span>
+                </div>
+            </div>
+            <div class="rc-info-row">
+                <div class="rc-info-item">
+                    <span class="rc-label">Program Duration:</span>
+                    <span id="rcDuration" class="rc-value"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Academic Performance Table -->
+        <div class="rc-section">
+            <h3 class="rc-section-title">Academic Performance</h3>
+            <div class="rc-table-wrapper">
+                <table id="gradeTable" class="rc-grade-table">
+                    <thead>
+                        <tr id="gradeTableHeader">
+                            <th class="rc-subject-col">Subject</th>
+                            <th class="rc-teacher-col">Teacher</th>
+                            <!-- Week columns inserted dynamically -->
+                            <th class="rc-avg-col">Average</th>
+                        </tr>
+                    </thead>
+                    <tbody id="gradeTableBody">
+                        <!-- Rows inserted dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Grade Visual Report Chart -->
+        <div class="rc-section rc-charts-section" id="gradeChartSection" style="display:none;">
+            <div class="rc-chart-header">
+                <input type="checkbox" id="gradeChartToggle" class="rc-row-toggle no-print" checked>
+                <h3 class="rc-section-title">Grade Visual Report</h3>
+            </div>
+            <div class="rc-chart-container">
+                <canvas id="gradeChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Academic Enabler -->
+        <div class="rc-section rc-ae-section" id="aeSection" style="display:none;">
+            <div class="rc-ae-header">
+                <input type="checkbox" id="aeToggle" class="rc-row-toggle no-print" checked>
+                <h3 class="rc-section-title">Academic Enabler</h3>
+            </div>
+            <div id="aeContainer"></div>
+            <div class="rc-ae-charts" id="aeChartsContainer" style="display:none;"></div>
+        </div>
+
+        <!-- ICAN Reading Assessment -->
+        <div class="rc-section rc-ra-section" id="raSection" style="display:none;">
+            <div class="rc-ra-header">
+                <input type="checkbox" id="raToggle" class="rc-row-toggle no-print" checked>
+                <h3 class="rc-section-title">ICAN Reading Assessment</h3>
+            </div>
+            <div class="rc-ra-grid" id="raContainer"></div>
+        </div>
+
+        <!-- Narrative Reports -->
+        <div class="rc-section rc-narratives-section">
+            <h3 class="rc-section-title">Narrative Reports</h3>
+            <div id="narrativesActions" class="narratives-actions" style="display:none;">
+                <button id="generateNarrativesBtn" class="btn-generate-narratives">Generate AI Narratives</button>
+                <p class="narratives-actions-hint">Uses AI to generate personalized narrative reports for each subject</p>
+            </div>
+            <div id="narrativesContainer">
+                <!-- Narrative cards inserted dynamically -->
+            </div>
+        </div>
+
+        <!-- Grading Legend -->
+        <div class="rc-section rc-legend-section">
+            <h3 class="rc-section-title">Grading Scale</h3>
+            <div class="rc-legend-grid">
+                <div>
+                    <h4 class="rc-legend-subtitle">Academic Performance</h4>
+                    <table class="rc-legend-table">
+                        <thead>
+                            <tr>
+                                <th>Grade</th>
+                                <th>Description</th>
+                                <th>Range</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="grade-badge grade-A">A</span></td>
+                                <td>Advanced</td>
+                                <td>90% and above</td>
+                            </tr>
+                            <tr>
+                                <td><span class="grade-badge grade-P">P</span></td>
+                                <td>Proficient</td>
+                                <td>85% - 89%</td>
+                            </tr>
+                            <tr>
+                                <td><span class="grade-badge grade-AP">AP</span></td>
+                                <td>Approaching Proficiency</td>
+                                <td>80% - 84%</td>
+                            </tr>
+                            <tr>
+                                <td><span class="grade-badge grade-D">D</span></td>
+                                <td>Developing</td>
+                                <td>75% - 79%</td>
+                            </tr>
+                            <tr>
+                                <td><span class="grade-badge grade-B">B</span></td>
+                                <td>Beginning</td>
+                                <td>Below 75%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <h4 class="rc-legend-subtitle">Academic Enabler</h4>
+                    <table class="rc-legend-table">
+                        <thead>
+                            <tr>
+                                <th>Grade</th>
+                                <th>Description</th>
+                                <th>Range</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="grade-badge rc-ae-badge-e">E</span></td>
+                                <td>Excellent</td>
+                                <td>90 - 100</td>
+                            </tr>
+                            <tr>
+                                <td><span class="grade-badge rc-ae-badge-g">G</span></td>
+                                <td>Good</td>
+                                <td>80 - 89</td>
+                            </tr>
+                            <tr>
+                                <td><span class="grade-badge rc-ae-badge-p">P</span></td>
+                                <td>Poor</td>
+                                <td>70 - 79</td>
+                            </tr>
+                            <tr>
+                                <td><span class="grade-badge rc-ae-badge-vp">VP</span></td>
+                                <td>Very Poor</td>
+                                <td>Below 70</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="rc-footer">
+            <div class="rc-signature">
+                <p class="rc-signature-name">Lee Hyun Soo</p>
+                <div class="rc-signature-line"></div>
+                <p class="rc-signature-label">Academy Director</p>
+            </div>
+            <div class="rc-footer-info">
+                <p>ICAN Language Center, Inc.</p>
+                <p>16F Strata 100 Building, Emerald Avenue, Ortigas Center</p>
+                <p>Pasig City, Metro Manila, Philippines</p>
+                <p class="rc-tagline">아이캔 영어학습을 잡다</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/common.js"></script>
+    <script src="js/report-card.js"></script>
+</body>
+</html>

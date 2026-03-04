@@ -1,0 +1,43 @@
+Subject: 🌟 ICAN Stellar Apps Now Accessible from Home!
+
+Dear Teachers,
+
+Great news! The ICAN Stellar apps are now accessible online from anywhere - including from home!
+
+🌐 PERMANENT ACCESS LINKS (Please bookmark these):
+
+📝 Teacher Report Generator
+https://icanstellar.ngrok.app
+Create daily monitoring reports with AI narratives
+
+📊 Student Report Viewer
+https://stellaranalysis.ngrok.app
+View analytics and performance insights
+
+🎓 Report Card Data Generator
+https://stellarscores.ngrok.app
+Generate final report cards with AI analysis
+
+---
+
+✅ These URLs are permanent and will never change
+✅ Access from anywhere with internet connection
+✅ Works on desktop, laptop, tablet, and mobile
+✅ Same functionality as before
+
+📍 LOCAL ACCESS (Still Available on Campus):
+If you're on the school network, you can still use:
+http://SCHOOL_IP:1441 (Teacher Report)
+http://SCHOOL_IP:1442 (Student Viewer)
+http://SCHOOL_IP:1443 (Report Card)
+
+🔖 ACTION REQUIRED: Please bookmark all three links for easy access!
+
+This means you can now work on reports and access student data from the comfort of your home!
+
+Questions? Contact IT support.
+
+Happy teaching! 🍎
+
+---
+ICAN Academy IT Team

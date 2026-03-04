@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Manager - ICAN Language Center</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/data-manager.css">
+</head>
+<body>
+    <!-- Controls Bar -->
+    <div class="controls-bar no-print">
+        <div class="controls-content">
+            <div class="controls-top">
+                <div class="controls-left">
+                    <img src="/assets/ican-logo.png" alt="ICAN Logo" class="controls-logo">
+                    <div>
+                        <h1 class="controls-title">Data Manager</h1>
+                        <p class="controls-subtitle">CSV admin interface for report data</p>
+                    </div>
+                </div>
+            </div>
+            <nav class="controls-nav">
+                <a href="/" class="btn-nav" data-href="/">Data Generator</a>
+                <a href="/academic-enabler" class="btn-nav" data-href="/academic-enabler">Academic Enabler</a>
+                <a href="/report-card" class="btn-nav" data-href="/report-card">Full Report Card</a>
+                <a href="/data-manager" class="btn-nav" data-href="/data-manager">Data Manager</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Tab Bar -->
+    <div class="dm-tabs">
+        <button class="dm-tab active" data-tab="overview">Overview</button>
+        <button class="dm-tab" data-tab="browse">Browse & Edit</button>
+        <button class="dm-tab" data-tab="duplicates">Duplicates</button>
+        <button class="dm-tab" data-tab="subjects">Subject Manager</button>
+        <button class="dm-tab" data-tab="backups">Backups</button>
+    </div>
+
+    <!-- Tab Content -->
+    <div class="dm-content">
+        <!-- Overview Tab -->
+        <div class="dm-panel active" id="panel-overview">
+            <div class="dm-stats-grid" id="statsGrid">
+                <div class="dm-stat-card">
+                    <div class="dm-stat-value" id="statTotalRows">--</div>
+                    <div class="dm-stat-label">Total Rows</div>
+                </div>
+                <div class="dm-stat-card dm-stat-warn">
+                    <div class="dm-stat-value" id="statDuplicates">--</div>
+                    <div class="dm-stat-label">Duplicate Rows</div>
+                </div>
+                <div class="dm-stat-card">
+                    <div class="dm-stat-value" id="statSubjects">--</div>
+                    <div class="dm-stat-label">Subjects</div>
+                </div>
+                <div class="dm-stat-card">
+                    <div class="dm-stat-value" id="statStudents">--</div>
+                    <div class="dm-stat-label">Students</div>
+                </div>
+            </div>
+            <div class="dm-quick-actions">
+                <h3>Quick Actions</h3>
+                <div class="dm-actions-row">
+                    <button class="dm-btn dm-btn-primary" id="btnCreateBackup">Create Backup</button>
+                    <button class="dm-btn dm-btn-danger" id="btnRemoveAllDups">Remove All Duplicates</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Browse & Edit Tab -->
+        <div class="dm-panel" id="panel-browse">
+            <div class="dm-toolbar">
+                <input type="text" class="dm-search" id="browseSearch" placeholder="Search all fields...">
+                <select class="dm-filter" id="browseStudent">
+                    <option value="">All Students</option>
+                </select>
+                <select class="dm-filter" id="browseSubject">
+                    <option value="">All Subjects</option>
+                </select>
+                <input type="date" class="dm-date" id="browseDateFrom" title="Date from">
+                <input type="date" class="dm-date" id="browseDateTo" title="Date to">
+                <button class="dm-btn dm-btn-secondary" id="browseClear">Clear</button>
+                <button class="dm-btn dm-btn-primary" id="btnEditSelected" disabled>Edit Selected</button>
+                <button class="dm-btn dm-btn-danger" id="btnDeleteSelected" disabled>Delete Selected</button>
+            </div>
+            <div class="dm-table-wrapper">
+                <table class="dm-table" id="browseTable">
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox" id="selectAll"></th>
+                            <th>#</th>
+                            <th>Date</th>
+                            <th>Student Name</th>
+                            <th>Teacher Name</th>
+                            <th>Subject</th>
+                            <th>Skill Focus</th>
+                            <th>SF Met</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="browseBody"></tbody>
+                </table>
+            </div>
+            <div class="dm-pagination" id="browsePagination"></div>
+        </div>
+
+        <!-- Duplicates Tab -->
+        <div class="dm-panel" id="panel-duplicates">
+            <div class="dm-dup-header">
+                <div class="dm-dup-info" id="dupInfo">Loading duplicates...</div>
+                <button class="dm-btn dm-btn-danger" id="btnAutoDedup">Remove All Duplicates (Keep Latest)</button>
+            </div>
+            <div id="dupGroups"></div>
+        </div>
+
+        <!-- Subject Manager Tab -->
+        <div class="dm-panel" id="panel-subjects">
+            <div class="dm-merge-section">
+                <h3>Merge / Rename Subjects</h3>
+                <p class="dm-merge-desc">Select a source subject to rename. All rows with that subject will be updated to the target name.</p>
+                <div class="dm-merge-controls">
+                    <div class="dm-merge-field">
+                        <label>Source (rename from):</label>
+                        <select id="mergeFrom" class="dm-filter">
+                            <option value="">-- Select Subject --</option>
+                        </select>
+                    </div>
+                    <div class="dm-merge-arrow">&#x2192;</div>
+                    <div class="dm-merge-field">
+                        <label>Target (rename to):</label>
+                        <select id="mergeTo" class="dm-filter">
+                            <option value="">-- Select Subject --</option>
+                        </select>
+                    </div>
+                    <button class="dm-btn dm-btn-primary" id="btnMerge" disabled>Merge</button>
+                </div>
+            </div>
+            <div class="dm-subject-list" id="subjectList"></div>
+        </div>
+
+        <!-- Backups Tab -->
+        <div class="dm-panel" id="panel-backups">
+            <div class="dm-backup-header">
+                <button class="dm-btn dm-btn-primary" id="btnNewBackup">Create New Backup</button>
+            </div>
+            <div class="dm-backup-list" id="backupList">Loading backups...</div>
+        </div>
+    </div>
+
+    <!-- Edit Modal -->
+    <div class="dm-modal-overlay" id="editModal" style="display:none;">
+        <div class="dm-modal">
+            <div class="dm-modal-header">
+                <h3>Edit Row</h3>
+                <button class="dm-modal-close" id="editModalClose">&times;</button>
+            </div>
+            <div class="dm-modal-body" id="editModalBody"></div>
+            <div class="dm-modal-footer">
+                <button class="dm-btn dm-btn-secondary" id="editModalCancel">Cancel</button>
+                <button class="dm-btn dm-btn-primary" id="editModalSave">Save Changes</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bulk Edit Modal -->
+    <div class="dm-modal-overlay" id="bulkEditModal" style="display:none;">
+        <div class="dm-modal dm-modal-small">
+            <div class="dm-modal-header">
+                <h3 id="bulkEditTitle">Bulk Edit</h3>
+                <button class="dm-modal-close" id="bulkEditModalClose">&times;</button>
+            </div>
+            <div class="dm-modal-body">
+                <div class="dm-bulk-field-group">
+                    <label>Field</label>
+                    <select class="dm-filter" id="bulkEditField" style="width:100%;"></select>
+                </div>
+                <div class="dm-bulk-field-group">
+                    <label>New Value</label>
+                    <input type="text" id="bulkEditValue" class="dm-bulk-value" placeholder="Enter new value...">
+                </div>
+            </div>
+            <div class="dm-modal-footer">
+                <button class="dm-btn dm-btn-secondary" id="bulkEditCancel">Cancel</button>
+                <button class="dm-btn dm-btn-primary" id="bulkEditApply">Apply</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confirm Modal -->
+    <div class="dm-modal-overlay" id="confirmModal" style="display:none;">
+        <div class="dm-modal dm-modal-small">
+            <div class="dm-modal-header">
+                <h3 id="confirmTitle">Confirm</h3>
+                <button class="dm-modal-close" id="confirmModalClose">&times;</button>
+            </div>
+            <div class="dm-modal-body">
+                <p id="confirmMessage"></p>
+            </div>
+            <div class="dm-modal-footer">
+                <button class="dm-btn dm-btn-secondary" id="confirmCancel">Cancel</button>
+                <button class="dm-btn dm-btn-danger" id="confirmOk">Confirm</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Password Gate -->
+    <div class="dm-auth-overlay" id="authOverlay">
+        <div class="dm-auth-card">
+            <div class="dm-auth-icon">&#x1F512;</div>
+            <h2>Data Manager</h2>
+            <p>Enter the admin password to continue</p>
+            <form id="authForm">
+                <input type="password" id="authPassword" class="dm-auth-input" placeholder="Password" autocomplete="off" autofocus>
+                <div class="dm-auth-error" id="authError"></div>
+                <button type="submit" class="dm-btn dm-btn-primary dm-auth-btn">Unlock</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div id="toast" class="dm-toast"></div>
+
+    <script src="js/common.js"></script>
+    <script src="js/data-manager.js"></script>
+</body>
+</html>

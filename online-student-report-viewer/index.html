@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Student Report Viewer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="app-header">
+            <div class="header-content">
+                <img src="assets/ican-logo.png" alt="ICAN Logo" class="header-logo">
+                <div>
+                    <h1>Online Student Report Viewer</h1>
+                    <p class="subtitle">View and analyze ICAN STELLAR online class monitoring reports</p>
+                </div>
+            </div>
+        </header>
+
+        <div class="filters-section">
+            <div class="filter-group">
+                <label for="studentSelect">Select Student:</label>
+                <div class="searchable-dropdown">
+                    <input type="text" id="studentSearch" placeholder="Search students..." autocomplete="off">
+                    <div class="dropdown-list" id="studentDropdown"></div>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <label for="startDate">Start Date:</label>
+                <input type="date" id="startDate">
+            </div>
+
+            <div class="filter-group">
+                <label for="endDate">End Date:</label>
+                <input type="date" id="endDate">
+            </div>
+
+            <div class="filter-group">
+                <label for="teacherFilter">Teacher:</label>
+                <select id="teacherFilter">
+                    <option value="">All Teachers</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="subjectFilter">Subject:</label>
+                <select id="subjectFilter">
+                    <option value="">All Subjects</option>
+                </select>
+            </div>
+
+            <div class="filter-actions">
+                <button id="applyFilters" class="btn-primary">Apply Filters</button>
+                <button id="clearFilters" class="btn-secondary">Clear</button>
+                <button id="viewPersonaBtn" class="btn-persona" style="display: none;">
+                    🎭 View Student Persona
+                </button>
+            </div>
+        </div>
+
+        <!-- Charts Section (Non-AI) -->
+        <div id="chartsSection" class="charts-section" style="display: none;">
+            <div class="section-header-with-download">
+                <h2>📊 Performance Analytics</h2>
+                <button id="downloadChartsBtn" class="btn-download">📥 Download Report</button>
+            </div>
+            <div class="filter-info" id="filterInfo" style="display: none;">
+                <p><strong>📌 Showing data for:</strong> <span id="filterDescription"></span></p>
+                <div id="filteredMaterialsDisplay" class="filtered-materials-display" style="display: none;"></div>
+            </div>
+            <div class="charts-container">
+                <div class="chart-card">
+                    <h3>📊 Performance Radar <span class="chart-label dynamic">Dynamic</span></h3>
+                    <p class="chart-description">Overall average rating across all 6 categories for the selected period</p>
+                    <div class="chart-canvas-wrapper">
+                        <canvas id="radarChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-card">
+                    <h3>📈 Ratings Over Time <span class="chart-label dynamic">Dynamic</span></h3>
+                    <p class="chart-description">Daily average ratings (when multiple reports exist on same day, they are averaged)</p>
+                    <div class="chart-canvas-wrapper">
+                        <canvas id="lineChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-card">
+                    <h3>📉 Weakness Analysis <span class="chart-label semantic">Semantic</span></h3>
+                    <p class="chart-description">Areas to focus on based on teacher observations - grouped by priority</p>
+                    <div class="chart-scroll-container" id="barChartContainer">
+                        <canvas id="barChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-card" id="scoresChartCard" style="display: none;">
+                    <h3>📝 Score Performance <span class="chart-label dynamic">Dynamic</span></h3>
+                    <p class="chart-description">Daily average score percentages by category (only shows categories with data)</p>
+                    <div class="chart-canvas-wrapper">
+                        <canvas id="scoresChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-card" id="subjectChartCard" style="display: none;">
+                    <h3>📚 Subject Performance Comparison <span class="chart-label kinetic">Kinetic</span></h3>
+                    <p class="chart-description">Average of all 6 ratings (Attention, Retention, Comprehension, Behavior, Handwriting, Conversation) per subject</p>
+                    <div class="chart-canvas-wrapper">
+                        <canvas id="subjectChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Academic Development Framework Section -->
+        <div id="academicFrameworkSection" class="academic-framework-section" style="display: none;">
+            <div class="section-header">
+                <h2>🎓 Academic Development Framework</h2>
+                <div class="header-buttons">
+                    <button id="generateFrameworkAnalysis" class="btn-primary">Generate AI Analysis</button>
+                    <button id="downloadFrameworkBtn" class="btn-download" style="display: none;">📥 Download Framework</button>
+                </div>
+            </div>
+
+            <!-- AI Loading State -->
+            <div id="frameworkAiLoadingState" class="loading-state" style="display: none;">
+                <div class="spinner"></div>
+                <p>AI is analyzing student data and generating comprehensive framework...</p>
+            </div>
+
+            <!-- Framework Content (Hidden until AI generates it) -->
+            <div id="frameworkContent" style="display: none;">
+                <!-- Student Profile: Grade Level + Development Stage -->
+                <div class="student-profile-section">
+                    <h3>🎓 Student Academic Profile</h3>
+                    <p class="indicator-description">Current grade level and development stage analysis</p>
+
+                    <div class="profile-grid">
+                        <!-- Actual Grade -->
+                        <div class="profile-card actual-grade-card">
+                            <div class="profile-card-header">
+                                <div class="profile-icon">📖</div>
+                                <div class="profile-label">Enrolled Grade</div>
+                            </div>
+                            <div class="profile-value" id="actualGradeLevel">-</div>
+                            <div class="profile-description">Student's current grade level</div>
+                        </div>
+
+                        <!-- Performance Level -->
+                        <div class="profile-card performance-card">
+                            <div class="profile-card-header">
+                                <div class="profile-icon">📊</div>
+                                <div class="profile-label">Performance Level</div>
+                            </div>
+                            <div class="profile-value" id="performanceGradeLevel">-</div>
+                            <div class="grade-status" id="gradeStatusBadge">-</div>
+                            <div id="academicScoreBreakdown" class="academic-score-breakdown" style="display: none;"></div>
+                        </div>
+
+                        <!-- Current Development Stage -->
+                        <div class="profile-card development-stage-card">
+                            <div class="profile-card-header">
+                                <div class="profile-icon">🌟</div>
+                                <div class="profile-label">Development Stage</div>
+                            </div>
+                            <div class="profile-value development-stage" id="currentDevelopmentStage">-</div>
+                            <div class="profile-description" id="developmentStageDescription">-</div>
+                        </div>
+                    </div>
+
+                    <!-- International Benchmarks Button -->
+                    <div class="benchmarks-button-container">
+                        <button id="showBenchmarksBtn" class="btn-secondary benchmarks-btn">
+                            📚 View International Grade Level Benchmarks
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AI Analysis Section (AI-Powered) -->
+        <div id="aiAnalysisSection" class="ai-analysis-section" style="display: none;">
+            <div class="section-header">
+                <h2>🤖 AI-Powered Analysis</h2>
+                <div class="header-buttons">
+                    <button id="generateAiAnalysis" class="btn-primary">Generate AI Analysis</button>
+                    <button id="downloadAiBtn" class="btn-download" style="display: none;">📥 Download Analysis</button>
+                </div>
+            </div>
+
+            <div id="aiLoadingState" class="loading-state" style="display: none;">
+                <div class="spinner"></div>
+                <p>AI is analyzing student performance data...</p>
+            </div>
+
+            <div id="aiContent" style="display: none;">
+                <!-- AI Insights -->
+                <div class="ai-insights">
+                    <div class="insight-card strengths-card">
+                        <h3>💪 Strengths</h3>
+                        <ul id="strengthsList"></ul>
+                    </div>
+
+                    <div class="insight-card weaknesses-card">
+                        <h3>⚠️ Weakness Patterns</h3>
+                        <div id="weaknessesList"></div>
+                    </div>
+
+                    <div class="insight-card recommendations-card">
+                        <h3>💡 Recommendations</h3>
+                        <ul id="recommendationsList"></ul>
+                    </div>
+
+                    <div class="insight-card insights-card">
+                        <h3>🎯 Progress Insights</h3>
+                        <p id="insightsText"></p>
+                        <div class="trend-badge" id="trendBadge"></div>
+                    </div>
+
+                    <div class="insight-card scores-insights-card" id="scoresInsightsCard" style="display: none;">
+                        <h3>📊 Score Performance Insights</h3>
+                        <div id="scoresInsightsList"></div>
+                    </div>
+
+                    <div class="insight-card lesson-prompt-card" id="lessonPromptCard" style="display: none;">
+                        <h3>📋 AI Lesson Plan Generator Prompt</h3>
+                        <p class="chart-description">Copy this prompt to any AI (ChatGPT, Claude, etc.) to generate a personalized lesson plan targeting this student's weaknesses</p>
+                        <div class="prompt-container">
+                            <div id="lessonPromptText" class="prompt-text"></div>
+                            <button id="copyPromptBtn" class="btn-primary copy-btn">📋 Copy to Clipboard</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="analyticsSection" class="analytics-section" style="display: none;">
+            <div class="section-header-with-download">
+                <h2>📈 Student Analytics</h2>
+                <button id="downloadAnalyticsBtn" class="btn-download" style="display: none;">📥 Download Report</button>
+            </div>
+            <div class="analytics-grid">
+                <div class="stat-card">
+                    <div class="stat-label">Total Reports</div>
+                    <div class="stat-value" id="totalReports">0</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Avg Attention</div>
+                    <div class="stat-value" id="avgAttention">0</div>
+                    <div class="stat-stars" id="starsAttention"></div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Avg Retention</div>
+                    <div class="stat-value" id="avgRetention">0</div>
+                    <div class="stat-stars" id="starsRetention"></div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Avg Comprehension</div>
+                    <div class="stat-value" id="avgComprehension">0</div>
+                    <div class="stat-stars" id="starsComprehension"></div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Avg Cooperation</div>
+                    <div class="stat-value" id="avgCooperation">0</div>
+                    <div class="stat-stars" id="starsCooperation"></div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Avg Engagement</div>
+                    <div class="stat-value" id="avgEngagement">0</div>
+                    <div class="stat-stars" id="starsEngagement"></div>
+                </div>
+            </div>
+
+            <div class="analytics-details">
+                <div class="detail-card">
+                    <h3>Subjects Breakdown</h3>
+                    <div id="subjectsBreakdown" class="breakdown-list"></div>
+                </div>
+                <div class="detail-card">
+                    <h3>Teachers</h3>
+                    <div id="teachersBreakdown" class="breakdown-list"></div>
+                </div>
+            </div>
+
+            <!-- Textbooks by Subject -->
+            <div class="materials-section">
+                <h3>📕 Textbooks/Materials by Subject</h3>
+                <p class="section-description">Books and learning materials used in each subject</p>
+                <div id="materialsBySubject" class="materials-grid"></div>
+            </div>
+
+            <!-- Lesson Themes Progress by Subject -->
+            <div class="learning-progress-section">
+                <h3>📖 Lesson Themes Covered by Subject</h3>
+                <p class="section-description">Specific lessons, chapters, and topics completed</p>
+                <div id="learningProgressBySubject" class="learning-progress-grid"></div>
+            </div>
+
+            <!-- Learning Timeline -->
+            <div class="learning-timeline-section" style="display: none;">
+                <h3>📅 Learning Timeline</h3>
+                <p class="section-description">Chronological view of lessons completed</p>
+                <div id="learningTimeline" class="timeline-container"></div>
+            </div>
+
+            <!-- Learning Effectiveness Analysis -->
+            <div class="effectiveness-section">
+                <h3>📊 Learning Effectiveness Analysis</h3>
+                <p class="section-description">How effectively is the student learning with each textbook and lesson?</p>
+
+                <!-- Textbook Performance -->
+                <div class="effectiveness-subsection">
+                    <h4>📕 Performance by Textbook</h4>
+                    <div id="textbookPerformance" class="textbook-performance-grid"></div>
+                </div>
+
+                <!-- Lesson Theme Performance Table -->
+                <div class="effectiveness-subsection">
+                    <h4>📖 Performance by Lesson Theme</h4>
+                    <div id="lessonPerformanceTable" class="lesson-performance-container"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="reportsSection" class="reports-section">
+            <div class="section-header">
+                <h2>📝 Reports</h2>
+                <div class="header-buttons">
+                    <div id="reportCount" class="report-count"></div>
+                    <button id="downloadReportsBtn" class="btn-download" style="display: none;">📥 Download All Reports (PDF)</button>
+                </div>
+            </div>
+            <div id="reportsList" class="reports-list">
+                <div class="empty-state">
+                    <p>👆 Select a student to view their reports</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- International Benchmarks Popup Modal -->
+    <div id="benchmarksModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>📚 International Grade Level Benchmarks</h2>
+                <span class="close-modal" id="closeBenchmarksModal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <!-- International Grade Level Benchmarks -->
+                <div class="modal-section">
+                    <h3>🌍 Performance-Based International Equivalents</h3>
+                    <p class="modal-description">Grade level equivalents across international education systems based on student performance</p>
+                    <div class="grade-benchmarks">
+                        <div class="benchmark-card ib-card">
+                            <div class="benchmark-logo">IB</div>
+                            <div class="benchmark-label">International Baccalaureate</div>
+                            <div class="benchmark-level" id="ibLevelModal">-</div>
+                            <div class="benchmark-sublabel" id="ibSublabelModal">-</div>
+                        </div>
+                        <div class="benchmark-card uscc-card">
+                            <div class="benchmark-logo">US</div>
+                            <div class="benchmark-label">US Common Core</div>
+                            <div class="benchmark-level" id="usccLevelModal">-</div>
+                            <div class="benchmark-sublabel" id="usccSublabelModal">-</div>
+                        </div>
+                        <div class="benchmark-card cambridge-card">
+                            <div class="benchmark-logo">CAM</div>
+                            <div class="benchmark-label">Cambridge Assessment</div>
+                            <div class="benchmark-level" id="cambridgeLevelModal">-</div>
+                            <div class="benchmark-sublabel" id="cambridgeSublabelModal">-</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Development Stage Rubric -->
+                <div class="modal-section">
+                    <h3>🧩 Development Stage Rubric</h3>
+                    <p class="modal-description">Data-driven analysis of developmental dimensions</p>
+
+                    <div class="rubric-stages" id="rubricStages">
+                        <!-- Dynamic content will be populated here by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

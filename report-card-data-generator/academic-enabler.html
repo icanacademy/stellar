@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Enabler - ICAN Language Center</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/academic-enabler.css">
+</head>
+<body>
+    <!-- Controls Bar -->
+    <div class="controls-bar no-print">
+        <div class="controls-content">
+            <div class="controls-top">
+                <div class="controls-left">
+                    <img src="/assets/ican-logo.png" alt="ICAN Logo" class="controls-logo">
+                    <div>
+                        <h1 class="controls-title">Academic Enabler</h1>
+                        <p class="controls-subtitle">Behavioral assessment logger</p>
+                    </div>
+                </div>
+                <div class="controls-right">
+                    <select id="studentSelect">
+                        <option value="">-- Select Student --</option>
+                    </select>
+                    <select id="seasonSelect" disabled>
+                        <option value="">-- Select Season --</option>
+                    </select>
+                    <button id="saveBtn" class="btn-action btn-save" disabled>Save</button>
+                </div>
+            </div>
+            <nav class="controls-nav">
+                <a href="/" class="btn-nav" data-href="/">Data Generator</a>
+                <a href="/academic-enabler" class="btn-nav" data-href="/academic-enabler">Academic Enabler</a>
+                <a href="/report-card" class="btn-nav" data-href="/report-card">Full Report Card</a>
+                <a href="/data-manager" class="btn-nav" data-href="/data-manager">Data Manager</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Loading State -->
+    <div id="loadingState" class="loading-overlay" style="display:none;">
+        <div class="loading-spinner"></div>
+        <p>Loading assessment...</p>
+    </div>
+
+    <!-- Main Form -->
+    <div class="form-container" id="formContainer" style="display:none;">
+        <!-- Student Info Bar -->
+        <div class="student-info-bar" id="studentInfoBar">
+            <div class="student-name" id="studentNameDisplay"></div>
+            <div class="teacher-list" id="teacherListDisplay"></div>
+        </div>
+
+        <!-- Teacher Participation Management Bar -->
+        <div id="teacherMgmtBar" class="teacher-mgmt-bar" style="display:none;"></div>
+
+        <div id="domainSections"></div>
+
+        <!-- Summary Bar -->
+        <div class="summary-bar" id="summaryBar">
+            <h3 class="summary-title">Overall Summary</h3>
+            <div id="summaryContent" class="summary-content"></div>
+        </div>
+    </div>
+
+    <!-- Empty State -->
+    <div id="emptyState" class="empty-state">
+        <p>Select a student and season to view and edit their Academic Enabler assessment</p>
+    </div>
+
+    <!-- Toast -->
+    <div id="toast" class="toast"></div>
+
+    <script src="js/common.js"></script>
+    <script src="js/academic-enabler.js"></script>
+</body>
+</html>

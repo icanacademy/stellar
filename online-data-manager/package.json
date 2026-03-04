@@ -1,0 +1,13 @@
+{
+  "name": "online-data-manager",
+  "version": "1.0.0",
+  "description": "CSV admin interface for online report data",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "cors": "^2.8.5"
+  }
+}

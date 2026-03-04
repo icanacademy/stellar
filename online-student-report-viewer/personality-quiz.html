@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personality Quiz - STELLAR</title>
+  <link rel="stylesheet" href="css/persona-styles.css">
+  <style>
+    /* Quiz-specific styles */
+    .quiz-container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .quiz-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .quiz-header h1 {
+      font-size: 2rem;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 10px;
+    }
+
+    .quiz-header p {
+      color: #666;
+      font-size: 1rem;
+    }
+
+    .student-badge {
+      display: inline-block;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 8px 20px;
+      border-radius: 20px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .progress-container {
+      margin-bottom: 30px;
+    }
+
+    .progress-text {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .progress-bar {
+      height: 8px;
+      background: #e0e0e0;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border-radius: 4px;
+      transition: width 0.3s ease;
+    }
+
+    .question-card {
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .question-number {
+      font-size: 0.85rem;
+      color: #667eea;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .question-text {
+      font-size: 1.25rem;
+      color: #333;
+      margin-bottom: 25px;
+      line-height: 1.5;
+    }
+
+    .options-container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .option-button {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding: 20px;
+      background: #f8f9ff;
+      border: 2px solid #e0e0e0;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-align: left;
+    }
+
+    .option-button:hover {
+      border-color: #667eea;
+      background: white;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+    }
+
+    .option-button.selected {
+      border-color: #667eea;
+      background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+    }
+
+    .option-letter {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border-radius: 50%;
+      font-weight: 700;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    .option-text {
+      font-size: 1rem;
+      color: #333;
+      line-height: 1.4;
+    }
+
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .nav-btn {
+      padding: 12px 30px;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border: none;
+    }
+
+    .nav-btn.back {
+      background: #f0f0f0;
+      color: #666;
+    }
+
+    .nav-btn.back:hover {
+      background: #e0e0e0;
+    }
+
+    .nav-btn.next {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      flex: 1;
+      max-width: 200px;
+    }
+
+    .nav-btn.next:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+    }
+
+    .nav-btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      transform: none !important;
+    }
+
+    /* Intro screen */
+    .intro-screen {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .intro-icon {
+      font-size: 4rem;
+      margin-bottom: 20px;
+    }
+
+    .intro-screen h2 {
+      font-size: 1.8rem;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    .intro-screen p {
+      color: #666;
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+
+    .intro-features {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 30px 0;
+      flex-wrap: wrap;
+    }
+
+    .intro-feature {
+      text-align: center;
+    }
+
+    .intro-feature .icon {
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+
+    .intro-feature .label {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .start-btn {
+      padding: 15px 50px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-top: 20px;
+    }
+
+    .start-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+    }
+
+    /* Results screen */
+    .results-screen {
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    .results-icon {
+      font-size: 4rem;
+      margin-bottom: 20px;
+    }
+
+    .personality-code-display {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin: 30px 0;
+    }
+
+    .code-letter-box {
+      width: 50px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border-radius: 10px;
+      font-size: 1.8rem;
+      font-weight: 700;
+      font-family: monospace;
+    }
+
+    .code-letter-box.balanced {
+      opacity: 0.7;
+    }
+
+    .dimension-results {
+      text-align: left;
+      margin: 30px 0;
+    }
+
+    .dimension-result-item {
+      margin-bottom: 20px;
+    }
+
+    .dimension-result-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      font-size: 0.9rem;
+    }
+
+    .dimension-result-labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      color: #888;
+    }
+
+    .dimension-result-track {
+      height: 10px;
+      background: linear-gradient(to right, #667eea, #e0e0e0 45%, #e0e0e0 55%, #764ba2);
+      border-radius: 5px;
+      position: relative;
+      margin: 8px 0;
+    }
+
+    .dimension-result-marker {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: white;
+      border: 3px solid #333;
+      border-radius: 50%;
+      top: -5px;
+      transform: translateX(-50%);
+    }
+
+    .view-profile-btn {
+      display: inline-block;
+      padding: 15px 40px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 600;
+      margin-top: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .view-profile-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+    }
+
+    /* Loading state */
+    .loading-screen {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .loading-spinner {
+      width: 60px;
+      height: 60px;
+      border: 4px solid #e0e0e0;
+      border-top-color: #667eea;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 20px;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    /* Back link */
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #667eea;
+      text-decoration: none;
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Hidden */
+    .hidden {
+      display: none !important;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .quiz-header h1 {
+        font-size: 1.5rem;
+      }
+
+      .question-text {
+        font-size: 1.1rem;
+      }
+
+      .option-button {
+        padding: 15px;
+      }
+
+      .intro-features {
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="quiz-container">
+    <!-- Back link -->
+    <a href="#" class="back-link" id="back-link">
+      <span>&larr;</span> Back to Profile
+    </a>
+
+    <!-- Student badge -->
+    <div class="quiz-header">
+      <div class="student-badge" id="student-badge">Loading...</div>
+      <h1>Discover Your Learning Personality</h1>
+      <p>Answer 12 quick questions to reveal your unique learning style</p>
+    </div>
+
+    <!-- Intro Screen -->
+    <div class="question-card" id="intro-screen">
+      <div class="intro-screen">
+        <div class="intro-icon">🧠</div>
+        <h2>Ready to discover your personality?</h2>
+        <p>This quiz helps us understand how you learn best and what future careers might be a great fit for you.</p>
+
+        <div class="intro-features">
+          <div class="intro-feature">
+            <div class="icon">⏱️</div>
+            <div class="label">3-5 minutes</div>
+          </div>
+          <div class="intro-feature">
+            <div class="icon">❓</div>
+            <div class="label">12 questions</div>
+          </div>
+          <div class="intro-feature">
+            <div class="icon">🎯</div>
+            <div class="label">No wrong answers</div>
+          </div>
+        </div>
+
+        <p style="font-size: 0.9rem; color: #888;">Just pick the option that feels most like you!</p>
+
+        <button class="start-btn" id="start-btn">Start Quiz</button>
+      </div>
+    </div>
+
+    <!-- Question Screen -->
+    <div id="question-screen" class="hidden">
+      <div class="progress-container">
+        <div class="progress-text">
+          <span id="progress-label">Question 1 of 12</span>
+          <span id="progress-percent">0%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+        </div>
+      </div>
+
+      <div class="question-card">
+        <div class="question-number" id="question-number">Question 1</div>
+        <div class="question-text" id="question-text">Loading question...</div>
+
+        <div class="options-container">
+          <button class="option-button" id="option-a" data-answer="A">
+            <span class="option-letter">A</span>
+            <span class="option-text" id="option-a-text">Option A</span>
+          </button>
+          <button class="option-button" id="option-b" data-answer="B">
+            <span class="option-letter">B</span>
+            <span class="option-text" id="option-b-text">Option B</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="nav-buttons">
+        <button class="nav-btn back" id="prev-btn">← Back</button>
+        <button class="nav-btn next" id="next-btn" disabled>Next →</button>
+      </div>
+    </div>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="hidden">
+      <div class="question-card">
+        <div class="loading-screen">
+          <div class="loading-spinner"></div>
+          <h3>Analyzing your responses...</h3>
+          <p>Calculating your personality profile</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Results Screen -->
+    <div id="results-screen" class="hidden">
+      <div class="question-card">
+        <div class="results-screen">
+          <div class="results-icon">🎉</div>
+          <h2>Your Personality Code</h2>
+
+          <div class="personality-code-display" id="personality-code">
+            <!-- Filled dynamically -->
+          </div>
+
+          <div class="dimension-results" id="dimension-results">
+            <!-- Filled dynamically -->
+          </div>
+
+          <a href="#" class="view-profile-btn" id="view-profile-btn">View Full Profile →</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    // State
+    let studentName = '';
+    let questions = [];
+    let currentQuestion = 0;
+    let answers = [];
+
+    // DOM Elements
+    const introScreen = document.getElementById('intro-screen');
+    const questionScreen = document.getElementById('question-screen');
+    const loadingScreen = document.getElementById('loading-screen');
+    const resultsScreen = document.getElementById('results-screen');
+
+    // Initialize
+    document.addEventListener('DOMContentLoaded', async () => {
+      // Get student name from URL
+      const params = new URLSearchParams(window.location.search);
+      studentName = params.get('student') || '';
+
+      if (!studentName) {
+        alert('No student specified. Redirecting to persona page.');
+        window.location.href = 'persona.html';
+        return;
+      }
+
+      // Update UI
+      document.getElementById('student-badge').textContent = studentName;
+      document.getElementById('back-link').href = `persona.html?student=${encodeURIComponent(studentName)}`;
+      document.getElementById('view-profile-btn').href = `persona.html?student=${encodeURIComponent(studentName)}`;
+
+      // Fetch questions
+      try {
+        const response = await fetch('/api/personality/quiz/questions');
+        const data = await response.json();
+        questions = data.questions;
+        answers = new Array(questions.length).fill(null);
+      } catch (error) {
+        console.error('Error fetching questions:', error);
+        alert('Error loading quiz. Please try again.');
+      }
+    });
+
+    // Start quiz
+    document.getElementById('start-btn').addEventListener('click', () => {
+      introScreen.classList.add('hidden');
+      questionScreen.classList.remove('hidden');
+      showQuestion(0);
+    });
+
+    // Show question
+    function showQuestion(index) {
+      currentQuestion = index;
+      const q = questions[index];
+
+      document.getElementById('question-number').textContent = `Question ${index + 1}`;
+      document.getElementById('question-text').textContent = q.text;
+      document.getElementById('option-a-text').textContent = q.optionA.text;
+      document.getElementById('option-b-text').textContent = q.optionB.text;
+
+      // Update progress
+      const progress = ((index) / questions.length) * 100;
+      document.getElementById('progress-label').textContent = `Question ${index + 1} of ${questions.length}`;
+      document.getElementById('progress-percent').textContent = `${Math.round(progress)}%`;
+      document.getElementById('progress-fill').style.width = `${progress}%`;
+
+      // Update button states
+      document.getElementById('prev-btn').disabled = index === 0;
+
+      // Update selection state
+      const optionA = document.getElementById('option-a');
+      const optionB = document.getElementById('option-b');
+      optionA.classList.remove('selected');
+      optionB.classList.remove('selected');
+
+      if (answers[index] === 'A') {
+        optionA.classList.add('selected');
+      } else if (answers[index] === 'B') {
+        optionB.classList.add('selected');
+      }
+
+      // Update next button
+      updateNextButton();
+    }
+
+    // Option click handlers
+    document.getElementById('option-a').addEventListener('click', () => selectAnswer('A'));
+    document.getElementById('option-b').addEventListener('click', () => selectAnswer('B'));
+
+    function selectAnswer(answer) {
+      answers[currentQuestion] = answer;
+
+      const optionA = document.getElementById('option-a');
+      const optionB = document.getElementById('option-b');
+      optionA.classList.remove('selected');
+      optionB.classList.remove('selected');
+
+      if (answer === 'A') {
+        optionA.classList.add('selected');
+      } else {
+        optionB.classList.add('selected');
+      }
+
+      updateNextButton();
+
+      // Auto-advance after short delay
+      setTimeout(() => {
+        if (currentQuestion < questions.length - 1) {
+          showQuestion(currentQuestion + 1);
+        }
+      }, 300);
+    }
+
+    function updateNextButton() {
+      const nextBtn = document.getElementById('next-btn');
+      const hasAnswer = answers[currentQuestion] !== null;
+
+      if (currentQuestion === questions.length - 1) {
+        nextBtn.textContent = 'Finish';
+        nextBtn.disabled = !hasAnswer;
+      } else {
+        nextBtn.textContent = 'Next →';
+        nextBtn.disabled = !hasAnswer;
+      }
+    }
+
+    // Navigation
+    document.getElementById('prev-btn').addEventListener('click', () => {
+      if (currentQuestion > 0) {
+        showQuestion(currentQuestion - 1);
+      }
+    });
+
+    document.getElementById('next-btn').addEventListener('click', async () => {
+      if (currentQuestion < questions.length - 1) {
+        showQuestion(currentQuestion + 1);
+      } else {
+        // Submit quiz
+        await submitQuiz();
+      }
+    });
+
+    // Submit quiz
+    async function submitQuiz() {
+      questionScreen.classList.add('hidden');
+      loadingScreen.classList.remove('hidden');
+
+      try {
+        const response = await fetch(`/api/personality/quiz/${encodeURIComponent(studentName)}`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ answers })
+        });
+
+        const result = await response.json();
+
+        if (response.ok) {
+          showResults(result);
+        } else {
+          alert('Error submitting quiz: ' + result.message);
+          loadingScreen.classList.add('hidden');
+          questionScreen.classList.remove('hidden');
+        }
+      } catch (error) {
+        console.error('Error submitting quiz:', error);
+        alert('Error submitting quiz. Please try again.');
+        loadingScreen.classList.add('hidden');
+        questionScreen.classList.remove('hidden');
+      }
+    }
+
+    // Show results
+    function showResults(result) {
+      loadingScreen.classList.add('hidden');
+      resultsScreen.classList.remove('hidden');
+
+      const profile = result.combinedProfile;
+
+      // Display personality code
+      const codeContainer = document.getElementById('personality-code');
+      codeContainer.innerHTML = profile.code.split('').map(letter => {
+        const isBalanced = letter === letter.toLowerCase();
+        return `<div class="code-letter-box ${isBalanced ? 'balanced' : ''}">${letter.toUpperCase()}</div>`;
+      }).join('');
+
+      // Display dimension results
+      const dimensionsContainer = document.getElementById('dimension-results');
+      dimensionsContainer.innerHTML = profile.codeDetails.map(detail => `
+        <div class="dimension-result-item">
+          <div class="dimension-result-header">
+            <span>${detail.dimensionName}</span>
+            <span style="color: #667eea; font-weight: 600;">${detail.strength}</span>
+          </div>
+          <div class="dimension-result-labels">
+            <span>${detail.leftLabel}</span>
+            <span>${detail.rightLabel}</span>
+          </div>
+          <div class="dimension-result-track">
+            <div class="dimension-result-marker" style="left: ${detail.score}%"></div>
+          </div>
+        </div>
+      `).join('');
+    }
+  </script>
+</body>
+</html>

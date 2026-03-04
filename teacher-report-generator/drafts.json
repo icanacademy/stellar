@@ -1,0 +1,1061 @@
+{
+  "[Christine] Christine Joy Yerro-Bañares|||Kang Seung Ji [강승지]": {
+    "timestamp": 1772514387727,
+    "teacherName": "[Christine] Christine Joy Yerro-Bañares",
+    "studentName": "Kang Seung Ji [강승지]",
+    "data": {
+      "fields": {
+        "studentSearch": "Kang Seung Ji [강승지]",
+        "studentName": "Kang Seung Ji [강승지]",
+        "studentId": "ICN-ST-676",
+        "gradeLevel": "10",
+        "studentGender": "Female",
+        "wpmInitial": "TBD",
+        "gbwtInitial": "TBD",
+        "readingLevelInitial": "TBD",
+        "interviewScore": "TBD",
+        "date": "2026-03-03",
+        "dayOfWeek": "Tuesday",
+        "teacherSearch": "[Christine] Christine Joy Yerro-Bañares",
+        "teacherName": "[Christine] Christine Joy Yerro-Bañares",
+        "teacherId": "ICN-275",
+        "isSubstitute": false,
+        "subjectSearch": "Reading and Vocab",
+        "subject": "Reading and Vocab",
+        "materials": "Reading Explorer 3 and Wordly Wise 3000 Level 5",
+        "currentLesson": "Reading Explorer 3: Lesson 11B Seeing the Light, Wordly Wise 3000 Level 5: Lesson 20 A Tale of Two Donkeys (continuation)",
+        "homework": "Caterpillar Vocab book",
+        "nextLesson": "Reading Explorer 3: Video Lesson The Genius of Picasso and Lesson 12A Defying Gravity",
+        "skillFocus": "[\"Academic Readiness\"]",
+        "skillFocusMet": "{\"Academic Readiness\":true}",
+        "attention": "0",
+        "retention": "0",
+        "comprehension": "0",
+        "behavior": "0",
+        "handwriting": "0",
+        "conversation": "0",
+        "scoreBookMaterials": "",
+        "totalBookMaterials": "",
+        "scoreVocabulary": "",
+        "totalVocabulary": "",
+        "scoreClassVideo": "",
+        "totalClassVideo": "",
+        "scoreHomework": "",
+        "totalHomework": "",
+        "scoreHomeworkVocab": "",
+        "totalHomeworkVocab": "",
+        "scoreWeeklyTest": "",
+        "totalWeeklyTest": "",
+        "activitiesFinished": "",
+        "activitiesNotFinished": ""
+      },
+      "selectedSkillFocuses": [
+        "Academic Readiness"
+      ],
+      "skillFocusMetStatus": {
+        "Academic Readiness": true
+      },
+      "starRatings": {
+        "attention": "0",
+        "retention": "0",
+        "comprehension": "0",
+        "behavior": "0",
+        "handwriting": "0",
+        "conversation": "0"
+      },
+      "skillsAssessment": {
+        "skill-0": {
+          "name": "Comprehension  ",
+          "isNA": false,
+          "score": "5",
+          "weaknesses": []
+        },
+        "skill-1": {
+          "name": "Digital Literacy",
+          "isNA": false,
+          "score": "5",
+          "weaknesses": []
+        },
+        "skill-2": {
+          "name": "Text Navigation",
+          "isNA": false,
+          "score": "5",
+          "weaknesses": []
+        },
+        "skill-3": {
+          "name": "Information Processing",
+          "isNA": false,
+          "score": "5",
+          "weaknesses": []
+        },
+        "skill-4": {
+          "name": "Study Methods",
+          "isNA": false,
+          "score": "5",
+          "weaknesses": []
+        },
+        "skill-5": {
+          "name": "Critical Analysis",
+          "isNA": false,
+          "score": "5",
+          "weaknesses": []
+        }
+      }
+    }
+  },
+  "[Demple] Demple Agan|||Lee Ha Jun [이하준]": {
+    "timestamp": 1772518736640,
+    "teacherName": "[Demple] Demple Agan",
+    "studentName": "Lee Ha Jun [이하준]",
+    "data": {
+      "fields": {
+        "studentSearch": "Lee Ha Jun [이하준]",
+        "studentName": "Lee Ha Jun [이하준]",
+        "studentId": "ICN-ST-682",
+        "gradeLevel": "6",
+        "studentGender": "Male",
+        "wpmInitial": "TBD",
+        "gbwtInitial": "TBD",
+        "readingLevelInitial": "TBD",
+        "interviewScore": "TBD",
+        "date": "2026-03-03",
+        "dayOfWeek": "Tuesday",
+        "teacherSearch": "[Demple] Demple Agan",
+        "teacherName": "[Demple] Demple Agan",
+        "teacherId": "ICN-56",
+        "isSubstitute": false,
+        "subjectSearch": "Reading to Writing",
+        "subject": "Reading to Writing",
+        "materials": "Reflect 1",
+        "currentLesson": "",
+        "homework": "",
+        "nextLesson": "",
+        "skillFocus": "",
+        "skillFocusMet": "",
+        "attention": "0",
+        "retention": "0",
+        "comprehension": "0",
+        "behavior": "0",
+        "handwriting": "0",
+        "conversation": "0",
+        "scoreBookMaterials": "",
+        "totalBookMaterials": "",
+        "scoreVocabulary": "",
+        "totalVocabulary": "",
+        "scoreClassVideo": "",
+        "totalClassVideo": "",
+        "scoreHomework": "",
+        "totalHomework": "",
+        "scoreHomeworkVocab": "",
+        "totalHomeworkVocab": "",
+        "scoreWeeklyTest": "",
+        "totalWeeklyTest": "",
+        "activitiesFinished": "Today i ichecked his vocabulary homework, then we proceed with the vocabulary quiz where he was able to get a high score, then we proceed with the topic we reviewed quickly then i let him answer the remaining activities ",
+        "activitiesNotFinished": "NONE"
+      },
+      "selectedSkillFocuses": [],
+      "skillFocusMetStatus": {},
+      "starRatings": {
+        "attention": "0",
+        "retention": "0",
+        "comprehension": "0",
+        "behavior": "0",
+        "handwriting": "0",
+        "conversation": "0"
+      },
+      "skillsAssessment": {
+        "skill-0": {
+          "name": "Coherence",
+          "isNA": false,
+          "score": "5",
+          "weaknesses": []
+        },
+        "skill-1": {
+          "name": "Summarization",
+          "isNA": false,
+          "score": "5",
+          "weaknesses": []
+        },
+        "skill-2": {
+          "name": "Expression ",
+          "isNA": false,
+          "score": "5",
+          "weaknesses": []
+        },
+        "skill-3": {
+          "name": "Main Idea & Details",
+          "isNA": false,
+          "score": "5",
+          "weaknesses": []
+        },
+        "skill-4": {
+          "name": "Structure ",
+          "isNA": false,
+          "score": "5",
+          "weaknesses": []
+        },
+        "skill-5": {
+          "name": "Comprehension",
+          "isNA": false,
+          "score": "5",
+          "weaknesses": []
+        }
+      }
+    }
+  },
+  "[Analyn] Analyn Roa|||Han Ga Eun [한가은]": {
+    "timestamp": 1772522345851,
+    "teacherName": "[Analyn] Analyn Roa",
+    "studentName": "Han Ga Eun [한가은]",
+    "data": {
+      "fields": {
+        "studentSearch": "",
+        "studentName": "Han Ga Eun [한가은]",
+        "studentId": "ICN-ST-651",
+        "gradeLevel": "8",
+        "studentGender": "Female",
+        "wpmInitial": "TBD",
+        "gbwtInitial": "TBD",
+        "readingLevelInitial": "TBD",
+        "interviewScore": "TBD",
+        "date": "2026-03-03",
+        "dayOfWeek": "Tuesday",
+        "teacherSearch": "[Analyn] Analyn Roa",
+        "teacherName": "[Analyn] Analyn Roa",
+        "teacherId": "ICN-71",
+        "isSubstitute": false,
+        "subjectSearch": "Acad: Filipino",
+        "subject": "Acad: Filipino",
+        "materials": "Digital files",
+        "currentLesson": "",
+        "homework": "",
+        "nextLesson": "",
+        "skillFocus": "[\"Academic Grammar\",\"Academic Listening\"]",
+        "skillFocusMet": "{\"Academic Grammar\":true,\"Academic Listening\":false}",
+        "attention": "0",
+        "retention": "0",
+        "comprehension": "0",
+        "behavior": "0",
+        "handwriting": "0",
+        "conversation": "0",
+        "scoreBookMaterials": "",
+        "totalBookMaterials": "",
+        "scoreVocabulary": "",
+        "totalVocabulary": "",
+        "scoreClassVideo": "",
+        "totalClassVideo": "",
+        "scoreHomework": "",
+        "totalHomework": "",
+        "scoreHomeworkVocab": "",
+        "totalHomeworkVocab": "",
+        "scoreWeeklyTest": "",
+        "totalWeeklyTest": "",
+        "activitiesFinished": "",
+        "activitiesNotFinished": ""
+      },
+      "selectedSkillFocuses": [
+        "Academic Grammar",
+        "Academic Listening"
+      ],
+      "skillFocusMetStatus": {
+        "Academic Grammar": true,
+        "Academic Listening": false
+      },
+      "starRatings": {
+        "attention": "0",
+        "retention": "0",
+        "comprehension": "0",
+        "behavior": "0",
+        "handwriting": "0",
+        "conversation": "0"
+      },
+      "skillsAssessment": {
+        "skill-0": {
+          "name": "Listening",
+          "isNA": false,
+          "score": "5",
+          "weaknesses": []
+        },
+        "skill-1": {
+          "name": "Writing  ",
+          "isNA": false,
+          "score": "5",
+          "weaknesses": []
+        },
+        "skill-2": {
+          "name": "Grammar  ",
+          "isNA": false,
+          "score": "5",
+          "weaknesses": []
+        },
+        "skill-3": {
+          "name": "Speaking ",
+          "isNA": false,
+          "score": "5",
+          "weaknesses": []
+        },
+        "skill-4": {
+          "name": "Vocabulary ",
+          "isNA": false,
+          "score": "5",
+          "weaknesses": []
+        },
+        "skill-5": {
+          "name": "Reading ",
+          "isNA": false,
+          "score": "5",
+          "weaknesses": []
+        }
+      }
+    }
+  },
+  "[Christine] Christine Joy Yerro-Bañares|||Hong Seo Hoon (Chris) [홍서훈]": {
+    "timestamp": 1772540231078,
+    "teacherName": "[Christine] Christine Joy Yerro-Bañares",
+    "studentName": "Hong Seo Hoon (Chris) [홍서훈]",
+    "data": {
+      "fields": {
+        "studentSearch": "Hong Seo Hoon (Chris) [홍서훈]",
+        "studentName": "Hong Seo Hoon (Chris) [홍서훈]",
+        "studentId": "ICN-ST-133",
+        "gradeLevel": "10",
+        "studentGender": "Male",
+        "wpmInitial": "61",
+        "gbwtInitial": "68-78-86",
+        "readingLevelInitial": "Level 9, 25%",
+        "interviewScore": "11",
+        "date": "2026-03-03",
+        "dayOfWeek": "Tuesday",
+        "teacherSearch": "[Christine] Christine Joy Yerro-Bañares",
+        "teacherName": "[Christine] Christine Joy Yerro-Bañares",
+        "teacherId": "ICN-275",
+        "isSubstitute": false,
+        "subjectSearch": "Academics",
+        "subject": "Academics",
+        "materials": "N/A",
+        "currentLesson": "Essay Presentation (My Possession, Myself)",
+        "homework": "N/A",
+        "nextLesson": "N/A",
+        "skillFocus": "[\"Academic Grammar\",\"Academic Clarity\",\"Academic Writing\"]",
+        "skillFocusMet": "{\"Academic Grammar\":true,\"Academic Clarity\":true,\"Academic Writing\":true}",
+        "attention": "5",
+        "retention": "4",
+        "comprehension": "5",
+        "behavior": "5",
+        "handwriting": "4",
+        "conversation": "5",
+        "scoreBookMaterials": "",
+        "totalBookMaterials": "",
+        "scoreVocabulary": "",
+        "totalVocabulary": "",
+        "scoreClassVideo": "",
+        "totalClassVideo": "",
+        "scoreHomework": "",
+        "totalHomework": "",
+        "scoreHomeworkVocab": "",
+        "totalHomeworkVocab": "",
+        "scoreWeeklyTest": "",
+        "totalWeeklyTest": "",
+        "activitiesFinished": "Preparing for Presentation of Essay\nDiscussion on how to deliver his presentation\nApplication of techniques",
+        "activitiesNotFinished": "None"
+      },
+      "selectedSkillFocuses": [
+        "Academic Grammar",
+        "Academic Clarity",
+        "Academic Writing"
+      ],
+      "skillFocusMetStatus": {
+        "Academic Grammar": true,
+        "Academic Clarity": true,
+        "Academic Writing": true
+      },
+      "starRatings": {
+        "attention": "5",
+        "retention": "4",
+        "comprehension": "5",
+        "behavior": "5",
+        "handwriting": "4",
+        "conversation": "5"
+      },
+      "skillsAssessment": {
+        "skill-0": {
+          "name": "Vocabulary  ",
+          "isNA": true,
+          "score": "NA",
+          "weaknesses": []
+        },
+        "skill-1": {
+          "name": "Application ",
+          "isNA": true,
+          "score": "NA",
+          "weaknesses": []
+        },
+        "skill-2": {
+          "name": "Retention",
+          "isNA": true,
+          "score": "NA",
+          "weaknesses": []
+        },
+        "skill-3": {
+          "name": "Analysis ",
+          "isNA": true,
+          "score": "NA",
+          "weaknesses": []
+        },
+        "skill-4": {
+          "name": "Writing ",
+          "isNA": true,
+          "score": "NA",
+          "weaknesses": []
+        },
+        "skill-5": {
+          "name": "Critical Thinking ",
+          "isNA": true,
+          "score": "NA",
+          "weaknesses": []
+        }
+      }
+    }
+  },
+  "[Melody] Melody Joy Mata|||Hwang Chae Min [황채민]": {
+    "timestamp": 1772602020201,
+    "teacherName": "[Melody] Melody Joy Mata",
+    "studentName": "Hwang Chae Min [황채민]",
+    "data": {
+      "fields": {
+        "studentSearch": "Hwang Chae Min [황채민]",
+        "studentName": "Hwang Chae Min [황채민]",
+        "studentId": "ICN-ST-565",
+        "gradeLevel": "9",
+        "studentGender": "Female",
+        "wpmInitial": "123",
+        "gbwtInitial": "GBWT: 40-50-68-72",
+        "readingLevelInitial": "Level 6 100%, Level 7 50%",
+        "interviewScore": "12",
+        "date": "2026-03-04",
+        "dayOfWeek": "Wednesday",
+        "teacherSearch": "[Melody] Melody Joy Mata",
+        "teacherName": "[Melody] Melody Joy Mata",
+        "teacherId": "ICN-44",
+        "isSubstitute": false,
+        "subjectSearch": "Academics",
+        "subject": "Academics",
+        "materials": "Everything You Need to Ace MATH in One Big Fat Notebook; Google Canvas",
+        "currentLesson": "Math: Divisibility Rules, Multiples and LCM",
+        "homework": "-",
+        "nextLesson": "-",
+        "skillFocus": "[\"reasoning\",\"Academic Clarity\",\"Problem Solving\"]",
+        "skillFocusMet": "{\"reasoning\":false,\"Academic Clarity\":false,\"Problem Solving\":false}",
+        "attention": "0",
+        "retention": "0",
+        "comprehension": "0",
+        "behavior": "0",
+        "handwriting": "0",
+        "conversation": "0",
+        "scoreBookMaterials": "",
+        "totalBookMaterials": "",
+        "scoreVocabulary": "9",
+        "totalVocabulary": "10",
+        "scoreClassVideo": "",
+        "totalClassVideo": "",
+        "scoreHomework": "",
+        "totalHomework": "",
+        "scoreHomeworkVocab": "",
+        "totalHomeworkVocab": "",
+        "scoreWeeklyTest": "",
+        "totalWeeklyTest": "",
+        "activitiesFinished": "- class started with a vocabulary spelling test from the vocabulary we discussed in the past 2 days. scored 9/10\n- ",
+        "activitiesNotFinished": "-"
+      },
+      "selectedSkillFocuses": [
+        "reasoning",
+        "Academic Clarity",
+        "Problem Solving"
+      ],
+      "skillFocusMetStatus": {
+        "reasoning": false,
+        "Academic Clarity": false,
+        "Problem Solving": false
+      },
+      "starRatings": {
+        "attention": "0",
+        "retention": "0",
+        "comprehension": "0",
+        "behavior": "0",
+        "handwriting": "0",
+        "conversation": "0"
+      },
+      "skillsAssessment": {
+        "skill-0": {
+          "name": "Vocabulary  ",
+          "isNA": false,
+          "score": "5",
+          "weaknesses": []
+        },
+        "skill-1": {
+          "name": "Application ",
+          "isNA": false,
+          "score": "5",
+          "weaknesses": []
+        },
+        "skill-2": {
+          "name": "Retention",
+          "isNA": false,
+          "score": "5",
+          "weaknesses": []
+        },
+        "skill-3": {
+          "name": "Analysis ",
+          "isNA": false,
+          "score": "5",
+          "weaknesses": []
+        },
+        "skill-4": {
+          "name": "Writing ",
+          "isNA": false,
+          "score": "5",
+          "weaknesses": []
+        },
+        "skill-5": {
+          "name": "Critical Thinking ",
+          "isNA": false,
+          "score": "5",
+          "weaknesses": []
+        }
+      }
+    }
+  },
+  "[Greg] Hyacinth Griego Bañares|||Kang Seung Ji [강승지]": {
+    "timestamp": 1772601593281,
+    "teacherName": "[Greg] Hyacinth Griego Bañares",
+    "studentName": "Kang Seung Ji [강승지]",
+    "data": {
+      "fields": {
+        "studentSearch": "Kang Seung Ji [강승지]",
+        "studentName": "Kang Seung Ji [강승지]",
+        "studentId": "ICN-ST-676",
+        "gradeLevel": "10",
+        "studentGender": "Female",
+        "wpmInitial": "TBD",
+        "gbwtInitial": "TBD",
+        "readingLevelInitial": "TBD",
+        "interviewScore": "TBD",
+        "date": "2026-03-04",
+        "dayOfWeek": "Wednesday",
+        "teacherSearch": "[Greg] Hyacinth Griego Bañares",
+        "teacherName": "[Greg] Hyacinth Griego Bañares",
+        "teacherId": "ICN-270",
+        "isSubstitute": false,
+        "subjectSearch": "Academics",
+        "subject": "Academics",
+        "materials": "Everything you need to ace math in one big fat notebook",
+        "currentLesson": "Chapter 19: Percent",
+        "homework": "Chapter 19 Worksheet",
+        "nextLesson": "Chapter 20",
+        "skillFocus": "[\"Academic Vocabulary\",\"Academic Clarity\"]",
+        "skillFocusMet": "{\"Academic Vocabulary\":true,\"Academic Clarity\":true}",
+        "attention": "0",
+        "retention": "0",
+        "comprehension": "0",
+        "behavior": "0",
+        "handwriting": "0",
+        "conversation": "0",
+        "scoreBookMaterials": "",
+        "totalBookMaterials": "",
+        "scoreVocabulary": "",
+        "totalVocabulary": "",
+        "scoreClassVideo": "",
+        "totalClassVideo": "",
+        "scoreHomework": "10",
+        "totalHomework": "11",
+        "scoreHomeworkVocab": "",
+        "totalHomeworkVocab": "",
+        "scoreWeeklyTest": "",
+        "totalWeeklyTest": "",
+        "activitiesFinished": "",
+        "activitiesNotFinished": ""
+      },
+      "selectedSkillFocuses": [
+        "Academic Vocabulary",
+        "Academic Clarity"
+      ],
+      "skillFocusMetStatus": {
+        "Academic Vocabulary": true,
+        "Academic Clarity": true
+      },
+      "starRatings": {
+        "attention": "0",
+        "retention": "0",
+        "comprehension": "0",
+        "behavior": "0",
+        "handwriting": "0",
+        "conversation": "0"
+      },
+      "skillsAssessment": {
+        "skill-0": {
+          "name": "Vocabulary  ",
+          "isNA": true,
+          "score": "NA",
+          "weaknesses": []
+        },
+        "skill-1": {
+          "name": "Application ",
+          "isNA": true,
+          "score": "NA",
+          "weaknesses": []
+        },
+        "skill-2": {
+          "name": "Retention",
+          "isNA": true,
+          "score": "NA",
+          "weaknesses": []
+        },
+        "skill-3": {
+          "name": "Analysis ",
+          "isNA": true,
+          "score": "NA",
+          "weaknesses": []
+        },
+        "skill-4": {
+          "name": "Writing ",
+          "isNA": true,
+          "score": "NA",
+          "weaknesses": []
+        },
+        "skill-5": {
+          "name": "Critical Thinking ",
+          "isNA": true,
+          "score": "NA",
+          "weaknesses": []
+        }
+      }
+    }
+  },
+  "[Christine] Christine Joy Yerro-Bañares|||Mok Min Chan [목민찬]": {
+    "timestamp": 1772601644280,
+    "teacherName": "[Christine] Christine Joy Yerro-Bañares",
+    "studentName": "Mok Min Chan [목민찬]",
+    "data": {
+      "fields": {
+        "studentSearch": "Mok Min Chan [목민찬]",
+        "studentName": "Mok Min Chan [목민찬]",
+        "studentId": "ICN-ST-652",
+        "gradeLevel": "5",
+        "studentGender": "Male",
+        "wpmInitial": "95",
+        "gbwtInitial": "30-49-58-67-77-84",
+        "readingLevelInitial": "Level 5 100%, Level 6 75%",
+        "interviewScore": "TBD",
+        "date": "2026-03-04",
+        "dayOfWeek": "Wednesday",
+        "teacherSearch": "[Christine] Christine Joy Yerro-Bañares",
+        "teacherName": "[Christine] Christine Joy Yerro-Bañares",
+        "teacherId": "ICN-275",
+        "isSubstitute": false,
+        "subjectSearch": "Reading and Vocab",
+        "subject": "Reading and Vocab",
+        "materials": "Reading Explorer 3",
+        "currentLesson": "Video Lesson: The Genius of Picasso and Lesson 12A Defying Gravity",
+        "homework": "Caterpillar Vocab Book",
+        "nextLesson": "Lesson 12B ",
+        "skillFocus": "",
+        "skillFocusMet": "",
+        "attention": "0",
+        "retention": "0",
+        "comprehension": "0",
+        "behavior": "0",
+        "handwriting": "0",
+        "conversation": "0",
+        "scoreBookMaterials": "",
+        "totalBookMaterials": "",
+        "scoreVocabulary": "",
+        "totalVocabulary": "",
+        "scoreClassVideo": "",
+        "totalClassVideo": "",
+        "scoreHomework": "",
+        "totalHomework": "",
+        "scoreHomeworkVocab": "",
+        "totalHomeworkVocab": "",
+        "scoreWeeklyTest": "",
+        "totalWeeklyTest": "",
+        "activitiesFinished": "",
+        "activitiesNotFinished": ""
+      },
+      "selectedSkillFocuses": [],
+      "skillFocusMetStatus": {},
+      "starRatings": {
+        "attention": "0",
+        "retention": "0",
+        "comprehension": "0",
+        "behavior": "0",
+        "handwriting": "0",
+        "conversation": "0"
+      },
+      "skillsAssessment": {
+        "skill-0": {
+          "name": "Comprehension  ",
+          "isNA": false,
+          "score": "5",
+          "weaknesses": []
+        },
+        "skill-1": {
+          "name": "Digital Literacy",
+          "isNA": false,
+          "score": "5",
+          "weaknesses": []
+        },
+        "skill-2": {
+          "name": "Text Navigation",
+          "isNA": false,
+          "score": "5",
+          "weaknesses": []
+        },
+        "skill-3": {
+          "name": "Information Processing",
+          "isNA": false,
+          "score": "5",
+          "weaknesses": []
+        },
+        "skill-4": {
+          "name": "Study Methods",
+          "isNA": false,
+          "score": "5",
+          "weaknesses": []
+        },
+        "skill-5": {
+          "name": "Critical Analysis",
+          "isNA": false,
+          "score": "5",
+          "weaknesses": []
+        }
+      }
+    }
+  },
+  "[Eunice] Eunice Joy Meman|||Mok Min Jun [목민준]": {
+    "timestamp": 1772602350290,
+    "teacherName": "[Eunice] Eunice Joy Meman",
+    "studentName": "Mok Min Jun [목민준]",
+    "data": {
+      "fields": {
+        "studentSearch": "Mok Min Jun [목민준]",
+        "studentName": "Mok Min Jun [목민준]",
+        "studentId": "ICN-ST-653",
+        "gradeLevel": "2",
+        "studentGender": "Male",
+        "wpmInitial": "71",
+        "gbwtInitial": "10-20-39-46",
+        "readingLevelInitial": "Level 2 100%, Level 3 25%",
+        "interviewScore": "TBD",
+        "date": "2026-03-04",
+        "dayOfWeek": "Wednesday",
+        "teacherSearch": "[Eunice] Eunice Joy Meman",
+        "teacherName": "[Eunice] Eunice Joy Meman",
+        "teacherId": "ICN-72",
+        "isSubstitute": false,
+        "subjectSearch": "Grammar to Writing",
+        "subject": "Grammar to Writing",
+        "materials": "The Grammar Lab 2, and Cambridge Grammar (and Writing Skills) 3",
+        "currentLesson": "GRAMMAR: Going to pages 100-111     WRITING: About his Favorite Movie (Jumanji)",
+        "homework": "Journal Diary",
+        "nextLesson": "GRAMMAR: Going to pages 112",
+        "skillFocus": "[\"Academic Grammar\",\"Grammar Foundations\",\"Grammar Awareness\",\"Grammar Application in Basic Writing\"]",
+        "skillFocusMet": "{\"Academic Grammar\":true,\"Grammar Foundations\":true,\"Grammar Awareness\":true,\"Grammar Application in Basic Writing\":true}",
+        "attention": "4",
+        "retention": "4",
+        "comprehension": "4",
+        "behavior": "4",
+        "handwriting": "4",
+        "conversation": "4",
+        "scoreBookMaterials": "",
+        "totalBookMaterials": "",
+        "scoreVocabulary": "",
+        "totalVocabulary": "",
+        "scoreClassVideo": "",
+        "totalClassVideo": "",
+        "scoreHomework": "",
+        "totalHomework": "",
+        "scoreHomeworkVocab": "",
+        "totalHomeworkVocab": "",
+        "scoreWeeklyTest": "",
+        "totalWeeklyTest": "",
+        "activitiesFinished": "GRAMMAR: Going to pages 100-111     WRITING: About his Favorite Movie (Jumanji)",
+        "activitiesNotFinished": "GRAMMAR: Going to pages 112"
+      },
+      "selectedSkillFocuses": [
+        "Academic Grammar",
+        "Grammar Foundations",
+        "Grammar Awareness",
+        "Grammar Application in Basic Writing"
+      ],
+      "skillFocusMetStatus": {
+        "Academic Grammar": true,
+        "Grammar Foundations": true,
+        "Grammar Awareness": true,
+        "Grammar Application in Basic Writing": true
+      },
+      "starRatings": {
+        "attention": "4",
+        "retention": "4",
+        "comprehension": "4",
+        "behavior": "4",
+        "handwriting": "4",
+        "conversation": "4"
+      },
+      "skillsAssessment": {
+        "skill-0": {
+          "name": "Error Correction",
+          "isNA": true,
+          "score": "NA",
+          "weaknesses": []
+        },
+        "skill-1": {
+          "name": "Sentence Basics",
+          "isNA": true,
+          "score": "NA",
+          "weaknesses": []
+        },
+        "skill-2": {
+          "name": "Paragraph Skills",
+          "isNA": true,
+          "score": "NA",
+          "weaknesses": []
+        },
+        "skill-3": {
+          "name": "Verb Use",
+          "isNA": true,
+          "score": "NA",
+          "weaknesses": []
+        },
+        "skill-4": {
+          "name": "Punctuation",
+          "isNA": true,
+          "score": "NA",
+          "weaknesses": []
+        },
+        "skill-5": {
+          "name": "Sentence Variety",
+          "isNA": true,
+          "score": "NA",
+          "weaknesses": []
+        }
+      }
+    }
+  },
+  "[Faye] Faye Ruby Ann Ladiza|||Yoon Jung Bin [윤정빈]": {
+    "timestamp": 1772602062756,
+    "teacherName": "[Faye] Faye Ruby Ann Ladiza",
+    "studentName": "Yoon Jung Bin [윤정빈]",
+    "data": {
+      "fields": {
+        "studentSearch": "Yoon Jung Bin [윤정빈]",
+        "studentName": "Yoon Jung Bin [윤정빈]",
+        "studentId": "ICN-ST-657",
+        "gradeLevel": "9",
+        "studentGender": "Male",
+        "wpmInitial": "TBD",
+        "gbwtInitial": "TBD",
+        "readingLevelInitial": "TBD",
+        "interviewScore": "TBD",
+        "date": "2026-03-04",
+        "dayOfWeek": "Wednesday",
+        "teacherSearch": "[Faye] Faye Ruby Ann Ladiza",
+        "teacherName": "[Faye] Faye Ruby Ann Ladiza",
+        "teacherId": "ICN-90",
+        "isSubstitute": false,
+        "subjectSearch": "Academics",
+        "subject": "Academics",
+        "materials": "",
+        "currentLesson": "",
+        "homework": "",
+        "nextLesson": "",
+        "skillFocus": "",
+        "skillFocusMet": "",
+        "attention": "0",
+        "retention": "0",
+        "comprehension": "0",
+        "behavior": "0",
+        "handwriting": "0",
+        "conversation": "0",
+        "scoreBookMaterials": "",
+        "totalBookMaterials": "",
+        "scoreVocabulary": "",
+        "totalVocabulary": "",
+        "scoreClassVideo": "",
+        "totalClassVideo": "",
+        "scoreHomework": "",
+        "totalHomework": "",
+        "scoreHomeworkVocab": "",
+        "totalHomeworkVocab": "",
+        "scoreWeeklyTest": "",
+        "totalWeeklyTest": "",
+        "activitiesFinished": "",
+        "activitiesNotFinished": ""
+      },
+      "selectedSkillFocuses": [],
+      "skillFocusMetStatus": {},
+      "starRatings": {
+        "attention": "0",
+        "retention": "0",
+        "comprehension": "0",
+        "behavior": "0",
+        "handwriting": "0",
+        "conversation": "0"
+      },
+      "skillsAssessment": {
+        "skill-0": {
+          "name": "Vocabulary  ",
+          "isNA": false,
+          "score": "5",
+          "weaknesses": []
+        },
+        "skill-1": {
+          "name": "Application ",
+          "isNA": false,
+          "score": "5",
+          "weaknesses": []
+        },
+        "skill-2": {
+          "name": "Retention",
+          "isNA": false,
+          "score": "5",
+          "weaknesses": []
+        },
+        "skill-3": {
+          "name": "Analysis ",
+          "isNA": false,
+          "score": "5",
+          "weaknesses": []
+        },
+        "skill-4": {
+          "name": "Writing ",
+          "isNA": false,
+          "score": "5",
+          "weaknesses": []
+        },
+        "skill-5": {
+          "name": "Critical Thinking ",
+          "isNA": false,
+          "score": "5",
+          "weaknesses": []
+        }
+      }
+    }
+  },
+  "[Janice] Janice Fernandez|||Kang Seung Ji [강승지]": {
+    "timestamp": 1772602752366,
+    "teacherName": "[Janice] Janice Fernandez",
+    "studentName": "Kang Seung Ji [강승지]",
+    "data": {
+      "fields": {
+        "studentSearch": "Kang Seung Ji [강승지]",
+        "studentName": "Kang Seung Ji [강승지]",
+        "studentId": "ICN-ST-676",
+        "gradeLevel": "10",
+        "studentGender": "Female",
+        "wpmInitial": "TBD",
+        "gbwtInitial": "TBD",
+        "readingLevelInitial": "TBD",
+        "interviewScore": "TBD",
+        "date": "2026-03-04",
+        "dayOfWeek": "Wednesday",
+        "teacherSearch": "[Janice] Janice Fernandez",
+        "teacherName": "[Janice] Janice Fernandez",
+        "teacherId": "ICN-20",
+        "isSubstitute": false,
+        "subjectSearch": "Grammar to Writing",
+        "subject": "Grammar to Writing",
+        "materials": "Great Writing 2",
+        "currentLesson": "Conversation Practice, Pronunciation Practice Through Singing, ",
+        "homework": "Visionary Journal",
+        "nextLesson": "Great Writing 2 P. ",
+        "skillFocus": "[\"Academic Grammar\",\"Academic Writing\",\"Conversational Speaking\",\"Pronunciation Control\"]",
+        "skillFocusMet": "{\"Academic Grammar\":true,\"Academic Writing\":true,\"Conversational Speaking\":true,\"Pronunciation Control\":true}",
+        "attention": "5",
+        "retention": "5",
+        "comprehension": "5",
+        "behavior": "4",
+        "handwriting": "5",
+        "conversation": "4",
+        "scoreBookMaterials": "10",
+        "totalBookMaterials": "10",
+        "scoreVocabulary": "",
+        "totalVocabulary": "",
+        "scoreClassVideo": "",
+        "totalClassVideo": "",
+        "scoreHomework": "9",
+        "totalHomework": "10",
+        "scoreHomeworkVocab": "9",
+        "totalHomeworkVocab": "10",
+        "scoreWeeklyTest": "",
+        "totalWeeklyTest": "",
+        "activitiesFinished": "Checked her homework, Discussed the corrections, Conversation Practice, Pronunciation Practice Through Singing, ",
+        "activitiesNotFinished": "None."
+      },
+      "selectedSkillFocuses": [
+        "Academic Grammar",
+        "Academic Writing",
+        "Conversational Speaking",
+        "Pronunciation Control"
+      ],
+      "skillFocusMetStatus": {
+        "Academic Grammar": true,
+        "Academic Writing": true,
+        "Conversational Speaking": true,
+        "Pronunciation Control": true
+      },
+      "starRatings": {
+        "attention": "5",
+        "retention": "5",
+        "comprehension": "5",
+        "behavior": "4",
+        "handwriting": "5",
+        "conversation": "4"
+      },
+      "skillsAssessment": {
+        "skill-0": {
+          "name": "Error Correction",
+          "isNA": true,
+          "score": "NA",
+          "weaknesses": []
+        },
+        "skill-1": {
+          "name": "Sentence Basics",
+          "isNA": false,
+          "score": "3",
+          "weaknesses": [
+            "Subject-Verb",
+            "Word Order"
+          ]
+        },
+        "skill-2": {
+          "name": "Paragraph Skills",
+          "isNA": true,
+          "score": "NA",
+          "weaknesses": []
+        },
+        "skill-3": {
+          "name": "Verb Use",
+          "isNA": false,
+          "score": "4",
+          "weaknesses": [
+            "Verb Tenses"
+          ]
+        },
+        "skill-4": {
+          "name": "Punctuation",
+          "isNA": true,
+          "score": "NA",
+          "weaknesses": []
+        },
+        "skill-5": {
+          "name": "Sentence Variety",
+          "isNA": false,
+          "score": "4",
+          "weaknesses": [
+            "Sentence Combining"
+          ]
+        }
+      }
+    }
+  }
+}
